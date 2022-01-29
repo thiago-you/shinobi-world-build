@@ -32,15 +32,12 @@
         <link href="src/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="container pt-3">
+            <!-- LOGO -->
             <div class="row">
-                <div class="col-7">
+                <div class="col-md-7 col-12">
                     <div class="logo">
-                        <h1>
-                            <strong>Shinobi</strong>
-                            <br>
-                            ° W O R L D °
-                        </h1>
+                        <img width="100%" src="https://i.imgur.com/gW34Y4U.png">
                     </div>
                     <!-- ./logo -->
                     <h1 class="mb-4">
@@ -113,16 +110,16 @@
                     </div>
                     <!-- ./card summary -->
                 </div>
-                <div class="col-5">
+                <div class="col-md-5 col-12">
                     <div class="card">
-                        <div class="card-header">
-                            <h2>
+                        <div class="card-header pb-0">
+                            <h2 class="mb-0">
                                 Atributos
                             </h2>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body py-0">
                             <form class="form-horizontal">
-                                <div class="row">
+                                <div class="row justify-content-around">
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="ninjutsu">Nin:</label>
@@ -177,7 +174,7 @@
                                             <input id="carisma" name="carisma" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-5 text-center">
+                                    <div class="col-12 mb-2 text-center">
                                         <button id="toggle-attribute" class="btn btn-light btn-block" type="button">
                                             Próximo
                                         </button>

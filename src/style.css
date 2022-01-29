@@ -11,7 +11,8 @@ body {
 }
 
 body::after {
-    background: url(https://i.imgur.com/pWKRc7t.png);
+    background: url(https://i.imgur.com/RnaO75M.png);
+    background-size: cover;
     content: "";
     opacity: 0.3;
     height: 100%;
