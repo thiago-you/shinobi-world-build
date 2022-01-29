@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121313;
+    color: #fff;
+    overflow: auto; 
+    padding: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+body::after {
+    background: url(https://i.imgur.com/pWKRc7t.png);
+    content: "";
+    opacity: 0.3;
+    height: 100%;
+    position: fixed;
+    background-position: center center; 
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+}
+
+form {
+    border: 1px solid #08086c;
+    padding: 2rem;
+    background: #000000b3;
+    border-radius: 0.7rem;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo h1 {
+    font-size: 4rem;
+}
+
+.card {
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    color: #272727;
+}
+
+.card form {
+    background-color: inherit;
+    padding: inherit;
+    border: none;
+}
+
+.card-header {
+    text-align: center;
+    border-bottom: none;
+    background-color: inherit;
+    border-radius: 1rem !important;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+}
+
+.card-body label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card.status .card-body label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card .card-body .empty-content {
+    display: none;
+}
+
+.card .link {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.card .card-body .summary-table table {
+    table-layout: fixed;
+}
+
+.card .card-body .summary-table th, .card .card-body .summary-table td {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.25rem !important;
+}
+
+.card .card-body .summary-table .fixed-summary-info, .card .card-body .summary-table .summary-info {
+    font-size: 0.7rem;
+}
+
+.selectize-control, .selectize-dropdown {
+    width: 400px !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+button.btn-light {
+    border-color: #272727;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.1rem;
+    margin-left: -1rem;
+    margin-top: -3rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    margin: 0 1rem 0.3rem 0;
+    font-size: 0.6rem;
+}
+
+label {
+    font-size: 0.7rem;
+}
+
+input:disabled {
+    background-color: #fff;
+}
