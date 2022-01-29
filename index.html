@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="utf-8" http-equiv="encoding">        
 
-        <title>Calculadora - Shinobi World</title>
-        <link rel="shortcut icon" type="image/x-icon" href="https://2img.net/i.imgur.com/fLBMAf2.png">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-         <!-- latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>Calculadora - Shinobi World</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://2img.net/i.imgur.com/fLBMAf2.png">
 
-        <!-- jQuery library -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-        <!-- popper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-        <!-- selectize -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sifter/0.5.4/sifter.min.js" integrity="sha512-B60IUvYpG4cibCeQ30J8k/+qtN+fxKAIENb3DL2DVdzIt76IDIynAt92chPEwlCuKejOt//+OZL61i1xsvCIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/microplugin/0.0.3/microplugin.min.js" integrity="sha512-7amIsiQ/hxbdPNawBZwmWBWPiwQRNEJlxTj6eVO+xmWd71fs79Iydr4rYARHwDf0rKHpysFxWbj64fjPRHbqfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js" integrity="sha512-JiDSvppkBtWM1f9nPRajthdgTCZV3wtyngKUqVHlAs0d5q72n5zpM3QMOLmuNws2vkYmmLn4r1KfnPzgC/73Mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.bootstrap2.css" integrity="sha512-NkKdMfG7MzwPkAqUdt+Vu3Ogx6NDda/P1N6dIGiQcGCtZuA22wIreJYP7I7G06yQAfomG3+8qZwUjKfhR1p/+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-        <!-- latest compiled JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- selectize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sifter/0.5.4/sifter.min.js"
+        integrity="sha512-B60IUvYpG4cibCeQ30J8k/+qtN+fxKAIENb3DL2DVdzIt76IDIynAt92chPEwlCuKejOt//+OZL61i1xsvCIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microplugin/0.0.3/microplugin.min.js"
+        integrity="sha512-7amIsiQ/hxbdPNawBZwmWBWPiwQRNEJlxTj6eVO+xmWd71fs79Iydr4rYARHwDf0rKHpysFxWbj64fjPRHbqfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.min.js"
+        integrity="sha512-JiDSvppkBtWM1f9nPRajthdgTCZV3wtyngKUqVHlAs0d5q72n5zpM3QMOLmuNws2vkYmmLn4r1KfnPzgC/73Mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.bootstrap2.css"
+        integrity="sha512-NkKdMfG7MzwPkAqUdt+Vu3Ogx6NDda/P1N6dIGiQcGCtZuA22wIreJYP7I7G06yQAfomG3+8qZwUjKfhR1p/+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- custom style -->
-        <link href="src/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container pt-3">
-            <!-- LOGO -->
-            <div class="row">
-                <div class="col-md-7 col-12">
-                    <div class="logo">
-                        <img width="100%" src="https://i.imgur.com/gW34Y4U.png">
+    <!-- latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- custom style -->
+    <link href="src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container pt-3">
+        <!-- LOGO -->
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <div class="logo">
+                    <img width="100%" src="https://i.imgur.com/gW34Y4U.png">
+                </div>
+                <!-- ./logo -->
+                <h1 class="mb-4">
+                    Calculadora de Testes
+                </h1>
+                <div class="card status">
+                    <div class="card-header">
+                        <h2>
+                            Status
+                        </h2>
                     </div>
-                    <!-- ./logo -->
-                    <h1 class="mb-4">
-                        Calculadora de Testes
-                    </h1>
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>
-                                Sumário
-                            </h2>
-                        </div>
-                        <div class="card-body">
+                    <div class="card-body pt-0">
+                        <form>
                             <div class="row">
-                                <div class="col-12">
-                                    <select id="select-summary" name="select-summary">
+                                <div class="w-100 mb-3">
+                                    <select onclick="toggleTestes(this)">
                                         <option value="0" selected>Ninjutsu</option>
                                         <option value="1">Genjustsu</option>
                                         <option value="2">Taijutsu</option>
@@ -62,260 +75,303 @@
                                         <option value="6">Atenção</option>
                                         <option value="7">Constituição</option>
                                         <option value="8">Carísma</option>
+                                        <option value="9">Todos</option>
                                     </select>
                                 </div>
-                                <!-- ./col -->
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="hp">HP e Chakra</label>
+                                        <input id="hp" name="hp" type="text" data-value="90" value="90"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="stamina">Stamina</label>
+                                        <input id="stamina" name="stamina" data-value="-1" value="-1"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="defesa">Defesa</label>
+                                        <input id="defesa" name="defesa" data-value="-2" value="-2"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="sanidade">Sanidade</label>
+                                        <input id="sanidade" name="sanidade" data-value="90" value="90"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="velocidade">Velocidade</label>
+                                        <input id="velocidade" name="velocidade" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="furtividade">Furtividade</label>
+                                        <input id="furtividade" name="furtividade" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="saque">Saque</label>
+                                        <input id="saque" name="saque" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="percepcao-movimento">Percepção de Movimento</label>
+                                        <input id="percepcao-movimento" name="percepcao-movimento" data-value="0"
+                                            value="0" class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="percepcao-velocidade">Percepção de Velocidade</label>
+                                        <input id="percepcao-velocidade" name="percepcao-velocidade" data-value="0"
+                                            value="0" class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="ocultacao-armadilha">Ocultação de Armadilhas</label>
+                                        <input id="ocultacao-armadilha" name="ocultacao-armadilha" data-value="0"
+                                            value="0" class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="rastreamento">Rastreamento</label>
+                                        <input id="rastreamento" name="rastreamento" value="N/D"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="encobrimento">Encobrimento</label>
+                                        <input id="encobrimento" name="encobrimento" value="N/D"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="teste-genjutsu">Teste de poder de Genjutsu</label>
+                                        <input id="teste-genjutsu" name="teste-genjutsu" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="teste-saida-genjutsu">Saída de Genjutsu</label>
+                                        <input id="teste-saida-genjutsu" name="teste-saida-genjutsu" data-value="0"
+                                            value="0" class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="limite-jutsus">Limite de jutsus</label>
+                                        <input id="limite-jutsus" name="limite-jutsus" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="teste-ilusao">Percepção de Ilusão</label>
+                                        <input id="teste-ilusao" name="teste-ilusao" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="teste-mentiras">Persuasão e Percepção de Mentiras</label>
+                                        <input id="teste-mentiras" name="teste-mentiras" data-value="0" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
                             </div>
-                            <!-- ./row -->
-                            <div class="row">
+                        </form>
+                    </div>
+                </div>
+                <!-- ./card summary -->
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h2 class="mb-0">
+                            Atributos
+                        </h2>
+                    </div>
+                    <div class="card-body py-0">
+                        <form class="form-horizontal">
+                            <div class="row justify-content-around">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="ninjutsu">Nin:</label>
+                                        <input id="ninjutsu" name="ninjutsu" type="number" class="form-control"
+                                            value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="deztreza">Des:</label>
+                                        <input id="deztreza" name="deztreza" type="number"
+                                            class="form-control flex-fill" value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="genjustsu">Gen:</label>
+                                        <input id="genjustsu" name="genjustsu" type="number"
+                                            class="form-control flex-fill" value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="constituicao">Cons:</label>
+                                        <input id="constituicao" name="constituicao" type="number"
+                                            class="form-control flex-fill" value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="taijustu">Tai:</label>
+                                        <input id="taijustu" name="taijustu" type="number"
+                                            class="form-control flex-fill" value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="atencao">Aten:</label>
+                                        <input id="atencao" name="atencao" type="number" class="form-control flex-fill"
+                                            value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="forca">For:</label>
+                                        <input id="forca" name="forca" type="number" class="form-control flex-fill"
+                                            value="0" min="0" max="10" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="inteligencia">Int:</label>
+                                        <input id="inteligencia" name="inteligencia" type="number"
+                                            class="form-control flex-fill" value="0" min="0" max="10" />
+                                    </div>
+                                </div>
                                 <div class="col-12">
-                                    <h3 class="mb-4">
-                                        Tabela de Atributos
-                                    </h3>
-                                    <div class="link">
-                                        <a href="https://narutoshinobiworld.forumeiros.com/t4-2-regra-de-atributos">
-                                            Clique aqui para consultar a regra.
-                                        </a>
+                                    <div class="form-group">
+                                        <label for="carisma">Car:</label>
+                                        <input id="carisma" name="carisma" type="number" class="form-control flex-fill"
+                                            value="0" min="0" max="10" />
                                     </div>
-                                    <div class="summary-content mb-4">
-                                        <div class="empty-content text-center mt-5">
-                                            Nenhum atributo selecionado
-                                        </div>
-                                        <div class="summary-table">
-                                            <table class="table table-striped table-bordered table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <!-- ./columns -->
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <!-- ./columns -->
-                                                </tbody>
-                                            </table>
-                                            <div class="fixed-summary-info mb-3">
-                                                Os pontos bônus não se somam com os anteriores. Ou seja, o bônus adquirido com 10 pontos substitui aquele que era conferido pelos pontos anteriores.Os pontos bônus não se somam com os anteriores. Ou seja, o bônus adquirido com 10 pontos substitui aquele que era conferido pelos pontos anteriores.
-                                            </div>
-                                            <div class="summary-info">
-                                                <!-- ./summary info -->
-                                            </div>
-                                        </div>
-                                        <!-- ./summary table -->
-                                    </div>
-                                    <!-- ./summary-content -->
                                 </div>
-                                <!-- ./col -->
+                                <div class="col-12 mb-2 text-center">
+                                    <button id="toggle-attribute" class="btn btn-light btn-block" type="button">
+                                        Próximo
+                                    </button>
+                                </div>
                             </div>
-                            <!-- ./row -->
-                        </div>
+                        </form>
                     </div>
-                    <!-- ./card summary -->
+                    <!-- ./card-body -->
                 </div>
-                <div class="col-md-5 col-12">
-                    <div class="card">
-                        <div class="card-header pb-0">
-                            <h2 class="mb-0">
-                                Atributos
-                            </h2>
-                        </div>
-                        <div class="card-body py-0">
-                            <form class="form-horizontal">
-                                <div class="row justify-content-around">
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="ninjutsu">Nin:</label>
-                                            <input id="ninjutsu" name="ninjutsu" type="number" class="form-control" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="deztreza">Des:</label>
-                                            <input id="deztreza" name="deztreza" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="genjustsu">Gen:</label>
-                                            <input id="genjustsu" name="genjustsu" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="constituicao">Cons:</label>
-                                            <input id="constituicao" name="constituicao" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="taijustu">Tai:</label>
-                                            <input id="taijustu" name="taijustu" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="atencao">Aten:</label>
-                                            <input id="atencao" name="atencao" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="forca">For:</label>
-                                            <input id="forca" name="forca" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <label for="inteligencia">Int:</label>
-                                            <input id="inteligencia" name="inteligencia" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="carisma">Car:</label>
-                                            <input id="carisma" name="carisma" type="number" class="form-control flex-fill" value="0" min="0" max="10"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mb-2 text-center">
-                                        <button id="toggle-attribute" class="btn btn-light btn-block" type="button">
-                                            Próximo
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- ./card-body -->
-                    </div>
-                    <!-- ./card attributes -->
-                </div>
-                <!-- ./col -->
+                <!-- ./card attributes -->
             </div>
-            <!-- ./row -->
-            <div class="row">
-                <div class="col-12">
-                    <!-- ./atributos -->
-                    <div class="card status">
-                        <div class="card-header">
-                            <h2>
-                                Status
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="hp">HP e Chakra</label>
-                                            <input id="hp" name="hp" type="text" data-value="90" value="90" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="stamina">Stamina</label>
-                                            <input id="stamina" name="stamina" data-value="-1" value="-1" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="defesa">Defesa</label>
-                                            <input id="defesa" name="defesa" data-value="-2" value="-2" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="sanidade">Sanidade</label>
-                                            <input id="sanidade" name="sanidade" data-value="90" value="90" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="velocidade">Velocidade</label>
-                                            <input id="velocidade" name="velocidade" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="furtividade">Furtividade</label>
-                                            <input id="furtividade" name="furtividade" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="saque">Saque</label>
-                                            <input id="saque" name="saque" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="percepcao-movimento">Percepção de Movimento</label>
-                                            <input id="percepcao-movimento" name="percepcao-movimento" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="percepcao-velocidade">Percepção de Velocidade</label>
-                                            <input id="percepcao-velocidade" name="percepcao-velocidade" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="ocultacao-armadilha">Ocultação de Armadilhas</label>
-                                            <input id="ocultacao-armadilha" name="ocultacao-armadilha" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="rastreamento">Rastreamento</label>
-                                            <input id="rastreamento" name="rastreamento" value="N/D" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="encobrimento">Encobrimento</label>
-                                            <input id="encobrimento" name="encobrimento" value="N/D" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="teste-genjutsu">Teste de poder de Genjutsu</label>
-                                            <input id="teste-genjutsu" name="teste-genjutsu" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="teste-saida-genjutsu">Saída de Genjutsu</label>
-                                            <input id="teste-saida-genjutsu" name="teste-saida-genjutsu" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="limite-jutsus">Limite de jutsus</label>
-                                            <input id="limite-jutsus" name="limite-jutsus" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="teste-ilusao">Percepção de Ilusão</label>
-                                            <input id="teste-ilusao" name="teste-ilusao" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="teste-mentiras">Persuasão e Percepção de Mentiras</label>
-                                            <input id="teste-mentiras" name="teste-mentiras" data-value="0" value="0" class="form-control flex-fill" disabled/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ./status -->
-                </div>
-                <!-- ./col -->
-            </div>
-            <!-- ./row -->
+            <!-- ./col -->
         </div>
-        <!-- ./content -->
-    </body>
-    <!-- ./body -->
-    <script src="src/script.js" defer></script>
-    <!-- ./custom script -->
+        <!-- ./row -->
+        <div class="row">
+            <div class="col-12">
+                <!-- ./atributos -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            Sumário
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <select id="select-summary" name="select-summary">
+                                    <option value="0" selected>Ninjutsu</option>
+                                    <option value="1">Genjustsu</option>
+                                    <option value="2">Taijutsu</option>
+                                    <option value="3">Força</option>
+                                    <option value="4">Destreza</option>
+                                    <option value="5">Inteligência</option>
+                                    <option value="6">Atenção</option>
+                                    <option value="7">Constituição</option>
+                                    <option value="8">Carísma</option>
+                                </select>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- ./row -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="mb-4">
+                                    Tabela de Atributos
+                                </h3>
+                                <div class="link">
+                                    <a href="https://narutoshinobiworld.forumeiros.com/t4-2-regra-de-atributos">
+                                        Clique aqui para consultar a regra.
+                                    </a>
+                                </div>
+                                <div class="summary-content mb-4">
+                                    <div class="empty-content text-center mt-5">
+                                        Nenhum atributo selecionado
+                                    </div>
+                                    <div class="summary-table">
+                                        <table class="table table-striped table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <!-- ./columns -->
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- ./columns -->
+                                            </tbody>
+                                        </table>
+                                        <div class="fixed-summary-info mb-3">
+                                            Os pontos bônus não se somam com os anteriores. Ou seja, o bônus adquirido
+                                            com 10 pontos substitui aquele que era conferido pelos pontos anteriores.Os
+                                            pontos bônus não se somam com os anteriores. Ou seja, o bônus adquirido com
+                                            10 pontos substitui aquele que era conferido pelos pontos anteriores.
+                                        </div>
+                                        <div class="summary-info">
+                                            <!-- ./summary info -->
+                                        </div>
+                                    </div>
+                                    <!-- ./summary table -->
+                                </div>
+                                <!-- ./summary-content -->
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- ./row -->
+                    </div>
+                </div>
+                <!-- ./status -->
+            </div>
+            <!-- ./col -->
+        </div>
+        <!-- ./row -->
+    </div>
+    <!-- ./content -->
+</body>
+<!-- ./body -->
+<script src="src/script.js" defer></script>
+<!-- ./custom script -->
+
 </html>

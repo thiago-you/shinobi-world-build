@@ -68,6 +68,10 @@ $(function () {
         }
     }
 
+    function toggleTestes(field){
+        console.log(field.value);
+    }
+
     function calculate(constituicao, forca) {
         let hp = -10;
         let stamina = -1;
