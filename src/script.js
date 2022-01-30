@@ -1,25 +1,45 @@
-$(function () {
-    showSummary(0);
-
+$(function () {   
     let status = new Status();
     
-    $('#constituicao', '#ninjustu').val(0).trigger('change');
-
+    // trigger default state
+    showSummary(0);
+    resetStatus();
+    
+    /**
+     * Intialize selectize component
+     */
     $("#select-summary").selectize({
         create: false,
         sortField: "text",
     });
 
-    $('body').on('click', '#toggle-attribute', function () {
-        this.blur();
-    });
-
+    /**
+     * Trigger status calculation
+     */
     $('body').on('change', '.form-atributos input', function () {
         calculateStatus();
     });
 
+    /**
+     * Show selected summary
+     */
     $("body").on('change', '#select-summary', function () {
         showSummary(this.value);
+    });
+
+    /**
+     * Reset status state
+     */
+    $('body').on('click', '#reset-status', function () {
+        status = new Status();
+        resetStatus();
+    });
+
+    /**
+     * Remove focus
+     */
+    $('body').on('click', 'button', function () {
+        this.blur();
     });
 
     /**
@@ -64,6 +84,23 @@ $(function () {
 
             toggleAttributesTable();
         }
+    }
+
+    /**
+     * Reset status state on UI
+     */
+    function resetStatus() {
+        $('#ninjutsu').val(status.ninjutsu);
+        $('#destreza').val(status.destreza);
+        $('#genjutsu').val(status.genjutsu);
+        $('#constituicao').val(status.constituicao);
+        $('#taijutsu').val(status.taijutsu);
+        $('#atencao').val(status.atencao);
+        $('#forca').val(status.forca);
+        $('#inteligencia').val(status.inteligencia);
+        $('#carisma').val(status.carisma);
+
+        calculateStatus();
     }
 
     /**

@@ -120,6 +120,11 @@ button.btn-light {
     font-weight: bold;
 }
 
+button.btn-light.small {
+    font-size: 0.7rem;
+    padding: 0.5rem !important;
+}
+
 .title {
     font-size: 1.1rem;
     margin-left: -1rem;
