@@ -1,6 +1,8 @@
 $(function () {
     showSummary(0);
 
+    let status = new Status();
+    
     $('#constituicao', '#ninjustu').val(0).trigger('change');
 
     $("#select-summary").selectize({
@@ -12,24 +14,17 @@ $(function () {
         this.blur();
     });
 
-    $('#ninjutsu').on('change', function () {
-        const value = this.value * 2;
-
-        $('#poder').val(10 + value);
-    });
-
-    $('body').on('change', '#constituicao', function () {
-        calculate(this.value, $('#forca').val());
-    });
-
-    $('body').on('change', '#forca', function () {
-        calculate($('#constituicao').val(), this.value);
+    $('body').on('change', '.form-atributos input', function () {
+        calculateStatus();
     });
 
     $("body").on('change', '#select-summary', function () {
         showSummary(this.value);
     });
 
+    /**
+     * Toggle summary attribute content
+     */
     function toggleAttributesTable(isEmpty) {
         if (isEmpty) {
             $('.summary-content .empty-content').show();
@@ -40,6 +35,9 @@ $(function () {
         }
     }
 
+    /**
+     * Display selecte summary
+     */
     function showSummary(value) {
         if (value == undefined || value == null || (value + '').trim().length == 0 || value < 0 || value > 8) {
             toggleAttributesTable(true);
@@ -68,103 +66,58 @@ $(function () {
         }
     }
 
-    function toggleTestes(field){
-        console.log(field.value);
+    /**
+     * Calculate status and update UI
+     */
+    function calculateStatus() {
+        // set attributes into status handler
+        status.ninjutsu = $('#ninjutsu').val() || 0;
+        status.destreza = $('#destreza').val() || 0;
+        status.genjutsu = $('#genjutsu').val() || 0;
+        status.constituicao = $('#constituicao').val() || 0;
+        status.taijutsu = $('#taijutsu').val() || 0;
+        status.atencao = $('#atencao').val() || 0;
+        status.forca = $('#forca').val() || 0;
+        status.inteligencia = $('#inteligencia').val() || 0;
+        status.carisma = $('#carisma').val() || 0;
+
+        status.calculate();
+
+        // set status values on ui
+        $('#hp').val((status.hp + status.chakra) / 2);
+        $('#stamina').val(status.stamina);
+        $('#saudeMental').val(status.saudeMental);
+        $('#vontade').val(status.vontade);
+        $('#ninjutsuAlcance').val(status.ninjutsuAlcance + 'm');
+        $('#ninjutsuVelocidade').val(status.ninjutsuVelocidade + 'm/s');
+        $('#ninjutsuConjuracao').val(status.ninjutsuConjuracao + 's');
+        $('#ninjutsuSelos').val(status.ninjutsuSelos  + 's');
+        $('#ninjutsuDano').val(status.ninjutsuDano);
+        $('#genjutsuAlcance').val(status.genjutsuAlcance  + 'm');
+        $('#genjutsuVelocidade').val(status.genjutsuVelocidade  + 'm/s');
+        $('#genjutsuPrecisao').val(status.genjutsuPrecisao);
+        $('#genjutsuPercepcao').val(status.genjutsuPercepcao);
+        $('#danoFisico').val(status.danoFisico);
+        $('#danoArmas').val(status.danoArmas);
+        $('#arremessoVelocidade').val(status.arremessoVelocidade + 'm/s');
+        $('#arremessoPrecisao').val(status.arremessoPrecisao + 'm');
+        $('#defesaFisica').val(status.defesaFisica  + '%');
+        $('#capacidadeCarga').val(status.capacidadeCarga);
+        $('#velocidadePersonagem').val(status.velocidadePersonagem + 'm/s');
+        $('#velocidadeGolpe').val(status.velocidadeGolpe + 'm/s');
+        $('#velocidadeSaque').val(status.velocidadeSaque + 'm/s');
+        $('#reflexos').val(status.reflexos + 'm/s');
+        $('#percepcaoMovimento').val(status.percepcaoMovimento + 'm/s');
+        $('#percepcaoMentira').val(status.percepcaoMentira);
+        $('#armadilhaCriacao').val(status.armadilhaCriacao);
+        $('#armadilhaVelocidade').val(status.armadilhaVelocidade + 's');
+        $('#armadilhaPercepcao').val(status.armadilhaPercepcao);
+        $('#persuasao').val(status.persuasao);
     }
 
-    function calculate(constituicao, forca) {
-        let hp = -10;
-        let stamina = -1;
-        let sanidade = -10;
-        let defesa = -5;
-
-        if (constituicao == undefined || constituicao.length == 0 || constituicao <= 0) {
-            hp = -10;
-            stamina = -1;
-            sanidade = -10;
-            defesa = -5;
-        } else if (constituicao == 1) {
-            hp = 20;
-            stamina = 1;
-            sanidade = 10;
-            defesa = 1;
-        } else if (constituicao == 2) {
-            hp = 40;
-            stamina = 1;
-            sanidade = 20;
-            defesa = 2;
-        } else if (constituicao == 3) {
-            hp = 60;
-            stamina = 2;
-            sanidade = 30;
-            defesa = 3;
-        } else if (constituicao == 4) {
-            hp = 80;
-            stamina = 2;
-            sanidade = 40;
-            defesa = 4;
-        } else if (constituicao == 5) {
-            hp = 100;
-            stamina = 2;
-            sanidade = 50;
-            defesa = 5;
-        } else if (constituicao == 6) {
-            hp = 120;
-            stamina = 3;
-            sanidade = 60;
-            defesa = 6;
-        } else if (constituicao == 7) {
-            hp = 140;
-            stamina = 3;
-            sanidade = 70;
-            defesa = 7;
-        } else if (constituicao == 8) {
-            hp = 160;
-            stamina = 4;
-            sanidade = 80;
-            defesa = 8;
-        } else if (constituicao == 9) {
-            hp = 180;
-            stamina = 4;
-            sanidade = 90;
-            defesa = 9;
-        } else if (constituicao >= 10) {
-            hp = 200;
-            stamina = 5;
-            sanidade = 100;
-            defesa = 10;
-        }
-
-        if (forca == undefined || forca.length == 0 || forca <= 0) {
-            defesa += -1;
-        } else if (forca == 1) {
-            defesa += 1;
-        } else if (forca == 2) {
-            defesa += 2;
-        } else if (forca == 3) {
-            defesa += 3;
-        } else if (forca == 4) {
-            defesa += 4;
-        } else if (forca == 5) {
-            defesa += 5;
-        } else if (forca == 6) {
-            defesa += 6;
-        } else if (forca == 7) {
-            defesa += 7;
-        } else if (forca == 8) {
-            defesa += 8;
-        } else if (forca == 9) {
-            defesa += 9;
-        } else if (forca >= 10) {
-            defesa += 10;
-        }
-
-        $('#hp').val(100 + hp);
-        $('#stamina').val(2 + stamina);
-        $('#sanidade').val(100 + sanidade);
-        $('#defesa').val(2 + defesa);
-    }
-
+    /**
+     * Insert Ninjutsu table on UI
+     */
     function tableNinjutsu($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -197,6 +150,9 @@ $(function () {
         $info.html('');
     }
 
+    /**
+     * Insert Genjutsu table on UI
+     */
     function tableGenjutsu($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -232,6 +188,9 @@ $(function () {
         `);
     }
 
+    /**
+     * Insert Taijutsu table on UI
+     */
     function tableTaijutsu($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -262,6 +221,9 @@ $(function () {
         $info.html('');
     }
 
+    /**
+     * Insert Forca table on UI
+     */
     function tableForca($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -294,6 +256,9 @@ $(function () {
         $info.html('<strong>Força:</strong> A força representa o potencial físico e a musculatura do personagem. Este atributo é muito importante para os personagens que utilizam a força física para realizarem seus golpes e também para aqueles personagens que precisam arremessar armamentos e carregar grandes quantidades de peso.');
     }
 
+    /**
+     * Insert Destreza table on UI
+     */
     function tableDestreza($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -326,6 +291,9 @@ $(function () {
         $info.html('A destreza indica a coordenação motora, a agilidade, os reflexos, a furtividade e o equilíbrio do personagem. Este atributo é importante para os personagens que fazem uso de seus corpos para se deslocar ou para se esquivar, para aqueles que utilizam armamentos ou que desejam ser rápidos em suas ações.');
     }
 
+    /**
+     * Insert Inteligência table on UI
+     */
     function tableInteligencia($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -360,6 +328,9 @@ $(function () {
         `);
     }
 
+    /**
+     * Insert Atencao table on UI
+     */
     function tableAtencao($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');
@@ -403,6 +374,9 @@ $(function () {
         `);
     }
 
+    /**
+     * Insert Carisma table on UI
+     */
     function tableCarisma($table, $info) {
         const $thead = $table.find('thead').first('tr');
         const $tbody = $table.find('tbody');

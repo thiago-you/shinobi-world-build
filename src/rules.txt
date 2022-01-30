@@ -1,0 +1,89 @@
+HP:
+100 + Pontos de Constituição x20 (ou seja, quantos pontos a pessao  tiver distribuido em Constituição x 20) + Bônus de Talento [Reservas Aumentadas]
+
+CH:
+100 + Pontos de Constituição x20 (ou seja, quantos pontos a pessao  tiver distribuido em Constituição x 20) + Bônus de Talento [Reservas Aumentadas]
+
+SM (Saúde mental, antiga Sanidade):
+100 + Pontos de Inteligência x20 (ou seja, quantos pontos a pessao  tiver distribuido em Inteligência x 20) + Bônus de Talento [Resiliência]
+
+ST (Stamina):
+02 + Pontos de Constituição + Bônus de Talento [Resistência]
+
+VT (Vontade)
+05 + Bônus de Clã + Carisma /2 (ou seja, os pontos que a pessoa possui em Carisma dividos por 2) + Bônus de Talento [Reservas Aumentadas]
+
+AN (Alcance de Ninjutsu):
+2m base + (Pontos em Ninjutsu x 05) + Bônus de Talento [De Ninjutsu Puro ou Elemental] + Bônus de Talento [De Controle de Chakra] + Bônus de Talento [De Reservas Aumentadas] = X
+
+VN (Velocidade de Ninjutsu):
+(Pontos em Ninjutsu x 02) + Bônus de Talento [De Ninjutsu Puro ou Elemental] = Xm/s.
+
+VC (Velocidade de Conjuração):
+15seg base - Pontos em Ninjutsu - Bônus de Talento [De Controle de Chakra] = X.
+
+VS (Velocidade de Selos de mão):
+3seg base - Bônus de Talento [De Selos de Mão] = Xseg.
+
+DN (Dano de ninjutsus):
+(Pontos em Ninjutsu x 02) + (Pontos em Atenção x 02) + Bônus de Talento [De Ninjutsu Puro ou Elemental] = X. 
+
+AG (Alcance de Genjutsu):
+02m base + (pontos em Genjutsu x 02) + Bônus de Talento [De Controle de Chakra] + Bônus de Talento [De Reservas Aumentadasa] = Xm.
+
+VEG (Velocidade de Expansão de Genjutsu):
+(Pontos em Genjutsu x 02) + Bônus de Talento [De Controle de Chakra] = Xm/s.
+
+PG (precisão de Genjutsu):
+(Pontos em Genjutsu /2) + (Pontos em Carisma/2) + Bônus de Talento [De Genjutsu] = X.
+
+PdG (Percepção de Genjutsu)
+(Pontos em Genjutsu + Pontos em Inteligência + Pontos em Atenção) /2 + Bônus de Talento [De Resiliência] = X. 
+
+DN (Dano Físico):
+(Pontos em Taijutsu x 02) + (Pontos em Força x 02) + Bônus de Talento [De Taijutsu] + Bônus de Talento [De Força] + Bônus de Talento [De Nintaijutsu] (esse somente quando usar técnicas do estilo Nintaijutsu) = X. 
+
+DA (Danos com armas):
+(Pontos em Taijutsu x 02) + (Pontos em Força x 02) + Bônus de Talento [De Bukijutsu] + Bônus de Talento [De Força] = X. 
+
+VAR (Velocidade de Arremesso):
+4m/s base + (pontos em Força x 02) + (pontos em Destreza x 02) + Bônus de Talentos [de Bukijutsu] = Xm/s.
+
+PAR (Precisão de Arremesso)
+05m base + (pontos em Taijutsu x 02) + (pontos em Destreza x 02) + Bônus de Talento [de Bukijutsu] = Xm.
+
+DF (Defesa Física)
+Pontos em Constituição + Pontos em Força + Bônus de Talento [de Força] + Bônus de Talento [de Resistência] + Bônus de Talento [de Taijutsu] = X% (resultado aqui é em %)
+
+CC (Capacidade de Carga)
+20 base + (pontos em Força x 05) + Bônus de Talento [de Força] = X.
+
+VP (Velocidade do Personagem)
+04m/s base + (Pontos em Destreza x 02) + Bônus de Talento [de Destreza] = Xm/s.
+
+VG (Velocidade dos Golpes):
+02m/s base + pontos em Taijutsu + pontos em Destreza + Bônus de Talento [de Taijutsu ou Nintaijutsu (quando usado o estilo) ou Bukijutsu (se usando arma)] + Bônus de Talento [de Destreza] = Xm/s. 
+
+VS (Velocidade de Saque de arma):
+Saque da Arma - pontos em Destreza (cada ponto vale 0,1s) = Xseg.
+
+RE (Reflexos)
+02m/s base + pontos em Atenção + pontos em Destreza + Bônus de Talentos [de Destreza] = Xm/s. 
+
+PM (percepção de movimentos):
+06m/s base + (pontos em Atenção x 02) + Bônus de Talento [de Atenção] = Xm/s. 
+
+PMS (Percepção de Mentiras):
+(Pontos em Inteligência + Pontos em Atenção)/2 + Bônus de Talento [Carisma] = X.
+
+CDA (Criação de Armadilhas):
+(Pontos em Inteligência + Bônus de Talento [de Inteligência])/3 = X. 
+
+VPA (Velocidade de Preparo de Armadilhas):
+20s base - pontos em Inteligência - Bônus de Talento [de Inteligência] = Xs.
+
+PA (Percepção de Armadilhas)
+(Pontos em Atenção + Bônus de Talento [de Atenção])/3 = X.
+
+PE (Persuasão)
+Pontos em Carisma + (Pontos em Inteligência/2) + Bônus de Talento [Carisma] = X.
