@@ -127,11 +127,11 @@ class Status {
         this.carisma = this.#validateAttributeType(this.carisma);
 
         // check for valid attribute range
-        this.ninjutsu = this.#validateAttributeRange(this.ninjutsu);
+        this.ninjutsu = this.#validateAttributeRange(this.ninjutsu, 10);
+        this.genjutsu = this.#validateAttributeRange(this.genjutsu, 10);
+        this.taijutsu = this.#validateAttributeRange(this.taijutsu, 10);
         this.destreza = this.#validateAttributeRange(this.destreza);
-        this.genjutsu = this.#validateAttributeRange(this.genjutsu);
         this.constituicao = this.#validateAttributeRange(this.constituicao);
-        this.taijutsu = this.#validateAttributeRange(this.taijutsu);
         this.atencao = this.#validateAttributeRange(this.atencao);
         this.forca = this.#validateAttributeRange(this.forca);
         this.inteligencia = this.#validateAttributeRange(this.inteligencia);
@@ -146,13 +146,13 @@ class Status {
         return parseInt(value);
     }
 
-    #validateAttributeRange(value) {
+    #validateAttributeRange(value, maxValue = 50) {
         if (value < 0) {
             return 0;
         }   
 
-        if (value > 10) {
-            return 10;
+        if (value > maxValue) {
+            return maxValue;
         }
 
         return value;

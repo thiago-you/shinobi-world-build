@@ -43,6 +43,26 @@ $(function () {
     });
 
     /**
+     * Calcula a quantidade estimada de pontos da personagem
+     */
+    $('body').on('change', '.personagem', function () {
+        let pontos = 9;
+
+        const nivel = parseInt($('#nivel').val() || 0);
+        const possuiCla = $('#possuiCla').val() || 'sim';
+
+        if (possuiCla == 'nao') {
+            pontos += 5;
+        }
+
+        if (nivel != undefined && nivel != null && (nivel + '').trim().length > 0 && !isNaN(nivel)) {
+            pontos += nivel;
+        }
+
+        $('#attrPoints').val(pontos);
+    });
+
+    /**
      * Toggle summary attribute content
      */
     function toggleAttributesTable(isEmpty) {
@@ -101,6 +121,9 @@ $(function () {
         $('#carisma').val(status.carisma);
 
         calculateStatus();
+
+        $('#nivel').val('0');
+        $('#possuiCla').val('sim').trigger('change');
     }
 
     /**
