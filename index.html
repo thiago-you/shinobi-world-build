@@ -201,19 +201,41 @@
                     <div class="card-body pt-0">
                         <form>
                             <div class="row">
-                                <div class="w-100 mb-3">
-                                    <select onclick="toggleTestes(this)">
-                                        <option value="0" selected>Ninjutsu</option>
-                                        <option value="1">Genjutsu</option>
-                                        <option value="2">Taijutsu</option>
-                                        <option value="3">Força</option>
-                                        <option value="4">Destreza</option>
-                                        <option value="5">Inteligência</option>
-                                        <option value="6">Atenção</option>
-                                        <option value="7">Constituição</option>
-                                        <option value="8">Carísma</option>
-                                        <option value="9">Todos</option>
-                                    </select>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="group-categorias">Categoria</label>
+                                        <select id="group-categorias" name="group-categorias" class="form-control filter-status">
+                                            <option value="0" selected>Todos</option>
+                                            <option value="1">Básico</option>
+                                            <option value="2">Ninjutsu</option>
+                                            <option value="3">Genjutsu</option>
+                                            <option value="4">Físico</option>
+                                            <option value="5">Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="group-atributos">Atributo</label>
+                                        <select id="group-atributos" name="group-atributos" class="form-control filter-status">
+                                            <option value="0">Ninjutsu</option>
+                                            <option value="1">Genjutsu</option>
+                                            <option value="2">Taijutsu</option>
+                                            <option value="3">Força</option>
+                                            <option value="4">Destreza</option>
+                                            <option value="5">Inteligência</option>
+                                            <option value="6">Atenção</option>
+                                            <option value="7">Constituição</option>
+                                            <option value="8">Carísma</option>
+                                            <option value="9" selected>Todos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./row -->
+                            <div class="row group-filter group-basico">
+                                <div class="col-12 mb-4">
+                                    <h3>Básico</h3>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
@@ -243,23 +265,29 @@
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
+                            </div>
+                            <!-- ./row -->
+                            <div class="row group-filter group-ninjutsu">
+                                <div class="col-12 mb-4">
+                                    <h3>Ninjutsu</h3>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="ninjutsuDano">Dano de Ninjutsu</label>
+                                        <label for="ninjutsuDano">Dano</label>
                                         <input id="ninjutsuDano" name="ninjutsuDano" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="ninjutsuVelocidade">Velocidade Ninjutsu</label>
+                                        <label for="ninjutsuVelocidade">Velocidade</label>
                                         <input id="ninjutsuVelocidade" name="ninjutsuVelocidade" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="ninjutsuAlcance">Alcance do Ninjutsu</label>
+                                        <label for="ninjutsuAlcance">Alcance</label>
                                         <input id="ninjutsuAlcance" name="ninjutsuAlcance" value="2m" 
                                             class="form-control flex-fill" disabled />
                                     </div>
@@ -278,33 +306,45 @@
                                             value="3s" class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
+                            </div>
+                            <!-- ./row -->
+                            <div class="row group-filter group-genjutsu">
+                                <div class="col-12 mb-4">
+                                    <h3>Genjutsu</h3>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="genjutsuAlcance">Alcance do Genjutsu</label>
+                                        <label for="genjutsuAlcance">Alcance</label>
                                         <input id="genjutsuAlcance" name="alcanceGenjutsu" value="2m"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="genjutsuVelocidade">Velocidade de Expansão de Genjutsu</label>
+                                        <label for="genjutsuVelocidade">Velocidade de Expansão</label>
                                         <input id="genjutsuVelocidade" name="genjutsuVelocidade" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="genjutsuPrecisao">Precisão de Genjutsu</label>
+                                        <label for="genjutsuPrecisao">Precisão</label>
                                         <input id="genjutsuPrecisao" name="genjutsuPrecisao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <label for="genjutsuPercepcao">Percepção de Genjutsu</label>
+                                        <label for="genjutsuPercepcao">Percepção</label>
                                         <input id="genjutsuPercepcao" name="genjutsuPercepcao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
+                                </div>
+                            </div>
+                            <!-- ./row -->
+                            <div class="row group-filter group-fisico">
+                                <div class="col-12 mb-4">
+                                    <h3>Físico</h3>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
@@ -376,6 +416,33 @@
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
+                            </div>
+                            <!-- ./row -->
+                            <div class="row group-filter group-outros">
+                                <div class="col-12 mb-4">
+                                    <h3>Outros</h3>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="criacaoArmadilha">Criação de Armadilhas</label>
+                                        <input id="criacaoArmadilha" name="criacaoArmadilha" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="velocidadeArmadilha">Vel. Preparo de Armadilhas</label>
+                                        <input id="velocidadeArmadilha" name="velocidadeArmadilha" value="20s"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="percepcaoArmadilha">Percepção de Armadilhas</label>
+                                        <input id="percepcaoArmadilha" name="percepcaoArmadilha" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="percepcaoMovimento">Percepção de Movimentos</label>
@@ -387,27 +454,6 @@
                                     <div class="form-group">
                                         <label for="percepcaoMentira">Percepção de Mentiras</label>
                                         <input id="percepcaoMentira" name="percepcaoMentira" value="0"
-                                            class="form-control flex-fill" disabled />
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="criacaoArmadilha">Criação de Armadilhas</label>
-                                        <input id="criacaoArmadilha" name="criacaoArmadilha" value="0"
-                                            class="form-control flex-fill" disabled />
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="velocidadeArmadilha">Velocidade de Preparo de Armadilhas</label>
-                                        <input id="velocidadeArmadilha" name="velocidadeArmadilha" value="20s"
-                                            class="form-control flex-fill" disabled />
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="percepcaoArmadilha">Percepção de Armadilhas</label>
-                                        <input id="percepcaoArmadilha" name="percepcaoArmadilha" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
@@ -438,18 +484,20 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12">
-                                <select id="select-summary" name="select-summary">
-                                    <option value="0" selected>Ninjutsu</option>
-                                    <option value="1">Genjutsu</option>
-                                    <option value="2">Taijutsu</option>
-                                    <option value="3">Força</option>
-                                    <option value="4">Destreza</option>
-                                    <option value="5">Inteligência</option>
-                                    <option value="6">Atenção</option>
-                                    <option value="7">Constituição</option>
-                                    <option value="8">Carísma</option>
-                                </select>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <select id="select-summary" name="select-summary" class="form-control">
+                                        <option value="0" selected>Ninjutsu</option>
+                                        <option value="1">Genjutsu</option>
+                                        <option value="2">Taijutsu</option>
+                                        <option value="3">Força</option>
+                                        <option value="4">Destreza</option>
+                                        <option value="5">Inteligência</option>
+                                        <option value="6">Atenção</option>
+                                        <option value="7">Constituição</option>
+                                        <option value="8">Carísma</option>
+                                    </select>
+                                </div>
                             </div>
                             <!-- ./col -->
                         </div>
