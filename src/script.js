@@ -162,8 +162,9 @@ $(function () {
 
         calculateStatus();
 
-        $('#nivel').val('0');
+        $('#nivel').val('0').trigger('change');
         $('#possuiCla').val('sim').trigger('change');
+        $('#attrPoints').val('9');
     }
 
     /**
