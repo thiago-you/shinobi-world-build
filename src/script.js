@@ -1,5 +1,7 @@
 $(function () {   
+    let talent_num = 2;
     let status = new Status();
+    $('#talent-tab').hide();
     
     // trigger default state
     showSummary(0);
@@ -25,6 +27,27 @@ $(function () {
      */
     $("body").on('change', '#select-summary', function () {
         showSummary(this.value);
+    });
+
+    /**
+     * Shows talents tab
+     */
+     $('body').on('click', '#toggle-attribute', function () {
+        $('#attr-tab').toggle();
+        $('#talent-tab').toggle();
+        if($('#attr-tab-title').html() == 'Atributos'){
+            $('#attr-tab-title').html('Talentos');
+        }
+        else{
+            $('#attr-tab-title').html('Atributos');
+        }
+    });
+
+    $('body').on('click', '#add-talent', function () {
+        $('#talents').append(
+            "<div class='w-100 mb-3'><label for='ninjutsu'>Talento " + talent_num + ":</label><select id='talento" + talent_num + "' name='talento" + talent_num + "' class='form-control'><option value='sim' selected='selected'>Sim</option><option value='nao'>Não</option></select></div>"
+        );
+        talent_num = talent_num + 1;
     });
 
     /**
