@@ -10,7 +10,7 @@ $(function () {
     /**
      * Intialize selectize component
      */
-    $("#select-summary").selectize({
+    $(".selectize").selectize({
         create: false,
         sortField: "text",
     });
@@ -25,7 +25,7 @@ $(function () {
     /**
      * Show selected summary
      */
-    $("body").on('change', '#select-summary', function () {
+    $('body').on('change', '#select-summary', function () {
         showSummary(this.value);
     });
 
@@ -47,7 +47,15 @@ $(function () {
         $('#talents').append(
             "<div class='w-100 mb-3'><label for='ninjutsu'>Talento " + talent_num + ":</label><select id='talento" + talent_num + "' name='talento" + talent_num + "' class='form-control'><option value='sim' selected='selected'>Sim</option><option value='nao'>Não</option></select></div>"
         );
+        
         talent_num = talent_num + 1;
+    });
+
+    /*
+     * Filter status list
+     */
+     $('body').on('change', '.filter-status', function () {
+        filterStatus();
     });
 
     /**
@@ -62,6 +70,13 @@ $(function () {
      * Remove focus
      */
     $('body').on('click', 'button', function () {
+        this.blur();
+    });
+
+    /**
+     * Remove focus
+     */
+     $('body').on('change', 'select', function () {
         this.blur();
     });
 
@@ -126,6 +141,32 @@ $(function () {
             }
 
             toggleAttributesTable();
+        }
+    }
+
+    /**
+     * Filter displayed status list
+     */
+    function filterStatus() {
+        const categoria = $('#group-categorias').val();
+        const atributo = $('#group-atributos').val();
+
+        if (categoria == 0 || categoria == undefined || categoria == null || (categoria + '').trim().length == 0) {
+            $('.group-filter').show();
+        } else {
+            $('.group-filter').hide();
+
+            if (categoria == 1) {
+                $('.group-basico').show();
+            } else if (categoria == 2) {
+                $('.group-ninjutsu').show();
+            } else if (categoria == 3) {
+                $('.group-genjutsu').show();
+            } else if (categoria == 4) {
+                $('.group-fisico').show();
+            } else if (categoria == 5) {
+                $('.group-outros').show();
+            }
         }
     }
 
