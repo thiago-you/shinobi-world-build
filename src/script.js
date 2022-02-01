@@ -148,6 +148,8 @@ $(function () {
      * Filter displayed status list
      */
     function filterStatus() {
+        $('.empty-filter-result').hide();
+
         const categoria = $('#group-categorias').val();
         const atributo = $('#group-atributos').val();
 
@@ -167,6 +169,42 @@ $(function () {
             } else if (categoria == 5) {
                 $('.group-outros').show();
             }
+        }
+
+        if (atributo == 0 || atributo == undefined || atributo == null || (atributo + '').trim().length == 0) {
+            $('.attr-filter').show();
+        } else {
+            $('.attr-filter').hide();
+
+            if (atributo == 1) {
+                $('.attr-ninjutsu').show();
+            } else if (atributo == 2) {
+                $('.attr-genjutsu').show();
+            } else if (atributo == 3) {
+                $('.attr-taijutsu').show();
+            } else if (atributo == 4) {
+                $('.attr-forca').show();
+            } else if (atributo == 5) {
+                $('.attr-destreza').show();
+            } else if (atributo == 6) {
+                $('.attr-inteligencia').show();
+            } else if (atributo == 7) {
+                $('.attr-atencao').show();
+            } else if (atributo == 8) {
+                $('.attr-constituicao').show();
+            } else if (atributo == 9) {
+                $('.attr-carisma').show();
+            }
+
+            $('.group-filter:visible').each(function () {
+                if ($(this).find('.attr-filter:visible').length == 0) {
+                    $(this).hide();
+                }
+            });
+        }
+
+        if ($('.group-filter:visible').length == 0) {
+            $('.empty-filter-result').show();
         }
     }
 
@@ -189,6 +227,7 @@ $(function () {
         $('#nivel').val('0').trigger('change');
         $('#possuiCla').val('sim').trigger('change');
         $('#attrPoints').val('9');
+        $('select.filter-status').val('0').trigger('change');
     }
 
     /**

@@ -245,47 +245,54 @@
                                     <div class="form-group">
                                         <label for="group-atributos">Atributo</label>
                                         <select id="group-atributos" name="group-atributos" class="form-control filter-status">
-                                            <option value="0">Ninjutsu</option>
-                                            <option value="1">Genjutsu</option>
-                                            <option value="2">Taijutsu</option>
-                                            <option value="3">Força</option>
-                                            <option value="4">Destreza</option>
-                                            <option value="5">Inteligência</option>
-                                            <option value="6">Atenção</option>
-                                            <option value="7">Constituição</option>
-                                            <option value="8">Carísma</option>
-                                            <option value="9" selected>Todos</option>
+                                            <option value="0" selected>Todos</option>
+                                            <option value="1">Ninjutsu</option>
+                                            <option value="2">Genjutsu</option>
+                                            <option value="3">Taijutsu</option>
+                                            <option value="4">Força</option>
+                                            <option value="5">Destreza</option>
+                                            <option value="6">Inteligência</option>
+                                            <option value="7">Atenção</option>
+                                            <option value="8">Constituição</option>
+                                            <option value="9">Carísma</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <!-- ./row -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="empty-filter-result text-center mt-5">
+                                        Nenhum combinação encontrada.
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row group-filter group-basico">
                                 <div class="col-12 mb-4">
                                     <h3>Básico</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-constituicao">
                                     <div class="form-group">
                                         <label for="hp">HP e Chakra</label>
                                         <input id="hp" name="hp" type="text" value="100"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-constituicao">
                                     <div class="form-group">
                                         <label for="stamina">Stamina</label>
                                         <input id="stamina" name="stamina" value="2"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
                                         <label for="saudeMental">Saúde Mental</label>
                                         <input id="saudeMental" name="saudeMental" value="100"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-carisma">
                                     <div class="form-group">
                                         <label for="vontade">Vontade</label>
                                         <input id="vontade" name="vontade" value="5"
@@ -298,35 +305,35 @@
                                 <div class="col-12 mb-4">
                                     <h3>Ninjutsu</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
                                         <label for="ninjutsuDano">Dano</label>
                                         <input id="ninjutsuDano" name="ninjutsuDano" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
                                         <label for="ninjutsuVelocidade">Velocidade</label>
                                         <input id="ninjutsuVelocidade" name="ninjutsuVelocidade" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
                                         <label for="ninjutsuAlcance">Alcance</label>
                                         <input id="ninjutsuAlcance" name="ninjutsuAlcance" value="2m" 
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
                                         <label for="ninjutsuConjuracao">Velocidade de Conjuração</label>
                                         <input id="ninjutsuConjuracao" name="ninjutsuConjuracao"
                                             value="15s" class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter">
                                     <div class="form-group">
                                         <label for="velocidadeSeloMao">Velocidade de Selos de mão</label>
                                         <input id="velocidadeSeloMao" name="velocidadeSeloMao"
@@ -339,28 +346,28 @@
                                 <div class="col-12 mb-4">
                                     <h3>Genjutsu</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6  attr-filter attr-genjutsu ">
                                     <div class="form-group">
                                         <label for="genjutsuAlcance">Alcance</label>
                                         <input id="genjutsuAlcance" name="alcanceGenjutsu" value="2m"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-genjutsu">
                                     <div class="form-group">
                                         <label for="genjutsuVelocidade">Velocidade de Expansão</label>
                                         <input id="genjutsuVelocidade" name="genjutsuVelocidade" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-genjutsu attr-carisma">
                                     <div class="form-group">
                                         <label for="genjutsuPrecisao">Precisão</label>
                                         <input id="genjutsuPrecisao" name="genjutsuPrecisao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-genjutsu attr-inteligencia">
                                     <div class="form-group">
                                         <label for="genjutsuPercepcao">Percepção</label>
                                         <input id="genjutsuPercepcao" name="genjutsuPercepcao" value="0"
@@ -373,70 +380,70 @@
                                 <div class="col-12 mb-4">
                                     <h3>Físico</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-taijutsu attr-forca">
                                     <div class="form-group">
                                         <label for="danoFisico">Dano Físico</label>
                                         <input id="danoFisico" name="danoFisico"
                                             value="0" class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-taijutsu attr-forca">
                                     <div class="form-group">
                                         <label for="danoArmas">Dano com Armas</label>
                                         <input id="danoArmas" name="danoArmas" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-forca attr-destreza">
                                     <div class="form-group">
                                         <label for="velocidadeArremesso">Velocidade de Arremesso</label>
                                         <input id="velocidadeArremesso" name="velocidadeArremesso" value="4m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-taijutsu attr-destreza">
                                     <div class="form-group">
                                         <label for="precisaoArremesso">Precisão de Arremesso</label>
                                         <input id="precisaoArremesso" name="precisaoArremesso" value="5m"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-forca attr-constituicao">
                                     <div class="form-group">
                                         <label for="defesaFisica">Defesa Física</label>
                                         <input id="defesaFisica" name="defesaFisica" value="0%"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-forca">
                                     <div class="form-group">
                                         <label for="capacidadeCarga">Capacidade de Carga</label>
                                         <input id="capacidadeCarga" name="capacidadeCarga" value="20"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-detreza">
                                     <div class="form-group">
                                         <label for="velocidadePersonagem">Velocidade do Personagem</label>
                                         <input id="velocidadePersonagem" name="velocidadePersonagem" value="4m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-destreza attr-taijutsu">
                                     <div class="form-group">
                                         <label for="velocidadeGolpe">Velocidade de Golpe</label>
                                         <input id="velocidadeGolpe" name="velocidadeGolpe" value="2m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-destreza">
                                     <div class="form-group">
                                         <label for="velocidadeSaque">Velocidade de Saque</label>
                                         <input id="velocidadeSaque" name="velocidadeSaque" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-destreza attr-atencao">
                                     <div class="form-group">
                                         <label for="reflexos">Reflexos</label>
                                         <input id="reflexos" name="reflexos" value="2m/s"
@@ -449,42 +456,42 @@
                                 <div class="col-12 mb-4">
                                     <h3>Outros</h3>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
                                         <label for="criacaoArmadilha">Criação de Armadilhas</label>
                                         <input id="criacaoArmadilha" name="criacaoArmadilha" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
                                         <label for="velocidadeArmadilha">Vel. Preparo de Armadilhas</label>
                                         <input id="velocidadeArmadilha" name="velocidadeArmadilha" value="20s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-atencao">
                                     <div class="form-group">
                                         <label for="percepcaoArmadilha">Percepção de Armadilhas</label>
                                         <input id="percepcaoArmadilha" name="percepcaoArmadilha" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-atencao">
                                     <div class="form-group">
                                         <label for="percepcaoMovimento">Percepção de Movimentos</label>
                                         <input id="percepcaoMovimento" name="percepcaoMovimento" value="6m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-atencao attr-inteligencia">
                                     <div class="form-group">
                                         <label for="percepcaoMentira">Percepção de Mentiras</label>
                                         <input id="percepcaoMentira" name="percepcaoMentira" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 attr-filter attr-carisma attr-inteligencia">
                                     <div class="form-group">
                                         <label for="persuasao">Persuasão</label>
                                         <input id="persuasao" name="persuasao" value="0"

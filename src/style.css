@@ -75,7 +75,7 @@ form {
     font-weight: bold;
 }
 
-.card .card-body .empty-content {
+.card .card-body .empty-content, .card .card-body .empty-filter-result {
     display: none;
 }
 
