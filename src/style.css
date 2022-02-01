@@ -98,10 +98,6 @@ form {
     font-size: 0.7rem;
 }
 
-.selectize-control, .selectize-dropdown {
-    width: 400px !important;
-}
-
 .card .card-body #talent-tab {
     max-height: 500px; 
     overflow-y: auto;
@@ -162,4 +158,8 @@ label {
 
 input:disabled {
     background-color: #fff;
+}
+
+.selectize-input {
+    white-space: nowrap !important;
 }

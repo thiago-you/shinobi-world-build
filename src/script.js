@@ -1,18 +1,30 @@
 $(function () {
+    const talentos = [
+        {'value': 0, 'name': 'Selecione'},
+        {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
+        {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
+        {'value': 3, 'name': 'Controle de Chakra (5m Alcance Ninjutsu)'},
+    ];
+
     let status = new Status();
     $('#talent-tab').hide();
     
+    /**
+     * Intialize selectize component de sumario
+     */
+    $('.selectize').selectize({
+        create: false,
+        sortField: 'text',
+    });
+
+    /**
+     * Intialize selectize component do talento 1
+     */
+    initTalentoSelectize($('.selectize-talento'));
+
     // trigger default state
     showSummary(0);
     resetStatus();
-    
-    /**
-     * Intialize selectize component
-     */
-    $(".selectize").selectize({
-        create: false,
-        sortField: "text",
-    });
 
     /**
      * Trigger status calculation
@@ -50,8 +62,11 @@ $(function () {
         item.removeClass('static-talent');
         item.find('label').html(`<span class="text">Talento ${itemsCount}:</span>`).attr('for', `talento-${itemsCount}:`).append(removeIcon);
         item.find('select').attr('name', `talento-${itemsCount}:`);
+        item.find('.selectize-control').remove();
 
         $('#talents').append(item);
+        
+        initTalentoSelectize(item.find('select'));
     });
 
     /**
@@ -78,8 +93,17 @@ $(function () {
      * Reset status state
      */
     $('body').on('click', '#reset-status', function () {
-        status = new Status();
-        resetStatus();
+        console.log($('.talent-item'));
+        
+        if ($('.talent-item').length > 1) {
+            if (confirm('Desejá mesmo resetar? Todos os talentos serão removidos.')) {
+                status = new Status();
+                resetStatus();
+            }
+        } else {
+            status = new Status();
+            resetStatus();
+        }
     });
 
     /**
@@ -115,6 +139,23 @@ $(function () {
 
         $('#attrPoints').val(pontos);
     });
+
+    /**
+     * Initialize talent selectize component
+     */
+    function initTalentoSelectize(element) {
+        element.selectize({
+            create: false,
+            sortField: 'text',
+            options: talentos,
+            multiple: false,
+            labelField: 'name',
+            valueField: 'value',
+            searchField: 'name',
+        }).promise().done(function () {
+            element[0].selectize.setValue('0');
+        });
+    }
 
     /**
      * Toggle summary attribute content
@@ -244,6 +285,12 @@ $(function () {
         $('#possuiCla').val('sim').trigger('change');
         $('#attrPoints').val('9');
         $('select.filter-status').val('0').trigger('change');
+
+        $('.talent-item:not(.static-talent)').remove();
+
+        if ($('.selectize-talento')[0].selectize != undefined) {
+            $('.selectize-talento')[0].selectize.setValue('0');
+        }
     }
 
     /**
