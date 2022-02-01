@@ -34,6 +34,13 @@ $(function () {
     });
 
     /**
+     * Trigger talent calculation
+     */
+    $('body').on('change', '.talent-item select', function () {
+        calculateTalents();
+    });
+
+    /**
      * Show selected summary
      */
     $('body').on('change', '#select-summary', function () {
@@ -93,8 +100,6 @@ $(function () {
      * Reset status state
      */
     $('body').on('click', '#reset-status', function () {
-        console.log($('.talent-item'));
-        
         if ($('.talent-item').length > 1) {
             if (confirm('Desejá mesmo resetar? Todos os talentos serão removidos.')) {
                 status = new Status();
@@ -340,6 +345,13 @@ $(function () {
         $('#armadilhaVelocidade').val(status.armadilhaVelocidade + 's');
         $('#armadilhaPercepcao').val(status.armadilhaPercepcao);
         $('#persuasao').val(status.persuasao);
+    }
+
+    /**
+     * Calculate talents and update UI
+     */
+    function calculateTalent() {
+        
     }
 
     /**
