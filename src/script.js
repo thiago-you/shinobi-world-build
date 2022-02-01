@@ -12,8 +12,12 @@ $(function () {
         {'value': 9, 'name': 'Grande Controle de Velocidade (Ninjutsu)'},
         {'value': 10, 'name': 'Grande Controle de Velocidade (Genjutsu)'},
         {'value': 11, 'name': 'Controle do Fluxo de Chakra'},
-        {'value': 11, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
-        {'value': 11, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
+        {'value': 12, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
+        {'value': 13, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
+        {'value': 14, 'name': 'Mestre no Controle de Velocidade (Ninjutsu)'},
+        {'value': 15, 'name': 'Mestre no Controle de Velocidade (Genjutsu)'},
+        {'value': 15, 'name': 'Sombra e Luz'},
+        
     ];
 
     let status = new Status();
