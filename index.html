@@ -113,7 +113,7 @@
                     </div>
                     <div class="card-body py-0 h-100">
                         <form class="form-atributos form-horizontal">
-                            <div id="attr-tab" class="row justify-content-around">
+                            <div id="attr-tab" class="attribute-tab row justify-content-around">
                                 <div class="col-12 mb-2">
                                     <div class="form-group">
                                         <label for="attrPoints">Pontos para distribuir*:</label>
@@ -188,21 +188,30 @@
                                 </div>
                             </div>
                             <!-- ./status-tab -->
-                            <div id="talent-tab" class="row justify-content-around w-100" style="max-height: 500px; overflow-y: auto;">
-                                <div class="form-group w-100 d-flex flex-column align-items-center">
-                                    <div id="talents" class="w-100 mb-5 d-flex flex-column align-items-center">
-                                        <div class="w-100 mb-3">
-                                            <label for="ninjutsu">Talento 1:</label>
-                                            <select id="talento1" name="talento1" class="form-control">
-                                                <option value="sim" selected="selected">Sim</option>
-                                                <option value="nao">Não</option>
-                                            </select>
+                            <div id="talent-tab" class="attribute-tab row justify-content-around">
+                                <div class="col-12">
+                                    <div id="talents" class="row mb-2 align-items-center">
+                                        <div class="col-12 mb-3 talent-item static-talent">
+                                            <div class="form-group">
+                                                <label for="talento-1" class="d-flex justify-content-between align-items-center">
+                                                    <span class="text">Talento 1:</span>
+                                                </label>
+                                                <select name="talento-1" class="form-control talento">
+                                                    <option value="sim" selected="selected">Sim</option>
+                                                    <option value="nao">Não</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button id="add-talent" type="button" style="width: 100px; height:100px; border-radius: 50%;">
-                                        <i class="fas fa-plus"></i>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-12 d-flex flex-column align-items-center">
+                                    <button id="add-talent" type="button">
+                                        <i class="fas fa-plus fa-fw"></i>
                                     </button>
-                                    <div style="font-family: 'Comfortaa', cursive;">Adicionar novo talento</div>
+                                    <div class="font-comfortaa mt-3 mb-3">
+                                        Adicionar novo talento
+                                    </div>
                                 </div>
                             </div>
                             <!-- ./talent-tab -->

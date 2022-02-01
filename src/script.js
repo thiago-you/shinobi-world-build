@@ -1,5 +1,4 @@
-$(function () {   
-    let talent_num = 2;
+$(function () {
     let status = new Status();
     $('#talent-tab').hide();
     
@@ -33,22 +32,39 @@ $(function () {
      * Shows talents tab
      */
      $('body').on('click', '#toggle-attribute', function () {
-        $('#attr-tab').toggle();
-        $('#talent-tab').toggle();
-        if($('#attr-tab-title').html() == 'Atributos'){
-            $('#attr-tab-title').html('Talentos');
-        }
-        else{
-            $('#attr-tab-title').html('Atributos');
-        }
+        $('.attribute-tab').toggle();
+
+        $('#attr-tab-title').text($('#attr-tab-title').text().trim() == 'Atributos' ? 'Talentos' : 'Atributos');
+        $(this).text($(this).text().trim() == 'Próximo' ? 'Anterior' : 'Próximo');
     });
 
+    /**
+     * Adiciona um novo talento
+     */
     $('body').on('click', '#add-talent', function () {
-        $('#talents').append(
-            "<div class='w-100 mb-3'><label for='ninjutsu'>Talento " + talent_num + ":</label><select id='talento" + talent_num + "' name='talento" + talent_num + "' class='form-control'><option value='sim' selected='selected'>Sim</option><option value='nao'>Não</option></select></div>"
-        );
-        
-        talent_num = talent_num + 1;
+        const item = $('.static-talent').clone();
+        const itemsCount = $('#talents').find('.talent-item').length + 1;
+
+        const removeIcon = $('<i class="fas fa-times fa-fw text-danger item-remove" role="button">');
+
+        item.removeClass('static-talent');
+        item.find('label').html(`<span class="text">Talento ${itemsCount}:</span>`).attr('for', `talento-${itemsCount}:`).append(removeIcon);
+        item.find('select').attr('name', `talento-${itemsCount}:`);
+
+        $('#talents').append(item);
+    });
+
+    /**
+     * Remove um talento
+     */
+     $('body').on('click', '#talents .item-remove', function () {
+        $(this).closest('.talent-item').remove();
+
+        // reseta os names
+        $('.talent-item').each(function (index) {
+            $(this).find('label').find('.text').text(`Talento ${index + 1}:`).attr('for', `talento-${index + 1}:`);
+            $(this).find('select').attr('name', `talento-${index + 1}:`);
+        });
     });
 
     /*
