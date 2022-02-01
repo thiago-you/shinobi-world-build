@@ -3,7 +3,17 @@ $(function () {
         {'value': 0, 'name': 'Selecione'},
         {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
         {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
-        {'value': 3, 'name': 'Controle de Chakra (5m Alcance Ninjutsu)'},
+        {'value': 3, 'name': 'Bom Controle de Expansão (Ninjutsu)'},
+        {'value': 4, 'name': 'Bom Controle de Expansão (Genjutsu)'},
+        {'value': 5, 'name': 'Bom controle de Velocidade (Ninjutsu)'},
+        {'value': 6, 'name': 'Bom controle de Velocidade (Genjutsu)'},
+        {'value': 7, 'name': 'Grande Controle de Expansão (Ninjutsu)'},
+        {'value': 8, 'name': 'Grande Controle de Expansão (Genjutsu)'},
+        {'value': 9, 'name': 'Grande Controle de Velocidade (Ninjutsu)'},
+        {'value': 10, 'name': 'Grande Controle de Velocidade (Genjutsu)'},
+        {'value': 11, 'name': 'Controle do Fluxo de Chakra'},
+        {'value': 11, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
+        {'value': 11, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
     ];
 
     let status = new Status();
