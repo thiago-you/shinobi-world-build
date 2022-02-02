@@ -1,5 +1,4 @@
 $(function () {
-
     const talentos = new Talentos();
     let status = new Status();
 
