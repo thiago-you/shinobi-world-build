@@ -1,26 +1,7 @@
 $(function () {
-    const talentos = [
-        {'value': 0, 'name': 'Selecione'},
-        {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
-        {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
-        {'value': 3, 'name': 'Bom Controle de Expansão (Ninjutsu)'},
-        {'value': 4, 'name': 'Bom Controle de Expansão (Genjutsu)'},
-        {'value': 5, 'name': 'Bom controle de Velocidade (Ninjutsu)'},
-        {'value': 6, 'name': 'Bom controle de Velocidade (Genjutsu)'},
-        {'value': 7, 'name': 'Grande Controle de Expansão (Ninjutsu)'},
-        {'value': 8, 'name': 'Grande Controle de Expansão (Genjutsu)'},
-        {'value': 9, 'name': 'Grande Controle de Velocidade (Ninjutsu)'},
-        {'value': 10, 'name': 'Grande Controle de Velocidade (Genjutsu)'},
-        {'value': 11, 'name': 'Controle do Fluxo de Chakra'},
-        {'value': 12, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
-        {'value': 13, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
-        {'value': 14, 'name': 'Mestre no Controle de Velocidade (Ninjutsu)'},
-        {'value': 15, 'name': 'Mestre no Controle de Velocidade (Genjutsu)'},
-        {'value': 15, 'name': 'Sombra e Luz'},
-        
-    ];
-
+    const talentos = new Talentos();
     let status = new Status();
+
     $('#talent-tab').hide();
     
     /**
@@ -45,6 +26,13 @@ $(function () {
      */
     $('body').on('change', '.form-atributos input', function () {
         calculateStatus();
+    });
+
+    /**
+     * Trigger talent calculation
+     */
+    $('body').on('change', '.talent-item select', function () {
+        calculateTalents();
     });
 
     /**
@@ -107,8 +95,6 @@ $(function () {
      * Reset status state
      */
     $('body').on('click', '#reset-status', function () {
-        console.log($('.talent-item'));
-        
         if ($('.talent-item').length > 1) {
             if (confirm('Desejá mesmo resetar? Todos os talentos serão removidos.')) {
                 status = new Status();
@@ -161,7 +147,7 @@ $(function () {
         element.selectize({
             create: false,
             sortField: 'text',
-            options: talentos,
+            options: talentos.list,
             multiple: false,
             labelField: 'name',
             valueField: 'value',
@@ -293,8 +279,6 @@ $(function () {
         $('#inteligencia').val(status.inteligencia);
         $('#carisma').val(status.carisma);
 
-        calculateStatus();
-
         $('#nivel').val('0').trigger('change');
         $('#possuiCla').val('sim').trigger('change');
         $('#attrPoints').val('9');
@@ -305,6 +289,9 @@ $(function () {
         if ($('.selectize-talento')[0].selectize != undefined) {
             $('.selectize-talento')[0].selectize.setValue('0');
         }
+
+        calculateStatus();
+        calculateTalents();
     }
 
     /**
@@ -324,6 +311,28 @@ $(function () {
 
         status.calculate();
 
+        updateAttributesForm();
+    }
+
+    /**
+     * Calculate talents and update UI
+     */
+    function calculateTalents() {
+        status.initTalents();
+
+        $('.talent-item select').each(function () {
+            talentos.addAttributes(status, $(this).val());
+        });
+
+        status.calculate();
+
+        updateAttributesForm();
+    }
+
+    /**
+     * Update UI with status attributes
+     */
+    function updateAttributesForm() {
         // set status values on ui
         $('#hp').val((status.hp + status.chakra) / 2);
         $('#stamina').val(status.stamina);
