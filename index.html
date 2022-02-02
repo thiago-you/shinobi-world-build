@@ -55,10 +55,12 @@
 <body>
     <div class="container pt-3">
         <!-- LOGO -->
-        <div class="row">
+        <div class="row justify-content-between">
             <div class="col-md-5 col-sm-12">
                 <div class="logo">
-                    <img width="100%" src="https://i.imgur.com/gW34Y4U.png">
+                    <a href="https://narutoshinobiworld.forumeiros.com/" target="_blank">
+                        <img width="100%" src="https://i.imgur.com/gW34Y4U.png">
+                    </a>
                 </div>
                 <!-- ./logo -->
                 <h1 class="mb-4">
@@ -191,6 +193,13 @@
                             <!-- ./status-tab -->
                             <div id="talent-tab" class="attribute-tab row justify-content-around">
                                 <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="talentPoints">Talentos para distribuir*:</label>
+                                        <input id="talentPoints" name="attrPoints" type="number" class="form-control" value="2" min="0" max="50" disabled/>
+                                        <small>
+                                            Os talentos podem variar conforme o clã selecionado.
+                                        </small>
+                                    </div>
                                     <div id="talents" class="row mb-2 align-items-center">
                                         <div class="col-12 mb-3 talent-item static-talent">
                                             <div class="form-group">
@@ -204,7 +213,7 @@
                                 </div>
                                 <!-- ./col -->
                                 <div class="col-12 d-flex flex-column align-items-center">
-                                    <button id="add-talent" type="button">
+                                    <button id="add-talent" type="button" disabled>
                                         <i class="fas fa-plus fa-fw"></i>
                                     </button>
                                     <div class="font-comfortaa mt-3 mb-3">
@@ -225,7 +234,7 @@
                 <!-- ./card attributes -->
             </div>
             <!-- ./col -->
-            <div class="col-md-7 col-12">
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-6">
                 <div class="card status">
                     <div class="card-header">
                         <h2>
@@ -309,8 +318,9 @@
                             </div>
                             <!-- ./row -->
                             <div class="row group-filter group-ninjutsu">
-                                <div class="col-12 mb-4">
-                                    <h3>Ninjutsu</h3>
+                                <div class="col-12">
+                                    <h3 class="d-none d-sm-block mb-4">Ninjutsu</h3>
+                                    <h3 class="d-block d-sm-none mb-2">Ninjutsu</h3>
                                 </div>
                                 <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
@@ -328,21 +338,32 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
-                                        <label for="ninjutsuAlcance">Alcance</label>
+                                        <label for="ninjutsuAlcance" class="d-none d-sm-block">Alcance</label>
+                                        <label for="ninjutsuAlcance" class="d-block d-sm-none">Alcance</label>
                                         <input id="ninjutsuAlcance" name="ninjutsuAlcance" value="2m" 
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
-                                        <label for="ninjutsuConjuracao">Velocidade de Conjuração</label>
+                                        <label for="ninjutsuConjuracao" class="d-none d-sm-block">
+                                            Velocidade de Conjuração
+                                        </label>
+                                        <label for="ninjutsuConjuracao" class="d-block d-sm-none">
+                                            Vel. Conjuração
+                                        </label>
                                         <input id="ninjutsuConjuracao" name="ninjutsuConjuracao"
                                             value="15s" class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter">
                                     <div class="form-group">
-                                        <label for="velocidadeSeloMao">Velocidade de Selos de mão</label>
+                                        <label for="velocidadeSeloMao" class="d-none d-sm-block">
+                                            Velocidade de Selos de mão
+                                        </label>
+                                        <label for="velocidadeSeloMao" class="d-block d-sm-none">
+                                            Vel. Selos de mão
+                                        </label>
                                         <input id="velocidadeSeloMao" name="velocidadeSeloMao"
                                             value="3s" class="form-control flex-fill" disabled />
                                     </div>
@@ -350,19 +371,26 @@
                             </div>
                             <!-- ./row -->
                             <div class="row group-filter group-genjutsu">
-                                <div class="col-12 mb-4">
-                                    <h3>Genjutsu</h3>
+                                <div class="col-12">
+                                    <h3 class="d-none d-sm-block mb-4">Genjutsu</h3>
+                                    <h3 class="d-block d-sm-none mb-2">Genjutsu</h3>
                                 </div>
                                 <div class="col-6  attr-filter attr-genjutsu ">
                                     <div class="form-group">
-                                        <label for="genjutsuAlcance">Alcance</label>
+                                        <label for="genjutsuAlcance" class="d-none d-sm-block">Alcance</label>
+                                        <label for="genjutsuAlcance" class="d-block d-sm-none">Alcance</label>
                                         <input id="genjutsuAlcance" name="alcanceGenjutsu" value="2m"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-genjutsu">
                                     <div class="form-group">
-                                        <label for="genjutsuVelocidade">Velocidade de Expansão</label>
+                                        <label for="genjutsuVelocidade" class="d-none d-sm-block">
+                                            Velocidade de Expansão
+                                        </label>
+                                        <label for="genjutsuVelocidade" class="d-block d-sm-none">
+                                            Vel. de Expansão
+                                        </label>
                                         <input id="genjutsuVelocidade" name="genjutsuVelocidade" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
@@ -384,8 +412,9 @@
                             </div>
                             <!-- ./row -->
                             <div class="row group-filter group-fisico">
-                                <div class="col-12 mb-4">
-                                    <h3>Físico</h3>
+                                <div class="col-12">
+                                    <h3 class="d-none d-sm-block mb-4">Físico</h3>
+                                    <h3 class="d-block d-sm-none mb-2">Físico</h3>
                                 </div>
                                 <div class="col-6 attr-filter attr-taijutsu attr-forca">
                                     <div class="form-group">
@@ -417,14 +446,20 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-forca attr-constituicao">
                                     <div class="form-group">
-                                        <label for="defesaFisica">Defesa Física</label>
+                                        <label for="defesaFisica" class="d-none d-sm-block">Defesa Física</label>
+                                        <label for="defesaFisica" class="d-block d-sm-none">Defesa Física</label>
                                         <input id="defesaFisica" name="defesaFisica" value="0%"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-forca">
                                     <div class="form-group">
-                                        <label for="capacidadeCarga">Capacidade de Carga</label>
+                                        <label for="capacidadeCarga" class="d-none d-sm-block">
+                                            Capacidade de Carga
+                                        </label>
+                                        <label for="capacidadeCarga" class="d-block d-sm-none">
+                                            Capac. Carga
+                                        </label>
                                         <input id="capacidadeCarga" name="capacidadeCarga" value="20"
                                             class="form-control flex-fill" disabled />
                                     </div>
@@ -445,14 +480,20 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-destreza">
                                     <div class="form-group">
-                                        <label for="velocidadeSaque">Velocidade de Saque</label>
+                                        <label for="velocidadeSaque" class="d-none d-sm-block">
+                                            Velocidade de Saque
+                                        </label>
+                                        <label for="velocidadeSaque" class="d-block d-sm-none">
+                                            Vel. Saque
+                                        </label>
                                         <input id="velocidadeSaque" name="velocidadeSaque" value="0m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-destreza attr-atencao">
                                     <div class="form-group">
-                                        <label for="reflexos">Reflexos</label>
+                                        <label for="reflexos" class="d-none d-sm-block">Reflexos</label>
+                                        <label for="reflexos" class="d-block d-sm-none">Reflexos</label>
                                         <input id="reflexos" name="reflexos" value="2m/s"
                                             class="form-control flex-fill" disabled />
                                     </div>
@@ -460,8 +501,9 @@
                             </div>
                             <!-- ./row -->
                             <div class="row group-filter group-outros">
-                                <div class="col-12 mb-4">
-                                    <h3>Outros</h3>
+                                <div class="col-12">
+                                    <h3 class="d-none d-sm-block mb-4">Outros</h3>
+                                    <h3 class="d-block d-sm-none mb-4">Outros</h3>
                                 </div>
                                 <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
@@ -493,14 +535,20 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-atencao attr-inteligencia">
                                     <div class="form-group">
-                                        <label for="percepcaoMentira">Percepção de Mentiras</label>
+                                        <label for="percepcaoMentira" class="d-none d-sm-block">
+                                            Percepção de Mentiras
+                                        </label>
+                                        <label for="percepcaoMentira" class="d-block d-sm-none">
+                                            Percep. Mentiras
+                                        </label>
                                         <input id="percepcaoMentira" name="percepcaoMentira" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-carisma attr-inteligencia">
                                     <div class="form-group">
-                                        <label for="persuasao">Persuasão</label>
+                                        <label for="persuasao" class="d-none d-sm-block">Persuasão</label>
+                                        <label for="persuasao" class="d-block d-sm-none">Persuasão</label>
                                         <input id="persuasao" name="persuasao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>

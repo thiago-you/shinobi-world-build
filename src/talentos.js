@@ -3,32 +3,17 @@
  */
 class Talentos {
     constructor() {
-        this.list = [
-            { 
-                'value': 1, 
-                'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)',
-                'status': {
-                    'hp': 100,
-                    'chakra': 100,
-                }
-            },
-            { 
-                'value': 2, 
-                'name': 'Resiliência (+100 de Saúde Mental)', 
-                'status': {
-                    'saudeMental': 100,
-                }
-            },
-            {
-                'value': 3, 
-                'name': 'Controle de Chakra (5m Alcance Ninjutsu)',
-                'status': {
-                    'ninjutsuDano': 10,
-                    'ninjutsuAlcance': 5,
-                }
-            },
-        ];
+        this.list = [];
+    }
 
+    /**
+     * Set talents list from remote source
+     * 
+     * @param {array} list 
+     */
+    setList(list) {
+        this.list = list;
+        
         // add first empty item
         this.list.unshift({ 
             'value': 0, 
