@@ -1,5 +1,30 @@
 $(function () {
-    const talentos = new Talentos();
+    const talentos = [
+        {'value': 0, 'name': 'Selecione'},
+        {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
+        {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
+        {'value': 3, 'name': 'Bom Controle de Expansão (Ninjutsu)'},
+        {'value': 4, 'name': 'Bom Controle de Expansão (Genjutsu)'},
+        {'value': 5, 'name': 'Bom controle de Velocidade (Ninjutsu)'},
+        {'value': 6, 'name': 'Bom controle de Velocidade (Genjutsu)'},
+        {'value': 7, 'name': 'Grande Controle de Expansão (Ninjutsu)'},
+        {'value': 8, 'name': 'Grande Controle de Expansão (Genjutsu)'},
+        {'value': 9, 'name': 'Grande Controle de Velocidade (Ninjutsu)'},
+        {'value': 10, 'name': 'Grande Controle de Velocidade (Genjutsu)'},
+        {'value': 11, 'name': 'Controle do Fluxo de Chakra'},
+        {'value': 12, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
+        {'value': 13, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
+        {'value': 14, 'name': 'Mestre no Controle de Velocidade (Ninjutsu)'},
+        {'value': 15, 'name': 'Mestre no Controle de Velocidade (Genjutsu)'},
+        {'value': 15, 'name': 'Sombra e Luz'},
+        {'value': 16, 'name': 'Estudado em Ninjutsu'},
+        {'value': 2, 'name': 'Caminho do Ninjutsu (Alcance)'},
+        {'value': 2, 'name': 'Caminho do Ninjutsu (Velocidade)'},
+        {'value': 2, 'name': 'Caminho do Ninjutsu (Dano)'},
+        {'value': 2, 'name': 'Caminho das Barreiras'},
+        
+    ];
+
     let status = new Status();
 
     $('#talent-tab').hide();
