@@ -1,0 +1,68 @@
+[
+    {
+       "value":14,
+       "name":"Estudado em Ninjutsu (+15 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+       "status":{
+          "ninjutsuDano":15,
+          "ninjutsuVelocidade":2
+       }
+    },
+    {
+       "value":15,
+       "name":"Caminho do Ninjutsu (Alcance) (+05m Alcance Ninjutsu)",
+       "status":{
+          "ninjutsuAlcance":5
+       }
+    },
+    {
+       "value":16,
+       "name":"Caminho do Ninjutsu (Dano) (+15 Dano Ninjutsu)",
+       "status":{
+          "ninjutsuDano":15
+       }
+    },
+    {
+       "value":17,
+       "name":"Versado em Ninjutsu (+25 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+       "status":{
+          "ninjutsuDano":25,
+          "ninjutsuVelocidade":2
+       }
+    },
+    {
+       "value":18,
+       "name":"Longo Caminho do Ninjutsu (+05m Alcance Ninjutsu)",
+       "status":{
+          "ninjutsuAlcance":5
+       }
+    },
+    {
+       "value":19,
+       "name":"Caminho da Velocidade Espiritual (Dano) (+1m/s Velocidade Ninjutsu)",
+       "status":{
+          "ninjutsuVelocidade":1
+       }
+    },
+    {
+       "value":20,
+       "name":"Mestre em Ninjutsu (+40 Dano Ninjutsu | 4m/s Velocidade Ninjutsu)",
+       "status":{
+          "ninjutsuDano":40,
+          "ninjutsuVelocidade":4
+       }
+    },
+    {
+       "value":21,
+       "name":"Caminho do Ninjutsu Destrutivo (+50 Dano Ninjutsu)",
+       "status":{
+          "ninjutsuDano":50
+       }
+    },
+    {
+       "value":21,
+       "name":"Caminho do Ninjutsu Expansivo (+20m Alcance Ninjutsu)",
+       "status":{
+          "ninjutsuAlcance":20
+       }
+    }
+ ]

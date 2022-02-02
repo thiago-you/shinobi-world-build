@@ -1,3 +1,6 @@
+/**
+ * User Status class 
+ */
 class Status {
     constructor() {
         // user status
@@ -42,11 +45,57 @@ class Status {
         this.forca = 0;
         this.inteligencia = 0;
         this.carisma = 0;
+
+        // status talentos attributes
+        this.initTalents();
     }
 
+    /**
+     * Initialize/reset talents status
+     */
+    initTalents() {
+        this.talento = {
+            hp: 0,
+            chakra: 0,
+            saudeMental: 0,
+            stamina: 0,
+            vontade: 0,
+            ninjutsuAlcance: 0,
+            ninjutsuVelocidade: 0,
+            ninjutsuConjuracao: 0,
+            ninjutsuSelos: 0,
+            ninjutsuDano: 0,
+            genjutsuAlcance: 0,
+            genjutsuVelocidade: 0,
+            genjutsuPrecisao: 0,
+            genjutsuPercepcao: 0,
+            danoFisico: 0,
+            danoArmas: 0,
+            arremessoVelocidade: 0,
+            arremessoPrecisao: 0,
+            defesaFisica: 0,
+            capacidadeCarga: 0,
+            velocidadePersonagem: 0,
+            velocidadeGolpe: 0,
+            velocidadeSaque: 0,
+            reflexos: 0,
+            percepcaoMovimento: 0,
+            percepcaoMentira: 0,
+            armadilhaCriacao: 0,
+            armadilhaVelocidade: 0,
+            armadilhaPercepcao: 0,
+            persuasao: 0,
+        };
+    }
+
+    /**
+     * Calculate user status with attributes
+     */
     calculate() {
         this.#validateAttributes();
+        this.#validateTalentAttributes();
 
+        // calculate status
         this.hp = 100 + (this.constituicao * 20);
         this.chakra = 100 + (this.constituicao * 20);
         this.saudeMental = 100 + (this.inteligencia * 20);
@@ -78,9 +127,44 @@ class Status {
         this.armadilhaPercepcao = 0 + this.atencao;
         this.persuasao = 0 + this.carisma + (this.inteligencia * 2);
 
+        // add talents status
+        this.hp += this.talento.hp;
+        this.chakra += this.talento.chakra;
+        this.saudeMental += this.talento.saudeMental;
+        this.stamina += this.talento.stamina;
+        this.vontade += this.talento.vontade;
+        this.ninjutsuAlcance += this.talento.ninjutsuAlcance;
+        this.ninjutsuVelocidade += this.talento.ninjutsuVelocidade;
+        this.ninjutsuConjuracao -= this.talento.ninjutsuConjuracao;
+        this.ninjutsuSelos -= this.talento.ninjutsuSelos;
+        this.ninjutsuDano += this.talento.ninjutsuDano;
+        this.genjutsuAlcance += this.talento.genjutsuAlcance;
+        this.genjutsuVelocidade += this.talento.genjutsuVelocidade;
+        this.genjutsuPrecisao += this.talento.genjutsuPrecisao;
+        this.genjutsuPercepcao += this.talento.genjutsuPercepcao;
+        this.danoFisico += this.talento.danoFisico;
+        this.danoArmas += this.talento.danoArmas;
+        this.arremessoVelocidade += this.talento.arremessoVelocidade;
+        this.arremessoPrecisao += this.talento.arremessoPrecisao;
+        this.defesaFisica += this.talento.defesaFisica;
+        this.capacidadeCarga += this.talento.capacidadeCarga;
+        this.velocidadePersonagem += this.talento.velocidadePersonagem;
+        this.velocidadeGolpe += this.talento.velocidadeGolpe;
+        this.velocidadeSaque -= this.talento.velocidadeSaque;
+        this.reflexos += this.talento.reflexos;
+        this.percepcaoMovimento += this.talento.percepcaoMovimento;
+        this.percepcaoMentira += this.talento.percepcaoMentira;
+        this.armadilhaCriacao += this.talento.armadilhaCriacao;
+        this.armadilhaVelocidade -= this.talento.armadilhaVelocidade;
+        this.armadilhaPercepcao += this.talento.armadilhaPercepcao;
+        this.persuasao += this.talento.persuasao;
+
         this.#clenupAtrributes();
     }
 
+    /**
+     * Sanitize and validate attributes variables
+     */
     #clenupAtrributes() {
         this.hp = this.#validateAttributeType(this.hp, 100);
         this.chakra = this.#validateAttributeType(this.chakra, 100);
@@ -114,6 +198,9 @@ class Status {
         this.persuasao = this.#validateAttributeType(this.persuasao, 0);
     }
 
+    /**
+     * Validate status variables
+     */
     #validateAttributes() {
         // check for valid attribute type
         this.ninjutsu = this.#validateAttributeType(this.ninjutsu);
@@ -138,6 +225,46 @@ class Status {
         this.carisma = this.#validateAttributeRange(this.carisma);
     }
 
+    /**
+     * Validate attributes variables number type
+     */
+    #validateTalentAttributes() {
+        // check for valid talent attribute type
+        this.talento.hp = this.#validateAttributeType(this.talento.hp);
+        this.talento.chakra = this.#validateAttributeType(this.talento.chakra);
+        this.talento.saudeMental = this.#validateAttributeType(this.talento.saudeMental);
+        this.talento.stamina = this.#validateAttributeType(this.talento.stamina);
+        this.talento.vontade = this.#validateAttributeType(this.talento.vontade);
+        this.talento.ninjutsuAlcance = this.#validateAttributeType(this.talento.ninjutsuAlcance);
+        this.talento.ninjutsuVelocidade = this.#validateAttributeType(this.talento.ninjutsuVelocidade);
+        this.talento.ninjutsuConjuracao = this.#validateAttributeType(this.talento.ninjutsuConjuracao);
+        this.talento.ninjutsuSelos = this.#validateAttributeType(this.talento.ninjutsuSelos);
+        this.talento.ninjutsuDano = this.#validateAttributeType(this.talento.ninjutsuDano);
+        this.talento.genjutsuAlcance = this.#validateAttributeType(this.talento.genjutsuAlcance);
+        this.talento.genjutsuVelocidade = this.#validateAttributeType(this.talento.genjutsuVelocidade);
+        this.talento.genjutsuPrecisao = this.#validateAttributeType(this.talento.genjutsuPrecisao);
+        this.talento.genjutsuPercepcao = this.#validateAttributeType(this.talento.genjutsuPercepcao);
+        this.talento.danoFisico = this.#validateAttributeType(this.talento.danoFisico);
+        this.talento.danoArmas = this.#validateAttributeType(this.talento.danoArmas);
+        this.talento.arremessoVelocidade = this.#validateAttributeType(this.talento.arremessoVelocidade);
+        this.talento.arremessoPrecisao = this.#validateAttributeType(this.talento.arremessoPrecisao);
+        this.talento.defesaFisica = this.#validateAttributeType(this.talento.defesaFisica);
+        this.talento.capacidadeCarga = this.#validateAttributeType(this.talento.capacidadeCarga);
+        this.talento.velocidadePersonagem = this.#validateAttributeType(this.talento.velocidadePersonagem);
+        this.talento.velocidadeGolpe = this.#validateAttributeType(this.talento.velocidadeGolpe);
+        this.talento.velocidadeSaque = this.#validateAttributeType(this.talento.velocidadeSaque);
+        this.talento.reflexos = this.#validateAttributeType(this.talento.reflexos);
+        this.talento.percepcaoMovimento = this.#validateAttributeType(this.talento.percepcaoMovimento);
+        this.talento.percepcaoMentira = this.#validateAttributeType(this.talento.percepcaoMentira);
+        this.talento.armadilhaCriacao = this.#validateAttributeType(this.talento.armadilhaCriacao);
+        this.talento.armadilhaVelocidade = this.#validateAttributeType(this.talento.armadilhaVelocidade);
+        this.talento.armadilhaPercepcao = this.#validateAttributeType(this.talento.armadilhaPercepcao);
+        this.talento.persuasao = this.#validateAttributeType(this.talento.persuasao);
+    }
+
+    /**
+     * Validate value type as number
+     */
     #validateAttributeType(value, defaultValue = 0) {
         if (value == undefined || value == null || isNaN(value) || (value + '').trim().length == 0) {
             return parseInt(defaultValue);
@@ -146,6 +273,9 @@ class Status {
         return parseInt(value);
     }
 
+    /**
+     * Validate value range
+     */
     #validateAttributeRange(value, maxValue = 50) {
         if (value < 0) {
             return 0;

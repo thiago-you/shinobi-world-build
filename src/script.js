@@ -1,12 +1,8 @@
 $(function () {
-    const talentos = [
-        {'value': 0, 'name': 'Selecione'},
-        {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
-        {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
-        {'value': 3, 'name': 'Controle de Chakra (5m Alcance Ninjutsu)'},
-    ];
 
+    const talentos = new Talentos();
     let status = new Status();
+
     $('#talent-tab').hide();
     
     /**
@@ -152,7 +148,7 @@ $(function () {
         element.selectize({
             create: false,
             sortField: 'text',
-            options: talentos,
+            options: talentos.list,
             multiple: false,
             labelField: 'name',
             valueField: 'value',
@@ -284,8 +280,6 @@ $(function () {
         $('#inteligencia').val(status.inteligencia);
         $('#carisma').val(status.carisma);
 
-        calculateStatus();
-
         $('#nivel').val('0').trigger('change');
         $('#possuiCla').val('sim').trigger('change');
         $('#attrPoints').val('9');
@@ -296,6 +290,9 @@ $(function () {
         if ($('.selectize-talento')[0].selectize != undefined) {
             $('.selectize-talento')[0].selectize.setValue('0');
         }
+
+        calculateStatus();
+        calculateTalents();
     }
 
     /**
@@ -315,6 +312,28 @@ $(function () {
 
         status.calculate();
 
+        updateAttributesForm();
+    }
+
+    /**
+     * Calculate talents and update UI
+     */
+    function calculateTalents() {
+        status.initTalents();
+
+        $('.talent-item select').each(function () {
+            talentos.addAttributes(status, $(this).val());
+        });
+
+        status.calculate();
+
+        updateAttributesForm();
+    }
+
+    /**
+     * Update UI with status attributes
+     */
+    function updateAttributesForm() {
         // set status values on ui
         $('#hp').val((status.hp + status.chakra) / 2);
         $('#stamina').val(status.stamina);
@@ -345,13 +364,6 @@ $(function () {
         $('#armadilhaVelocidade').val(status.armadilhaVelocidade + 's');
         $('#armadilhaPercepcao').val(status.armadilhaPercepcao);
         $('#persuasao').val(status.persuasao);
-    }
-
-    /**
-     * Calculate talents and update UI
-     */
-    function calculateTalent() {
-        
     }
 
     /**
