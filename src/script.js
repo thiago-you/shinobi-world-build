@@ -1,50 +1,40 @@
 $(function () {
-    const talentos = [
-        {'value': 0, 'name': 'Selecione'},
-        {'value': 1, 'name': 'Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)'},
-        {'value': 2, 'name': 'Resiliência (+100 de Saúde Mental)'},
-        {'value': 3, 'name': 'Bom Controle de Expansão (Ninjutsu)'},
-        {'value': 4, 'name': 'Bom Controle de Expansão (Genjutsu)'},
-        {'value': 5, 'name': 'Bom controle de Velocidade (Ninjutsu)'},
-        {'value': 6, 'name': 'Bom controle de Velocidade (Genjutsu)'},
-        {'value': 7, 'name': 'Grande Controle de Expansão (Ninjutsu)'},
-        {'value': 8, 'name': 'Grande Controle de Expansão (Genjutsu)'},
-        {'value': 9, 'name': 'Grande Controle de Velocidade (Ninjutsu)'},
-        {'value': 10, 'name': 'Grande Controle de Velocidade (Genjutsu)'},
-        {'value': 11, 'name': 'Controle do Fluxo de Chakra'},
-        {'value': 12, 'name': 'Mestre no Controle de Expansão (Ninjutsu)'},
-        {'value': 13, 'name': 'Mestre no Controle de Expansão (Genjutsu)'},
-        {'value': 14, 'name': 'Mestre no Controle de Velocidade (Ninjutsu)'},
-        {'value': 15, 'name': 'Mestre no Controle de Velocidade (Genjutsu)'},
-        {'value': 15, 'name': 'Sombra e Luz'},
-        {'value': 16, 'name': 'Estudado em Ninjutsu'},
-        {'value': 2, 'name': 'Caminho do Ninjutsu (Alcance)'},
-        {'value': 2, 'name': 'Caminho do Ninjutsu (Velocidade)'},
-        {'value': 2, 'name': 'Caminho do Ninjutsu (Dano)'},
-        {'value': 2, 'name': 'Caminho das Barreiras'},
-        
-    ];
-
+    /**
+     * Init classes variables
+     */
+    const talentos = new Talentos();
     let status = new Status();
 
+    /**
+     * Initial tab state
+     */
     $('#talent-tab').hide();
     
     /**
-     * Intialize selectize component de sumario
+     * Carrega a lista de talentos
      */
-    $('.selectize').selectize({
-        create: false,
-        sortField: 'text',
+    fetch('./res/talentos.json').then(response => response.text()).then(response => {
+        talentos.setList(JSON.parse(response)); 
+        initTalentoSelectize($('.selectize-talento'));
+
+        $('#add-talent').prop('disabled', false);
     });
 
     /**
-     * Intialize selectize component do talento 1
+     * trigger default state
      */
-    initTalentoSelectize($('.selectize-talento'));
-
-    // trigger default state
     showSummary(0);
     resetStatus();
+
+    /**
+     * Intialize selectize component de sumario
+     */
+    $('.selectize').selectize({ create: false, sortField: 'text' });
+
+    /**
+     * set dynamic height to fit attributes and talents card
+     */
+    $('#talent-tab').css('height', $('#attr-tab').height());
 
     /**
      * Trigger status calculation
@@ -150,19 +140,23 @@ $(function () {
      */
     $('body').on('change', '.personagem', function () {
         let pontos = 9;
+        let talents = 2;
 
         const nivel = parseInt($('#nivel').val() || 0);
         const possuiCla = $('#possuiCla').val() || 'sim';
 
         if (possuiCla == 'nao') {
             pontos += 5;
+            talents += 1;
         }
 
         if (nivel != undefined && nivel != null && (nivel + '').trim().length > 0 && !isNaN(nivel)) {
             pontos += nivel;
+            talents += Math.min(nivel, 20) + Math.max(0, Math.floor((nivel - 20) / 2));
         }
 
         $('#attrPoints').val(pontos);
+        $('#talentPoints').val(talents);
     });
 
     /**

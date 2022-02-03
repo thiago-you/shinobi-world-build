@@ -1,0 +1,277 @@
+[
+   {
+      "value": 1,
+      "name": "Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)",
+      "status": {
+         "hp": 100,
+         "chakra": 100
+      }
+   },
+   {
+      "value": 2,
+      "name": "Resiliência (+100 de Saúde Mental)",
+      "status": {
+         "saudeMental": 100
+      }
+   },
+   {
+      "value": 3,
+      "name": "Bom Controle de Expansão (Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 5
+      }
+   },
+   {
+      "value": 4,
+      "name": "Bom Controle de Expansão (Genjutsu)",
+      "status": {
+         "genjutsuAlcance": 5
+      }
+   },
+   {
+      "value": 5,
+      "name": "Bom controle de Velocidade (Ninjutsu)",
+      "status": {
+         "ninjutsuConjuracao": 1
+      }
+   },
+   {
+      "value": 6,
+      "name": "Bom controle de Velocidade (Genjutsu)",
+      "status": {
+         "genjutsuVelocidade": 1
+      }
+   },
+   {
+      "value": 7,
+      "name": "Grande Controle de Expansão (Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 10
+      }
+   },
+   {
+      "value": 8,
+      "name": "Grande Controle de Expansão (Genjutsu)",
+      "status": {
+         "genjutsuAlcance": 10
+      }
+   },
+   {
+      "value": 9,
+      "name": "Grande Controle de Velocidade (Ninjutsu)",
+      "status": {
+         "ninjutsuConjuracao": 2
+      }
+   },
+   {
+      "value": 10,
+      "name": "Grande Controle de Velocidade (Genjutsu)",
+      "status": {
+         "genjutsuVelocidade": 2
+      }
+   },
+   {
+      "value": 11,
+      "name": "Controle do Fluxo de Chakra",
+      "status": {}
+   },
+   {
+      "value": 12,
+      "name": "Mestre no Controle de Expansão (Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 15
+      }
+   },
+   {
+      "value": 13,
+      "name": "Mestre no Controle de Expansão (Genjutsu)",
+      "status": {
+         "genjutsuAlcance": 15
+      }
+   },
+   {
+      "value": 14,
+      "name": "Estudado em Ninjutsu (+15 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 15,
+         "ninjutsuVelocidade": 2
+      }
+   },
+   {
+      "value": 15,
+      "name": "Caminho do Ninjutsu (Alcance) (+05m Alcance Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 5
+      }
+   },
+   {
+      "value": 16,
+      "name": "Caminho do Ninjutsu (Dano) (+15 Dano Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 15
+      }
+   },
+   {
+      "value": 17,
+      "name": "Versado em Ninjutsu (+25 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 25,
+         "ninjutsuVelocidade": 2
+      }
+   },
+   {
+      "value": 18,
+      "name": "Longo Caminho do Ninjutsu (+05m Alcance Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 5
+      }
+   },
+   {
+      "value": 19,
+      "name": "Caminho da Velocidade Espiritual (Dano) (+1m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuVelocidade": 1
+      }
+   },
+   {
+      "value": 20,
+      "name": "Mestre em Ninjutsu (+40 Dano Ninjutsu | 4m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 40,
+         "ninjutsuVelocidade": 4
+      }
+   },
+   {
+      "value": 21,
+      "name": "Caminho do Ninjutsu Destrutivo (+50 Dano Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 50
+      }
+   },
+   {
+      "value": 22,
+      "name": "Caminho do Ninjutsu Expansivo (+20m Alcance Ninjutsu)",
+      "status": {
+         "ninjutsuAlcance": 20
+      }
+   },
+   {
+      "value":23,
+      "name":"Estudado em Genjutsu (+2 Precisão Genjutsus)",
+      "status":{
+         "genjutsuPrecisao":2
+      }
+   },
+   {
+      "value":24,
+      "name":"Versado em Genjutsu (+2 Precisão Genjutsus | +1 Turno de duração em todos os genjutsus)",
+      "status":{
+         "genjutsuPrecisao":2
+      }
+   },
+   {
+      "value":25,
+      "name":"Mestre em Genjutsu (+2 Precisão Genjutsus | +1 Turno de duração de todos os genjutsus)",
+      "status":{
+         "genjutsuPrecisao":2
+      }
+   },
+   {
+      "value":26,
+      "name":"Deus da Manipulação ( +2 Precisão Genjutsus (Controle Mental) | +5% danos necessários para quebrar genjutsus de controle mental)",
+      "status":{
+         "genjutsuPrecisao":2
+      }
+   },
+   {
+      "value":27,
+      "name":"Deus das Ilusões ( +2 Precisão Genjutsus (Ilusões) |  +5% danos necessários para quebrar genjutsus de ilusões)",
+      "status":{
+         "genjutsuPrecisao":2
+      }
+   },
+   {
+      "value":28,
+      "name":"Estudado em Taijutsu (+15 Dano Físico)",
+      "status":{
+         "danoFisico":15
+      }
+   },
+   {
+      "value":29,
+      "name":"Golpes Intensos (+10 Dano Físico)",
+      "status":{
+         "danoFisico":10
+      }
+   },
+   {
+      "value":30,
+      "name":"Golpes Rápidos (+2m/s Velocidade dos Golpes)",
+      "status":{
+         "velocidadeGolpe":2
+      }
+   },
+   {
+      "value":31,
+      "name":"Bloqueios Firmes (+1% Defesa Física)",
+      "status":{
+         "defesaFisica":1
+      }
+   },
+   {
+      "value":32,
+      "name":"Versado em Taijutsu (+25 Dano Físico)",
+      "status":{
+         "danoFisico":25
+      }
+   },
+   {
+      "value":33,
+      "name":"Golpes Destruidores (+15 Dano Físico)",
+      "status":{
+         "danoFisico":15
+      }
+   },
+   {
+      "value":34,
+      "name":"Golpes Velozes (+2m/s Velocidade dos Golpes)",
+      "status":{
+         "velocidadeGolpe":2
+      }
+   },
+   {
+      "value":35,
+      "name":"Bloqueios Rígidos (+1% Defesa Física)",
+      "status":{
+         "defesaFisica":1
+      }
+   },
+   {
+      "value":36,
+      "name":"Mestre em Taijutsu (+40 Dano Físico)",
+      "status":{
+         "danoFisico":40
+      }
+   },
+   {
+      "value":37,
+      "name":"Golpes Devastadores (+50 Dano Físico)",
+      "status":{
+         "danoFisico":50
+      }
+   },
+   {
+      "value":38,
+      "name":"Golpes Velozes (+2m/s Velocidade dos Golpes)",
+      "status":{
+         "velocidadeGolpe":2
+      }
+   },
+   {
+      "value":39,
+      "name":"Bloqueios Perfeitos (+40 Dano Físico)",
+      "status":{
+         "defesaFisica":1
+      }
+   }
+]

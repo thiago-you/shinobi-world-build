@@ -3,8 +3,17 @@
  */
 class Talentos {
     constructor() {
-        this.list = require(lista.json);
+        this.list = [];
+    }
 
+    /**
+     * Set talents list from remote source
+     * 
+     * @param {array} list 
+     */
+    setList(list) {
+        this.list = list;
+        
         // add first empty item
         this.list.unshift({ 
             'value': 0, 
