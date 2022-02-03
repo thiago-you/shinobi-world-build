@@ -48,7 +48,7 @@ form {
 
 .card form {
     background-color: inherit;
-    padding: inherit;
+    padding: 0.2rem;
     border: none;
 }
 
@@ -99,7 +99,6 @@ form {
 }
 
 .card .card-body #talent-tab {
-    max-height: 500px; 
     overflow-y: auto;
 }
 
@@ -162,4 +161,103 @@ input:disabled {
 
 .selectize-input {
     white-space: nowrap !important;
+}
+
+
+@media (max-width: 766px) {
+    .card-body {
+        padding: 0.8rem;
+    }
+
+    .card-header {
+        padding: .55rem 1rem;
+    }
+
+    .card-header h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    
+    .card-body label {
+        font-size: 0.7rem;
+    }
+    
+    .card.status .card-body label {
+        font-size: 0.7rem;
+    }
+
+    .card form {
+        padding: 0;
+    }
+
+    .card .card-body #talent-tab {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    
+    .title {
+        font-size: 0.9rem;
+    }
+    
+    label {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-device-width: 990px) {
+    .card-body {
+        padding: 0.8rem;
+    }
+
+    .card-header {
+        padding: .55rem 1rem;
+    }
+
+    .card-header h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    
+    .card-body label {
+        font-size: 0.7rem;
+    }
+    
+    .card.status .card-body label {
+        font-size: 0.7rem;
+    }
+
+    .card form {
+        padding: 0;
+    }
+
+    .card .card-body #talent-tab {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    
+    .title {
+        font-size: 0.9rem;
+    }
+    
+    label {
+        font-size: 0.7rem;
+    }
 }
