@@ -20,6 +20,11 @@ class Talentos {
             'name': 'Selecione',
             'status': {}
         });
+
+        // validate unique value
+        this.list.forEach(function(item, index) {
+            item.value = index;
+        });
     }
 
     /**
