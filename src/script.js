@@ -241,7 +241,7 @@ $(function () {
             } else if (categoria == 3) {
                 $('.group-genjutsu').show();
             } else if (categoria == 4) {
-                $('.group-fisico').show();
+                $('.group-taijutsu').show();
             } else if (categoria == 5) {
                 $('.group-outros').show();
             } else if (categoria == 6) {
