@@ -561,6 +561,261 @@
       "status":{
          "danoFisico": 50
       }
-   }  
+   }, 
+   {
+      "value":81,
+      "name":"Estudado em Nintaijutsu (+35 Dano Físico(Usando Nintaijutsu))",
+      "status":{
+         "danoFisico": 35
+      }
+   },  
+   {
+      "value":82,
+      "name":"Levez da alma (+2m/s velocidade de golpes(Usando Nintaijutsu))",
+      "status":{
+         "velocidadeGolpe": 2
+      }
+   },
+   {
+      "value":83,
+      "name":"Versado em Nintaijutsu (+50 Dano Físico (usando Nintaijutsu))",
+      "status":{
+         "danoFisico": 50
+      }
+   },  
+   {
+      "value":84,
+      "name":"Grandeza da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "status":{
+         "velocidadeGolpe": 2
+      }
+   },   
+   {
+      "value":85,
+      "name":"Mestre em Nintaijutsu (+60 Dano Físico (usando Nintaijutsu))",
+      "status":{
+         "danoFisico": 60
+      }
+   },
+   {
+      "value":86,
+      "name":"Explosão da Alma (+60 Dano Físico (usando Nintaijutsu))",
+      "status":{
+         "danoFisico": 60
+      }
+   },
+   {
+      "value":87,
+      "name":"Maravilhas da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "status":{
+         "velocidadeGolpe": 60
+      }
+   },
+   {
+      "value":88,
+      "name":"Maravilhas da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "status":{
+         "velocidadeGolpe": 60
+      }
+   },
+   {
+      "value":89,
+      "name":"Inteligência Aguçada (+1 Criação de Armadilhas)",
+      "status":{
+         "armadilhaCriacao": 1
+      }
+   },
+   {
+      "value":90,
+      "name":"Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "status":{
+         "armadilhaVelocidade": -3
+      }
+   },
+   {
+      "value":91,
+      "name":"Altas Habilidades (+2 Criação de Armadilhas.)",
+      "status":{
+         "armadilhaCriacao": 2
+      }
+   },
+   {
+      "value":92,
+      "name":"Grande Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "status":{
+         "armadilhaVelocidade": -3
+      }
+   },
+   {
+      "value":93,
+      "name":"Conhecimentos Psicológicos (+1 Precisão Genjutsu (Ilusão))",
+      "status":{
+         "genjutsuPrecisao": 1
+      }
+   },
+   {
+      "value":94,
+      "name":"Genialidade (+2 Criação de Armadilhas)",
+      "status":{
+         "armadilhaCriacao": 2
+      }
+   },
+   {
+      "value":95,
+      "name":"Mestre Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "status":{
+         "armadilhaVelocidade": -3
+      }
+   },
+   {
+      "value":96,
+      "name":"Atenção intensificada (+1 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 1
+      }
+   },
+   {
+      "value":97,
+      "name":"Foco em Ação (+1 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 1
+      }
+   },
+   {
+      "value":98,
+      "name":"Foco no Oculto (+1 Percepção de Armadilhas)",
+      "status":{
+         "armadilhaPercepcao": 1
+      }
+   },
+   {
+      "value":99,
+      "name":"Foco na Realidade (+1 Percepção de Genjutsus)",
+      "status":{
+         "genjutsuPercepcao": 1
+      }
+   },
+   {
+      "value":100,
+      "name":"Atenção Aprimorada (+1 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 1
+      }
+   },
+   {
+      "value":101,
+      "name":"Concentrado em Ação (+2 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 2
+      }
+   },
+   {
+      "value":102,
+      "name":"Concentrado no Oculto (+2 Percepção de Armadilhas)",
+      "status":{
+         "armadilhaPercepcao": 2
+      }
+   },
+   {
+      "value":103,
+      "name":"Concentrado na Realidade (+2 Percepção de Genjutsus)",
+      "status":{
+         "genjutsuPercepcao": 2
+      }
+   },
+   {
+      "value":104,
+      "name":"Super Atento (+1 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 1
+      }
+   },
+   {
+      "value":105,
+      "name":"Olhos de Águia (+2 Percepção de Movimentos)",
+      "status":{
+         "percepcaoMovimento": 2
+      }
+   },
+   {
+      "value":106,
+      "name":"Minucioso (+2 Percepção de Armadilhas)",
+      "status":{
+         "armadilhaPercepcao": 2
+      }
+   },
+   {
+      "value":107,
+      "name":"Realista (+2 Percepção de Genjutsu)",
+      "status":{
+         "genjutsuPercepcao": 2
+      }
+   },
+   {
+      "value":108,
+      "name":"Carismático (+1 Percepção de Mentiras, +1 Persuasão.)",
+      "status":{
+         "percepcaoMentira": 1,
+         "persuasao": 1
+      }
+   },
+   {
+      "value":109,
+      "name":"Envolvente (+2 Percepção de Mentiras, +2 Persuasão.)",
+      "status":{
+         "percepcaoMentira": 2,
+         "persuasao": 2
+      }
+   },
+   {
+      "value":110,
+      "name":"Perceptivo (+1 Percepção de Mentiras)",
+      "status":{
+         "percepcaoMentira": 1
+      }
+   },
+   {
+      "value":111,
+      "name":"Persuasivo (+1 Persuasão)",
+      "status":{
+         "persuasao": 1
+      }
+   },
+   {
+      "value":112,
+      "name":"Mestre Perceptivo (+2 Percepção de Mentiras.)",
+      "status":{
+         "percepcaoMentira": 2
+      }
+   },
+   {
+      "value":113,
+      "name":"Mestre Persuasivo (+2 Persuasão.)",
+      "status":{
+         "persuasao": 2
+      }
+   },
+   {
+      "value":114,
+      "name":"Grande Lábia (+2 Percepção de Mentiras, +2 Persuasão)",
+      "status":{
+         "persuasao": 2,
+         "percepcaoMentira": 2
+      }
+   },
+   {
+      "value":115,
+      "name":"Gênio Perceptivo (+2 Percepção de Mentiras)",
+      "status":{
+         "percepcaoMentira": 2
+      }
+   },
+   {
+      "value":116,
+      "name":"Gênio Persuasivo (+2 Persuasão)",
+      "status":{
+         "persuasao": 2
+      }
+   }
 ]
 
