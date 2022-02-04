@@ -376,6 +376,191 @@
          "ninjutsuDano": 40,
          "ninjutsuVelocidade": 4
       }
-   }
+   },
+   {
+      "value":55,
+      "name":"Resistência Sobrehumana (+1 Stamina)",
+      "status":{
+         "stamina": 1
+      }
+   },
+   {
+      "value":56,
+      "name":"Resistência Física Sobrehumana (+1% Defesa Física (contra ataques físicos))",
+      "status":{
+         "defesaFisica": 1
+      }
+   },
+   {
+      "value":57,
+      "name":"Resistência Elemental Sobrehumana (+1% Defesa Física (contra ataques elementais))",
+      "status":{
+         "defesaFisica": 1
+      }
+   },
+   {
+      "value":58,
+      "name":"Resistência Monstruosa (+1 Stamina)",
+      "status":{
+         "stamina": 1
+      }
+   },
+   {
+      "value":59,
+      "name":"Resistência Física Monstruosa (+2% Defesa Física (contra ataques físicos))",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":60,
+      "name":"Resistência Elemental Monstruosa (+2% Defesa Física (contra ataques elementais))",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":61,
+      "name":"Resistência Colossal (+2 Stamina)",
+      "status":{
+         "stamina": 2
+      }
+   },
+   {
+      "value":62,
+      "name":"Resistência Física Colossal (+2% Defesa Física (contra ataques físicos))",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":63,
+      "name":"Resistência Elemental Colossal (+2% Defesa Física (contra ataques elementais))",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":64,
+      "name":"Inquebrável(+7% Defesa Física)",
+      "status":{
+         "defesaFisica": 7
+      }
+   },
+   {
+      "value":65,
+      "name":"Tranquilidade Incomum (+60SM)",
+      "status":{
+         "saudeMental": 60
+      }
+   },
+   {
+      "value":66,
+      "name":"Mente Perceptiva (+1 Percepção de Genjutsus)",
+      "status":{
+         "genjutsuPercepcao": 1
+      }
+   },
+   {
+      "value":67,
+      "name":"Resiliência Absurda (+60SM)",
+      "status":{
+         "saudeMental": 60
+      }
+   },
+   {
+      "value":68,
+      "name":"Quebrador de Ilusões (+2 Percepção de Genjutsus)",
+      "status":{
+         "genjutsuPercepcao": 2
+      }
+   },
+   {
+      "value":69,
+      "name":"Nirvana (+60 SM)",
+      "status":{
+         "saudeMental": 60
+      }
+   },
+   {
+      "value":70,
+      "name":"Inalcançável (+2 Percepção de Genjutsus)",
+      "status":{
+         "genjutsuPercepcao": 2
+      }
+   },
+   {
+      "value":71,
+      "name":"Força Sobrehumana (+15 Dano Físico | +15 Dano com Armas)",
+      "status":{
+         "danoFisico": 15,
+         "danoArmas": 15
+      }
+   },
+   {
+      "value":72,
+      "name":"Carregador Sobrehumano (+10 Carga)",
+      "status":{
+         "capacidadeCarga": 10
+      }
+   },
+   {
+      "value":73,
+      "name":"Proteção Sobrehumana (+1% Defesa Física)",
+      "status":{
+         "defesaFisica": 1
+      }
+   },
+   {
+      "value":74,
+      "name":"Força Força Monstruosa (+25 Dano Físico | +25 Dano com Armas)",
+      "status":{
+         "danoFisico": 25,
+         "danoArmas": 25
+      }
+   },
+   {
+      "value":75,
+      "name":"Carregador Monstruoso (+20 Carga)",
+      "status":{
+         "capacidadeCarga": 20
+      }
+   },
+   {
+      "value":76,
+      "name":"Proteção Monstruosa (+2% Defesa Física)",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":77,
+      "name":"Força Força Colossal (+40 Dano Físico | +40 Dano com Armas)",
+      "status":{
+         "danoFisico": 40,
+         "danoArmas": 40
+      }
+   },
+   {
+      "value":78,
+      "name":"Carregador Colossal (+20 Carga)",
+      "status":{
+         "capacidadeCarga": 20
+      }
+   },
+   {
+      "value":79,
+      "name":"Proteção Colossal (+2% Defesa Física)",
+      "status":{
+         "defesaFisica": 2
+      }
+   },
+   {
+      "value":80,
+      "name":"Destruidor de Mundos (+50 Dano Físico)",
+      "status":{
+         "danoFisico": 50
+      }
+   }  
 ]
 
