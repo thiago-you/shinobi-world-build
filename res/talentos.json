@@ -268,5 +268,114 @@
       "status":{
          "defesaFisica":1
       }
+   },
+   {
+      "value":40,
+      "name":"Estudado em Selos(-0,25s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-0.25
+      }
+   },
+   {
+      "value":41,
+      "name":"Selos Ágeis(-0,25s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-0.25
+      }
+   },
+   {
+      "value":42,
+      "name":"Versado em Selos(-0,25s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-0.25
+      }
+   },
+   {
+      "value":43,
+      "name":"Mestre em Selos(-0,50s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-0.50
+      }
+   },
+   {
+      "value":44,
+      "name":"Selos Ultra Sônicos(-1s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-1
+      }
+   },
+   {
+      "value":45,
+      "name":"Estudado em Elemento de Chakra(+15 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "status":{
+         "ninjutsuDano": 15,
+         "ninjutsuVelocidade": 2 
+      }
+   },
+   {
+      "value":46,
+      "name":"Alcance Elemental(+05m Alcance Ninjutsu.)",
+      "status":{
+         "ninjutsuAlcance": 5
+      }
+   },
+   {
+      "value":47,
+      "name":"Velocidade Elemental(+1m/s Velocidade Ninjutsu.)",
+      "status":{
+         "ninjutsuVelocidade": 5
+      }
+   },
+   {
+      "value":48,
+      "name":"Elemento Destruidor(+15 Dano Ninjutsu.)",
+      "status":{
+         "ninjutsuDano": 5
+      }
+   },
+   {
+      "value":49,
+      "name":"Versado em Elemento de Chakra(+25 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "status":{
+         "ninjutsuDano": 25,
+         "ninjutsuVelocidade": 2
+      }
+   },
+   {
+      "value":50,
+      "name":"Grande Alcance Elemental(+05m Alcance Ninjutsu.)",
+      "status":{
+         "ninjutsuAlcance": 5
+      }
+   },
+   {
+      "value":51,
+      "name":"Potencializador de Elemento Concentrado(+15 Dano Ninjutsu do tipo concentrado)",
+      "status":{
+         "ninjutsuDano": 15
+      }
+   },
+   {
+      "value":52,
+      "name":"Potencializador de Elemento Dispersivo (+15 Dano Ninjutsu do tipo dispersivo)",
+      "status":{
+         "ninjutsuDano": 15
+      }
+   },
+   {
+      "value":53,
+      "name":"Grande Velocidade Elemental (+1m/s Velocidade Ninjutsu.)",
+      "status":{
+         "ninjutsuVelocidade": 1
+      }
+   },
+   {
+      "value":54,
+      "name":"Mestre em Elemento de Chakra (+40 Dano Ninjutsu, +4m/s Velocidade Ninjutsu.)",
+      "status":{
+         "ninjutsuDano": 40,
+         "ninjutsuVelocidade": 4
+      }
    }
 ]
+
