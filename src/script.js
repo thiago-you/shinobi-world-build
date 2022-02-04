@@ -138,22 +138,40 @@ $(function () {
     /**
      * Calcula a quantidade estimada de pontos da personagem
      */
-    $('body').on('change', '.personagem', function () {
+    $('body').on('change', '.personagem, #ninjutsu', function () {
         let pontos = 9;
-        let talents = 2;
+        let talents = 3;
 
         const nivel = parseInt($('#nivel').val() || 0);
         const possuiCla = $('#possuiCla').val() || 'sim';
 
         if (possuiCla == 'nao') {
             pontos += 5;
-            talents += 1;
         }
 
         if (nivel != undefined && nivel != null && (nivel + '').trim().length > 0 && !isNaN(nivel)) {
-            pontos += nivel;
-            talents += Math.min(nivel, 20) + Math.max(0, Math.floor((nivel - 20) / 2));
+            pontos += Math.min(nivel, 40);
+            talents += Math.min(nivel, 40) + Math.max(0, Math.floor((nivel - 40) / 2));
+
+            if (nivel >= 50) {
+                talents += 5;
+            } else if (nivel >= 40) {
+                talents += 4;
+            } else if (nivel >= 25) {
+                talents += 3;
+            } else if (nivel >= 15) {
+                talents += 2;
+            } else if (nivel >= 5) {
+                talents += 1;
+            }
         }
+
+        if (status && status.ninjutsu >= 3) {
+            talents += 1;
+        }
+
+        // cap max talents
+        talents = Math.min(talents, 57);
 
         $('#attrPoints').val(pontos);
         $('#talentPoints').val(talents);
