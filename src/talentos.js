@@ -56,7 +56,7 @@ class Talentos {
 
         for (let [key, value] of Object.entries(talento.status)) {
             if (status.talento.hasOwnProperty(key)) {
-                status.talento[key] += value;
+                status.talento[key] += Math.abs(value);
             }
         }
     }

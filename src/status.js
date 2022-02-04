@@ -137,6 +137,10 @@ class Status {
         this.ninjutsuVelocidade += this.talento.ninjutsuVelocidade;
         this.ninjutsuConjuracao -= this.talento.ninjutsuConjuracao;
         this.ninjutsuSelos -= this.talento.ninjutsuSelos;
+
+        console.log(this.ninjutsuSelos);
+        console.log(this.talento.ninjutsuSelos);
+
         this.ninjutsuDano += this.talento.ninjutsuDano;
         this.genjutsuAlcance += this.talento.genjutsuAlcance;
         this.genjutsuVelocidade += this.talento.genjutsuVelocidade;
