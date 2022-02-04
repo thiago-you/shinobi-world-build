@@ -1,94 +1,93 @@
 [
    {
-      "value": 1,
-      "name": "Reservas Aumentadas (+100 HP/Chakra | +10 Vontade)",
-      "status": {
-         "hp": 100,
-         "chakra": 100
-      }
-   },
-   {
-      "value": 2,
-      "name": "Resiliência (+100 de Saúde Mental)",
-      "status": {
-         "saudeMental": 100
-      }
-   },
-   {
       "value": 3,
-      "name": "Bom Controle de Expansão (Ninjutsu)",
+      "name": "Bom Controle de Expansão (Ninjutsu) (+05m Alcance Ninjutsu)",
       "status": {
          "ninjutsuAlcance": 5
       }
    },
    {
       "value": 4,
-      "name": "Bom Controle de Expansão (Genjutsu)",
+      "name": "Bom Controle de Expansão (Genjutsu) (+05m Alcance Genjutsu)",
       "status": {
          "genjutsuAlcance": 5
       }
    },
    {
       "value": 5,
-      "name": "Bom controle de Velocidade (Ninjutsu)",
+      "name": "Bom controle de Velocidade (Ninjutsu) (-01s Velocidade de Conjuração)",
       "status": {
          "ninjutsuConjuracao": 1
       }
    },
    {
       "value": 6,
-      "name": "Bom controle de Velocidade (Genjutsu)",
+      "name": "Bom controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
       "status": {
-         "genjutsuVelocidade": 1
+         "genjutsuVelocidade": 2
       }
    },
    {
       "value": 7,
-      "name": "Grande Controle de Expansão (Ninjutsu)",
+      "name": "Grande Controle de Expansão (Ninjutsu) (+10m Alcance Ninjutsu)",
       "status": {
          "ninjutsuAlcance": 10
       }
    },
    {
       "value": 8,
-      "name": "Grande Controle de Expansão (Genjutsu)",
+      "name": "Grande Controle de Expansão (Genjutsu) (+10m Alcance Genjutsu)",
       "status": {
          "genjutsuAlcance": 10
       }
    },
    {
       "value": 9,
-      "name": "Grande Controle de Velocidade (Ninjutsu)",
+      "name": "Grande Controle de Velocidade (Ninjutsu) (-02s Velocidade de Conjuração)",
       "status": {
          "ninjutsuConjuracao": 2
       }
    },
    {
       "value": 10,
-      "name": "Grande Controle de Velocidade (Genjutsu)",
+      "name": "Grande Controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
       "status": {
          "genjutsuVelocidade": 2
       }
    },
    {
       "value": 12,
-      "name": "Mestre no Controle de Expansão (Ninjutsu)",
+      "name": "Mestre no Controle de Expansão (Ninjutsu) (+15m Alcance Ninjutsu)",
       "status": {
          "ninjutsuAlcance": 15
       }
    },
    {
       "value": 13,
-      "name": "Mestre no Controle de Expansão (Genjutsu)",
+      "name": "Mestre no Controle de Expansão (Genjutsu) (+15m Alcance Genjutsu)",
       "status": {
          "genjutsuAlcance": 15
       }
    },
    {
-      "value": 14,
-      "name": "Estudado em Ninjutsu (+15 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "value": 12,
+      "name": "Mestre no Controle de Velocidade (Ninjutsu) (-02s Velocidade de Conjuração)",
       "status": {
-         "ninjutsuDano": 15,
+         "ninjutsuConjuracao": 2
+      }
+   },
+   {
+      "value": 12,
+      "name": "Mestre no Controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
+      "status": {
+         "genjutsuVelocidade": 2
+      }
+   },
+   {
+      "value": 14,
+      "name": "Estudado em Ninjutsu (+25 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuDano": 25,
          "ninjutsuVelocidade": 2
       }
    },
@@ -101,16 +100,23 @@
    },
    {
       "value": 16,
-      "name": "Caminho do Ninjutsu (Dano) (+15 Dano Ninjutsu)",
+      "name": "Caminho do Ninjutsu (Dano) (+25 Dano Ninjutsu)",
       "status": {
-         "ninjutsuDano": 15
+         "ninjutsuDano": 25
+      }
+   },
+   {
+      "value": 16,
+      "name": "Caminho do Ninjutsu (Velocidade) (+01m/s Velocidade Ninjutsu)",
+      "status": {
+         "ninjutsuVelocidade": 1
       }
    },
    {
       "value": 17,
-      "name": "Versado em Ninjutsu (+25 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "name": "Versado em Ninjutsu (+75 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
       "status": {
-         "ninjutsuDano": 25,
+         "ninjutsuDano": 75,
          "ninjutsuVelocidade": 2
       }
    },
@@ -130,17 +136,17 @@
    },
    {
       "value": 20,
-      "name": "Mestre em Ninjutsu (+40 Dano Ninjutsu | 4m/s Velocidade Ninjutsu)",
+      "name": "Mestre em Ninjutsu (+100 Dano Ninjutsu | 4m/s Velocidade Ninjutsu)",
       "status": {
-         "ninjutsuDano": 40,
+         "ninjutsuDano": 100,
          "ninjutsuVelocidade": 4
       }
    },
    {
       "value": 21,
-      "name": "Caminho do Ninjutsu Destrutivo (+50 Dano Ninjutsu)",
+      "name": "Caminho do Ninjutsu Destrutivo (+100 Dano Ninjutsu)",
       "status": {
-         "ninjutsuDano": 50
+         "ninjutsuDano": 100
       }
    },
    {
@@ -187,16 +193,16 @@
    },
    {
       "value":28,
-      "name":"Estudado em Taijutsu (+15 Dano Físico)",
+      "name":"Estudado em Taijutsu (+25 Dano Físico)",
       "status":{
-         "danoFisico":15
+         "danoFisico":25
       }
    },
    {
       "value":29,
-      "name":"Golpes Intensos (+10 Dano Físico)",
+      "name":"Golpes Intensos (+25 Dano Físico)",
       "status":{
-         "danoFisico":10
+         "danoFisico":25
       }
    },
    {
@@ -222,9 +228,9 @@
    },
    {
       "value":33,
-      "name":"Golpes Destruidores (+15 Dano Físico)",
+      "name":"Golpes Destruidores (+30 Dano Físico)",
       "status":{
-         "danoFisico":15
+         "danoFisico":30
       }
    },
    {
@@ -250,9 +256,9 @@
    },
    {
       "value":37,
-      "name":"Golpes Devastadores (+50 Dano Físico)",
+      "name":"Golpes Devastadores (+60 Dano Físico)",
       "status":{
-         "danoFisico":50
+         "danoFisico":60
       }
    },
    {
@@ -271,95 +277,81 @@
    },
    {
       "value":40,
-      "name":"Estudado em Selos(-0,25s Formação de Selos)",
+      "name":"Estudado em Selos (-0,25s Formação de Selos)",
       "status":{
          "ninjutsuSelos":-0.25
       }
    },
    {
       "value":41,
-      "name":"Selos Ágeis(-0,25s Formação de Selos)",
+      "name":"Selos Ágeis (-0,25s Formação de Selos)",
       "status":{
          "ninjutsuSelos":-0.25
       }
    },
    {
       "value":42,
-      "name":"Versado em Selos(-0,25s Formação de Selos)",
+      "name":"Versado em Selos (-0,25s Formação de Selos)",
       "status":{
          "ninjutsuSelos":-0.25
       }
    },
    {
       "value":43,
-      "name":"Mestre em Selos(-0,50s Formação de Selos)",
+      "name":"Mestre em Selos (-0,50s Formação de Selos)",
       "status":{
          "ninjutsuSelos":-0.50
       }
    },
    {
       "value":44,
-      "name":"Selos Ultra Sônicos(-1s Formação de Selos)",
+      "name":"Selos Ultra Sônicos (-1s Formação de Selos)",
       "status":{
          "ninjutsuSelos":-1
       }
    },
    {
       "value":45,
-      "name":"Estudado em Elemento de Chakra(+15 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "name":"Estudado em Elemento de Chakra (+25 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
       "status":{
-         "ninjutsuDano": 15,
+         "ninjutsuDano": 25,
          "ninjutsuVelocidade": 2 
       }
    },
    {
       "value":46,
-      "name":"Alcance Elemental(+05m Alcance Ninjutsu.)",
+      "name":"Alcance Elemental (+05m Alcance Ninjutsu.)",
       "status":{
          "ninjutsuAlcance": 5
       }
    },
    {
       "value":47,
-      "name":"Velocidade Elemental(+1m/s Velocidade Ninjutsu.)",
+      "name":"Velocidade Elemental (+1m/s Velocidade Ninjutsu.)",
       "status":{
-         "ninjutsuVelocidade": 5
+         "ninjutsuVelocidade": 1
       }
    },
    {
       "value":48,
-      "name":"Elemento Destruidor(+15 Dano Ninjutsu.)",
+      "name":"Elemento Destruidor (+25 Dano Ninjutsu.)",
       "status":{
-         "ninjutsuDano": 5
+         "ninjutsuDano": 25
       }
    },
    {
       "value":49,
-      "name":"Versado em Elemento de Chakra(+25 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "name":"Versado em Elemento de Chakra (+75 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
       "status":{
-         "ninjutsuDano": 25,
+         "ninjutsuDano": 75,
          "ninjutsuVelocidade": 2
       }
    },
    {
       "value":50,
-      "name":"Grande Alcance Elemental(+05m Alcance Ninjutsu.)",
+      "name":"Grande Alcance Elemental (+05m Alcance Ninjutsu.)",
       "status":{
          "ninjutsuAlcance": 5
-      }
-   },
-   {
-      "value":51,
-      "name":"Potencializador de Elemento Concentrado(+15 Dano Ninjutsu do tipo concentrado)",
-      "status":{
-         "ninjutsuDano": 15
-      }
-   },
-   {
-      "value":52,
-      "name":"Potencializador de Elemento Dispersivo (+15 Dano Ninjutsu do tipo dispersivo)",
-      "status":{
-         "ninjutsuDano": 15
       }
    },
    {
@@ -371,10 +363,24 @@
    },
    {
       "value":54,
-      "name":"Mestre em Elemento de Chakra (+40 Dano Ninjutsu, +4m/s Velocidade Ninjutsu.)",
+      "name":"Mestre em Elemento de Chakra (+100 Dano Ninjutsu, +4m/s Velocidade Ninjutsu.)",
       "status":{
-         "ninjutsuDano": 40,
+         "ninjutsuDano": 100,
          "ninjutsuVelocidade": 4
+      }
+   },
+   {
+      "value":54,
+      "name":"Elemento Devastador (+100 Dano Ninjutsu)",
+      "status":{
+         "ninjutsuDano": 100
+      }
+   },
+   {
+      "value":54,
+      "name":"Verdadeiro Alcance Elemental (+20m Alcance Ninjutsu)",
+      "status":{
+         "ninjutsuAlcance": 20
       }
    },
    {
@@ -442,16 +448,16 @@
    },
    {
       "value":64,
-      "name":"Inquebrável(+7% Defesa Física)",
+      "name":"Inquebrável (+7% Defesa Física)",
       "status":{
          "defesaFisica": 7
       }
    },
    {
       "value":65,
-      "name":"Tranquilidade Incomum (+60SM)",
+      "name":"Tranquilidade Incomum (+100SM)",
       "status":{
-         "saudeMental": 60
+         "saudeMental": 100
       }
    },
    {
@@ -463,9 +469,9 @@
    },
    {
       "value":67,
-      "name":"Resiliência Absurda (+60SM)",
+      "name":"Resiliência Absurda (+200SM)",
       "status":{
-         "saudeMental": 60
+         "saudeMental": 200
       }
    },
    {
@@ -477,9 +483,9 @@
    },
    {
       "value":69,
-      "name":"Nirvana (+60 SM)",
+      "name":"Nirvana (+400 SM)",
       "status":{
-         "saudeMental": 60
+         "saudeMental": 400
       }
    },
    {
@@ -491,10 +497,10 @@
    },
    {
       "value":71,
-      "name":"Força Sobrehumana (+15 Dano Físico | +15 Dano com Armas)",
+      "name":"Força Sobrehumana (+30 Dano Físico | +50 Dano com Armas)",
       "status":{
-         "danoFisico": 15,
-         "danoArmas": 15
+         "danoFisico": 30,
+         "danoArmas": 50
       }
    },
    {
@@ -513,10 +519,10 @@
    },
    {
       "value":74,
-      "name":"Força Força Monstruosa (+25 Dano Físico | +25 Dano com Armas)",
+      "name":"Força Monstruosa (+50 Dano Físico | +75 Dano com Armas)",
       "status":{
-         "danoFisico": 25,
-         "danoArmas": 25
+         "danoFisico": 50,
+         "danoArmas": 75
       }
    },
    {
@@ -535,10 +541,10 @@
    },
    {
       "value":77,
-      "name":"Força Força Colossal (+40 Dano Físico | +40 Dano com Armas)",
+      "name":"Força Força Colossal (+60 Dano Físico | +80 Dano com Armas)",
       "status":{
-         "danoFisico": 40,
-         "danoArmas": 40
+         "danoFisico": 60,
+         "danoArmas": 80
       }
    },
    {
@@ -557,9 +563,9 @@
    },
    {
       "value":80,
-      "name":"Destruidor de Mundos (+50 Dano Físico)",
+      "name":"Destruidor de Mundos (+65 Dano Físico)",
       "status":{
-         "danoFisico": 50
+         "danoFisico": 65
       }
    }, 
    {
