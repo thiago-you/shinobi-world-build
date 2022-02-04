@@ -111,7 +111,7 @@ class Status {
         this.genjutsuPrecisao = 0 + (this.genjutsu / 2) + (this.carisma / 2);
         this.genjutsuPercepcao = 0 + ((this.genjutsu + this.inteligencia + this.atencao) / 2);
         this.danoFisico = 0 + (this.taijutsu * 2) + (this.forca * 2);
-        this.danoArmas = 0 + (this.taijutsu * 2) + (this.forca * 2);
+        this.danoArmas = 0 + (this.atencao * 2) + (this.destreza * 2);
         this.arremessoVelocidade = 4 + (this.forca * 2) + (this.atencao * 2);
         this.arremessoPrecisao = 5 + (this.forca * 2) + (this.atencao * 2);
         this.defesaFisica = 0 + this.constituicao + this.forca;
@@ -137,9 +137,6 @@ class Status {
         this.ninjutsuVelocidade += this.talento.ninjutsuVelocidade;
         this.ninjutsuConjuracao -= this.talento.ninjutsuConjuracao;
         this.ninjutsuSelos -= this.talento.ninjutsuSelos;
-
-        console.log(this.ninjutsuSelos);
-        console.log(this.talento.ninjutsuSelos);
 
         this.ninjutsuDano += this.talento.ninjutsuDano;
         this.genjutsuAlcance += this.talento.genjutsuAlcance;

@@ -44,14 +44,10 @@ DN (Dano Físico):
 (Pontos em Taijutsu x 02) + (Pontos em Força x 02) + Bônus de Talento [De Taijutsu] + Bônus de Talento [De Força] + Bônus de Talento [De Nintaijutsu] (esse somente quando usar técnicas do estilo Nintaijutsu) = X. 
 
 DA (Danos com armas):
-(Pontos em Taijutsu x 02) + (Pontos em Força x 02) + Bônus de Talento [De Bukijutsu] + Bônus de Talento [De Força] = X. 
+(Atenção x 02) + (Destreza x 02) + Bônus de Talento [Bukijutsu] + Bônus de Talento [Força] = X. 
 
 VAR (Velocidade de Arremesso):
 4m/s + (Força x 02) + (Atenção x 02) + Bônus de Talentos [Bukijutsu] = Xm/s.
-
-//
-(Atenção x 02) + (Destreza x 02) + Bônus de Talento [Bukijutsu] + Bônus de Talento [Força] = X. 
-//
 
 PAR (Precisão de Arremesso)
 05m + (Força x 02) + (Atenção x 02) + Bônus de Talento [Bukijutsu] = Xm.
