@@ -86,6 +86,9 @@ class Status {
             armadilhaPercepcao: 0,
             persuasao: 0,
         };
+
+        // status especiais
+        this.talento.mestreSaque = false;
     }
 
     /**
@@ -159,6 +162,11 @@ class Status {
         this.armadilhaVelocidade -= this.talento.armadilhaVelocidade;
         this.armadilhaPercepcao += this.talento.armadilhaPercepcao;
         this.persuasao += this.talento.persuasao;
+
+        // valida os atributos especiais
+        if (this.talento.mestreSaque) {
+            this.velocidadeSaque = 0 - Math.abs(this.velocidadeSaque * 2)
+        }
 
         this.#clenupAtrributes();
     }

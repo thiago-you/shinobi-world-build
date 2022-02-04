@@ -1055,6 +1055,13 @@
       "status":{
          "arremessoPrecisao": 2
       }
+   },
+   {
+      "value":148,
+      "name":"Mestre do Saque (Todos os bônus de redução de saque do atributo Destreza são dobrados)",
+      "status":{
+         "mestreSaque": true
+      }
    }
 ]
 

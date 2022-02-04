@@ -56,7 +56,11 @@ class Talentos {
 
         for (let [key, value] of Object.entries(talento.status)) {
             if (status.talento.hasOwnProperty(key)) {
-                status.talento[key] += Math.abs(value);
+                if (isNaN(value)) {
+                    status.talento[key] = value;
+                } else {
+                    status.talento[key] += Math.abs(value);
+                }
             }
         }
     }
