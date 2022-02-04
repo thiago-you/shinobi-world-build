@@ -111,14 +111,15 @@ class Status {
         this.ninjutsuDano = 0 + (this.ninjutsu * 2) + (this.atencao * 2);
         this.genjutsuAlcance = 2 + (this.genjutsu * 2);
         this.genjutsuVelocidade = 0 + (this.genjutsu * 2);
-        if(this.genjutsu <= 4){
+
+        if (this.genjutsu <= 4) {
             this.genjutsuPrecisao = 0 + Math.ceil(this.genjutsu / 2) + (this.carisma / 2);
             this.genjutsuPercepcao = 0 + Math.ceil(this.genjutsu / 2) + (this.carisma / 2);
-        }
-        else{
+        } else {
             this.genjutsuPrecisao = 0 + Math.floor(this.genjutsu / 2) + (this.carisma / 2);
             this.genjutsuPercepcao = 0 + Math.floor(this.genjutsu / 2) + (this.carisma / 2);
         }
+
         this.danoFisico = 0 + (this.taijutsu * 2) + (this.forca * 2);
         this.danoArmas = 0 + (this.atencao * 2) + (this.destreza * 2);
         this.arremessoVelocidade = 4 + (this.forca * 2) + (this.atencao * 2);
@@ -146,7 +147,6 @@ class Status {
         this.ninjutsuVelocidade += this.talento.ninjutsuVelocidade;
         this.ninjutsuConjuracao -= this.talento.ninjutsuConjuracao;
         this.ninjutsuSelos -= this.talento.ninjutsuSelos;
-
         this.ninjutsuDano += this.talento.ninjutsuDano;
         this.genjutsuAlcance += this.talento.genjutsuAlcance;
         this.genjutsuVelocidade += this.talento.genjutsuVelocidade;
