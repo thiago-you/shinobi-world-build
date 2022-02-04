@@ -244,6 +244,8 @@ $(function () {
                 $('.group-fisico').show();
             } else if (categoria == 5) {
                 $('.group-outros').show();
+            } else if (categoria == 6) {
+                $('.group-bukijutsu').show();
             }
         }
 

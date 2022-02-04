@@ -112,8 +112,8 @@ class Status {
         this.genjutsuPercepcao = 0 + ((this.genjutsu + this.inteligencia + this.atencao) / 2);
         this.danoFisico = 0 + (this.taijutsu * 2) + (this.forca * 2);
         this.danoArmas = 0 + (this.taijutsu * 2) + (this.forca * 2);
-        this.arremessoVelocidade = 4 + (this.forca * 2) + (this.destreza * 2);
-        this.arremessoPrecisao = 5 + (this.taijutsu * 2) + (this.destreza * 2);
+        this.arremessoVelocidade = 4 + (this.forca * 2) + (this.atencao * 2);
+        this.arremessoPrecisao = 5 + (this.forca * 2) + (this.atencao * 2);
         this.defesaFisica = 0 + this.constituicao + this.forca;
         this.capacidadeCarga = 20 + (this.forca * 5);
         this.velocidadePersonagem = 4 + (this.destreza * 2);
@@ -267,10 +267,10 @@ class Status {
      */
     #validateAttributeType(value, defaultValue = 0) {
         if (value == undefined || value == null || isNaN(value) || (value + '').trim().length == 0) {
-            return parseInt(defaultValue);
+            return this.#parseNumber(defaultValue);
         }
 
-        return parseInt(value);
+        return this.#parseNumber(value);
     }
 
     /**
@@ -286,5 +286,13 @@ class Status {
         }
 
         return value;
+    }
+
+    #parseNumber(value) {
+        if (value % 1 === 0) {
+            return parseInt(value);
+        }
+
+        return parseFloat(value).toFixed(1);
     }
 }

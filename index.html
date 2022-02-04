@@ -258,6 +258,7 @@
                                             <option value="2">Ninjutsu</option>
                                             <option value="3">Genjutsu</option>
                                             <option value="4">Físico</option>
+                                            <option value="6">Bukijutsu</option>
                                             <option value="5">Outros</option>
                                         </select>
                                     </div>
@@ -429,27 +430,6 @@
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
-                                <div class="col-6 attr-filter attr-taijutsu attr-forca">
-                                    <div class="form-group">
-                                        <label for="danoArmas">Dano com Armas</label>
-                                        <input id="danoArmas" name="danoArmas" value="0" class="form-control flex-fill"
-                                            disabled />
-                                    </div>
-                                </div>
-                                <div class="col-6 attr-filter attr-forca attr-destreza">
-                                    <div class="form-group">
-                                        <label for="velocidadeArremesso">Velocidade de Arremesso</label>
-                                        <input id="velocidadeArremesso" name="velocidadeArremesso" value="4m/s"
-                                            class="form-control flex-fill" disabled />
-                                    </div>
-                                </div>
-                                <div class="col-6 attr-filter attr-taijutsu attr-destreza">
-                                    <div class="form-group">
-                                        <label for="precisaoArremesso">Precisão de Arremesso</label>
-                                        <input id="precisaoArremesso" name="precisaoArremesso" value="5m"
-                                            class="form-control flex-fill" disabled />
-                                    </div>
-                                </div>
                                 <div class="col-6 attr-filter attr-forca attr-constituicao">
                                     <div class="form-group">
                                         <label for="defesaFisica" class="d-none d-sm-block">Defesa Física</label>
@@ -506,6 +486,34 @@
                                 </div>
                             </div>
                             <!-- ./row -->
+                            <div class="row group-filter group-bukijutsu">
+                                <div class="col-12">
+                                    <h3 class="d-none d-sm-block mb-4">Bukijutsu</h3>
+                                    <h3 class="d-block d-sm-none mb-2">Bukijutsu</h3>
+                                </div>
+                                <div class="col-6 attr-filter attr-taijutsu attr-forca">
+                                    <div class="form-group">
+                                        <label for="danoArmas">Dano com Armas</label>
+                                        <input id="danoArmas" name="danoArmas" value="0" class="form-control flex-fill"
+                                            disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6 attr-filter attr-forca attr-atencao">
+                                    <div class="form-group">
+                                        <label for="arremessoVelocidade">Velocidade de Arremesso</label>
+                                        <input id="arremessoVelocidade" name="arremessoVelocidade" value="4m/s"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6 attr-filter attr-forca attr-atencao">
+                                    <div class="form-group">
+                                        <label for="arremessoPrecisao">Precisão de Arremesso</label>
+                                        <input id="arremessoPrecisao" name="arremessoPrecisao" value="5m"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./row -->
                             <div class="row group-filter group-outros">
                                 <div class="col-12">
                                     <h3 class="d-none d-sm-block mb-4">Outros</h3>
@@ -513,22 +521,22 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
-                                        <label for="criacaoArmadilha">Criação de Armadilhas</label>
-                                        <input id="criacaoArmadilha" name="criacaoArmadilha" value="0"
+                                        <label for="armadilhaCriacao">Criação de Armadilhas</label>
+                                        <input id="armadilhaCriacao" name="armadilhaCriacao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-inteligencia">
                                     <div class="form-group">
-                                        <label for="velocidadeArmadilha">Vel. Preparo de Armadilhas</label>
-                                        <input id="velocidadeArmadilha" name="velocidadeArmadilha" value="20s"
+                                        <label for="armadilhaVelocidade">Vel. Preparo de Armadilhas</label>
+                                        <input id="armadilhaVelocidade" name="armadilhaVelocidade" value="20s"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>
                                 <div class="col-6 attr-filter attr-atencao">
                                     <div class="form-group">
-                                        <label for="percepcaoArmadilha">Percepção de Armadilhas</label>
-                                        <input id="percepcaoArmadilha" name="percepcaoArmadilha" value="0"
+                                        <label for="armadilhaPercepcao">Percepção de Armadilhas</label>
+                                        <input id="armadilhaPercepcao" name="armadilhaPercepcao" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>

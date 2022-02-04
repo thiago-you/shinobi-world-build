@@ -47,10 +47,14 @@ DA (Danos com armas):
 (Pontos em Taijutsu x 02) + (Pontos em Força x 02) + Bônus de Talento [De Bukijutsu] + Bônus de Talento [De Força] = X. 
 
 VAR (Velocidade de Arremesso):
-4m/s base + (pontos em Força x 02) + (pontos em Destreza x 02) + Bônus de Talentos [de Bukijutsu] = Xm/s.
+4m/s + (Força x 02) + (Atenção x 02) + Bônus de Talentos [Bukijutsu] = Xm/s.
+
+//
+(Atenção x 02) + (Destreza x 02) + Bônus de Talento [Bukijutsu] + Bônus de Talento [Força] = X. 
+//
 
 PAR (Precisão de Arremesso)
-05m base + (pontos em Taijutsu x 02) + (pontos em Destreza x 02) + Bônus de Talento [de Bukijutsu] = Xm.
+05m + (Força x 02) + (Atenção x 02) + Bônus de Talento [Bukijutsu] = Xm.
 
 DF (Defesa Física)
 Pontos em Constituição + Pontos em Força + Bônus de Talento [de Força] + Bônus de Talento [de Resistência] + Bônus de Talento [de Taijutsu] = X% (resultado aqui é em %)
