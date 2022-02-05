@@ -169,6 +169,15 @@ $(function () {
         if (status && status.ninjutsu >= 3) {
             talents += 1;
         }
+        if (status && status.ninjutsu >= 10) {
+            talents += 1;
+        }
+        if (status && status.genjutsu >= 10) {
+            talents += 1;
+        }
+        if (status && status.taijutsu >= 10) {
+            talents += 1;
+        }
 
         // cap max talents
         talents = Math.min(talents, 57);
