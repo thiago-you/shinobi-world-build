@@ -4,6 +4,7 @@ $(function () {
      */
     const talentos = new Talentos();
     let status = new Status();
+    let attrTotal;
 
     /**
      * Initial tab state
@@ -40,14 +41,25 @@ $(function () {
      * Trigger status calculation
      */
     $('body').on('change', '.form-atributos input', function () {
+        if($('#attrPoints').val() == 1){
+            $('.form-atributos input').map(function(){
+                console.log(this , this.value);
+                $(this).attr("max", this.value)
+            })
+        }
+        else{
+            $('.form-atributos input').attr("max", 10);
+        }   
         calculateStatus();
+        attrTotal = status.ninjutsu + status.taijutsu + status.genjutsu + 
+        status.destreza + status.constituicao + status.atencao + status.forca + status.inteligencia;
     });
 
     /**
      * Trigger talent calculation
      */
-    $('body').on('change', '.talent-item select', function () {
-        calculateTalents();
+    $('body').on('change', '.talent-item select', function () {       
+        calculateTalents();    
     });
 
     /**
@@ -138,7 +150,7 @@ $(function () {
     /**
      * Calcula a quantidade estimada de pontos da personagem
      */
-    $('body').on('change', '.personagem, #ninjutsu', function () {
+    $('body').on('change', '.personagem, .form-atributos input', function () {
         let pontos = 9;
         let talents = 3;
 
@@ -181,8 +193,7 @@ $(function () {
 
         // cap max talents
         talents = Math.min(talents, 57);
-
-        $('#attrPoints').val(pontos);
+        $('#attrPoints').val(pontos - attrTotal);
         $('#talentPoints').val(talents);
     });
 
