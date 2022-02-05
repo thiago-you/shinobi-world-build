@@ -283,6 +283,13 @@
       }
    },
    {
+      "value":40,
+      "name":"Selos Rápidos (-0,25s Formação de Selos)",
+      "status":{
+         "ninjutsuSelos":-0.25
+      }
+   },
+   {
       "value":41,
       "name":"Selos Ágeis (-0,25s Formação de Selos)",
       "status":{
