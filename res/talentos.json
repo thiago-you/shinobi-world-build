@@ -270,7 +270,7 @@
    },
    {
       "value":39,
-      "name":"Bloqueios Perfeitos (+40 Dano Físico)",
+      "name":"Bloqueios Perfeitos (+1 Defesa Física)",
       "status":{
          "defesaFisica":1
       }
