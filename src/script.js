@@ -16,6 +16,7 @@ $(function () {
      */
     fetch('./res/talentos.json').then(response => response.text()).then(response => {
         talentos.setList(JSON.parse(response)); 
+        
         initTalentoSelectize($('.selectize-talento'));
 
         $('#add-talent').prop('disabled', false);
@@ -42,8 +43,11 @@ $(function () {
      */
     $('body').on('change', '.form-atributos input', function () {   
         calculateStatus();
-        attrTotal = status.ninjutsu + status.taijutsu + status.genjutsu + 
-        status.destreza + status.constituicao + status.atencao + status.forca + status.inteligencia +status.carisma;
+
+        attrTotal = 0;
+        $('.form-atributos input.attr-value').each(function () {
+            attrTotal += parseInt($(this).val() || 0);
+        });
     });
 
     /**
@@ -142,15 +146,6 @@ $(function () {
      * Calcula a quantidade estimada de pontos da personagem
      */
     $('body').on('change', '.personagem, .form-atributos input', function () {
-        if($('#attrPoints').val() == 1){
-            $('.form-atributos input').map(function(){
-                $(this).attr("max", this.value);
-            })
-        }
-        else{
-            $('.form-atributos input').attr("max", 10);
-        }
-        
         let pontos = 10;
         let talents = 3;
 
@@ -162,13 +157,7 @@ $(function () {
         }
 
         if (nivel != undefined && nivel != null && (nivel + '').trim().length > 0 && !isNaN(nivel)) {
-            if(nivel <= 40){
-                pontos += Math.min(nivel, 40);
-                console.log(nivel, 40)
-            }
-            else{
-                pontos += 40 + Math.floor((nivel - 40)/2);
-            }
+            pontos += Math.min(nivel, 40) + Math.max(0, Math.floor((nivel - 40) / 2));
             talents += Math.min(nivel, 40) + Math.max(0, Math.floor((nivel - 40) / 2));
 
             if (nivel >= 50) {
@@ -197,10 +186,21 @@ $(function () {
             talents += 1;
         }
 
-        // cap max talents
-        talents = Math.min(talents, 57);
-        $('#attrPoints').val(pontos - attrTotal);
+        // cap max values
+        $('#attrPoints').val(Math.max(0, pontos - attrTotal));
         $('#talentPoints').val(talents);
+        talents = Math.min(talents, 57);
+
+        let countAttrPoints = $('#attrPoints').val() || 10;
+
+        // set current alowed max attr
+        if (countAttrPoints > 10) {
+            $('.form-atributos input').attr('max', 10);
+        } else {
+            $('.form-atributos input').each(function() {
+                $(this).attr('max', countAttrPoints > 0 ? this.value + countAttrPoints : this.value);
+            });
+        }
     });
 
     /**
