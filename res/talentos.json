@@ -1069,6 +1069,21 @@
       "status":{
          "mestreSaque": true
       }
+   },
+   {
+      "value":149,
+      "name": "Caminho do Ninjutsu Dispersivo (Dano)(+75 de dano nas técnicas de ninjutsu (do tipo dispersivo))",
+      "status":{
+         "ninjutsuDano":75
+      }
+   },
+   {
+      "value":150,
+      "name": "Reservas Monstruosas(+200HP & CH)",
+      "status":{
+         "hp":200,
+         "chakra": 200
+      }
    }
 ]
 
