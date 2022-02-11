@@ -5,6 +5,7 @@ $(function () {
     const talentos = new Talentos();
     let status = new Status();
     let attrTotal = 0;
+    let attrExtra = 0;
 
     /**
      * Initial tab state
@@ -48,6 +49,7 @@ $(function () {
         $('.form-atributos input.attr-value').each(function () {
             attrTotal += parseInt($(this).val() || 0);
         });
+        attrExtra = parseInt($('#attrExtra').val())
     });
 
     /**
@@ -184,10 +186,10 @@ $(function () {
         }
         if (status && status.taijutsu >= 10) {
             talents += 1;
-        }
+        }        
 
         // cap max values
-        $('#attrPoints').val(Math.max(0, pontos - attrTotal));
+        $('#attrPoints').val(Math.max(0, (pontos - attrTotal) + attrExtra));
         $('#talentPoints').val(talents);
         talents = Math.min(talents, 57);
 
@@ -195,7 +197,7 @@ $(function () {
 
         // set current alowed max attr
         if (countAttrPoints > 10) {
-            $('.form-atributos input').attr('max', 10);
+            $('.form-atributos input').not('#attrExtra').attr('max', 10);
         } else {
             $('.form-atributos input').each(function() {
                 $(this).attr('max', countAttrPoints > 0 ? this.value + countAttrPoints : this.value);
