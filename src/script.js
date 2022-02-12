@@ -233,7 +233,11 @@ $(function () {
             multiple: false,
             labelField: 'name',
             valueField: 'value',
-            searchField: 'name',
+            searchField: ['name', 'group'],
+            optgroups: talentos.groups,
+            optgroupField: 'group',
+            optgroupLabelField: 'name',
+            optgroupValueField: 'name',
         }).promise().done(function () {
             element[0].selectize.setValue('0');
         });

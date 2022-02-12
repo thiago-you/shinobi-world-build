@@ -171,6 +171,16 @@ input:disabled {
     white-space: nowrap !important;
 }
 
+.selectize-talento {
+    font-size: 0.9rem !important;
+}
+
+.selectize-dropdown .optgroup-header {
+    color: #282626 !important;
+    background: #caccce !important;
+    text-transform: uppercase !important;
+}
+
 @media (max-width: 766px) {
     .card-body {
         padding: 0.8rem;

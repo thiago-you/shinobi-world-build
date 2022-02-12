@@ -2,6 +2,7 @@
    {
       "value": 3,
       "name": "Bom Controle de Expansão (Ninjutsu) (+05m Alcance Ninjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuAlcance": 5
       }
@@ -9,6 +10,7 @@
    {
       "value": 4,
       "name": "Bom Controle de Expansão (Genjutsu) (+05m Alcance Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuAlcance": 5
       }
@@ -16,6 +18,7 @@
    {
       "value": 5,
       "name": "Bom controle de Velocidade (Ninjutsu) (-01s Velocidade de Conjuração)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuConjuracao": 1
       }
@@ -23,6 +26,7 @@
    {
       "value": 6,
       "name": "Bom controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuVelocidade": 2
       }
@@ -30,6 +34,7 @@
    {
       "value": 7,
       "name": "Grande Controle de Expansão (Ninjutsu) (+10m Alcance Ninjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuAlcance": 10
       }
@@ -37,6 +42,7 @@
    {
       "value": 8,
       "name": "Grande Controle de Expansão (Genjutsu) (+10m Alcance Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuAlcance": 10
       }
@@ -44,6 +50,7 @@
    {
       "value": 9,
       "name": "Grande Controle de Velocidade (Ninjutsu) (-02s Velocidade de Conjuração)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuConjuracao": 2
       }
@@ -51,6 +58,7 @@
    {
       "value": 10,
       "name": "Grande Controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuVelocidade": 2
       }
@@ -58,6 +66,7 @@
    {
       "value": 12,
       "name": "Mestre no Controle de Expansão (Ninjutsu) (+15m Alcance Ninjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuAlcance": 15
       }
@@ -65,6 +74,7 @@
    {
       "value": 13,
       "name": "Mestre no Controle de Expansão (Genjutsu) (+15m Alcance Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuAlcance": 15
       }
@@ -72,6 +82,7 @@
    {
       "value": 12,
       "name": "Mestre no Controle de Velocidade (Ninjutsu) (-02s Velocidade de Conjuração)",
+      "group": "Controle de Chakra",
       "status": {
          "ninjutsuConjuracao": 2
       }
@@ -79,6 +90,7 @@
    {
       "value": 12,
       "name": "Mestre no Controle de Velocidade (Genjutsu) (+2m/s Velocidade de Expansão de Genjutsu)",
+      "group": "Controle de Chakra",
       "status": {
          "genjutsuVelocidade": 2
       }
@@ -86,6 +98,7 @@
    {
       "value": 14,
       "name": "Estudado em Ninjutsu (+25 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuDano": 25,
          "ninjutsuVelocidade": 2
@@ -94,6 +107,7 @@
    {
       "value": 15,
       "name": "Caminho do Ninjutsu (Alcance) (+05m Alcance Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuAlcance": 5
       }
@@ -101,6 +115,7 @@
    {
       "value": 16,
       "name": "Caminho do Ninjutsu (Dano) (+25 Dano Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuDano": 25
       }
@@ -108,6 +123,7 @@
    {
       "value": 16,
       "name": "Caminho do Ninjutsu (Velocidade) (+01m/s Velocidade Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuVelocidade": 1
       }
@@ -115,6 +131,7 @@
    {
       "value": 17,
       "name": "Versado em Ninjutsu (+75 Dano Ninjutsu | +2m/s Velocidade Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuDano": 75,
          "ninjutsuVelocidade": 2
@@ -123,6 +140,7 @@
    {
       "value": 18,
       "name": "Longo Caminho do Ninjutsu (+05m Alcance Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuAlcance": 5
       }
@@ -130,6 +148,7 @@
    {
       "value": 19,
       "name": "Caminho da Velocidade Espiritual (Dano) (+1m/s Velocidade Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuVelocidade": 1
       }
@@ -137,6 +156,7 @@
    {
       "value": 20,
       "name": "Mestre em Ninjutsu (+100 Dano Ninjutsu | 4m/s Velocidade Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuDano": 100,
          "ninjutsuVelocidade": 4
@@ -145,6 +165,7 @@
    {
       "value": 21,
       "name": "Caminho do Ninjutsu Destrutivo (+100 Dano Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuDano": 100
       }
@@ -152,6 +173,7 @@
    {
       "value": 22,
       "name": "Caminho do Ninjutsu Expansivo (+20m Alcance Ninjutsu)",
+      "group": "Ninjutsu",
       "status": {
          "ninjutsuAlcance": 20
       }
@@ -159,6 +181,7 @@
    {
       "value":23,
       "name":"Estudado em Genjutsu (+2 Precisão Genjutsus)",
+      "group": "Genjutsu",
       "status":{
          "genjutsuPrecisao":2
       }
@@ -166,6 +189,7 @@
    {
       "value":24,
       "name":"Versado em Genjutsu (+2 Precisão Genjutsus | +1 Turno de duração em todos os genjutsus)",
+      "group": "Genjutsu",
       "status":{
          "genjutsuPrecisao":2
       }
@@ -173,6 +197,7 @@
    {
       "value":25,
       "name":"Mestre em Genjutsu (+2 Precisão Genjutsus | +1 Turno de duração de todos os genjutsus)",
+      "group": "Genjutsu",
       "status":{
          "genjutsuPrecisao":2
       }
@@ -180,6 +205,7 @@
    {
       "value":26,
       "name":"Deus da Manipulação ( +2 Precisão Genjutsus (Controle Mental) | +5% danos necessários para quebrar genjutsus de controle mental)",
+      "group": "Genjutsu",
       "status":{
          "genjutsuPrecisao":2
       }
@@ -187,6 +213,7 @@
    {
       "value":27,
       "name":"Deus das Ilusões ( +2 Precisão Genjutsus (Ilusões) |  +5% danos necessários para quebrar genjutsus de ilusões)",
+      "group": "Genjutsu",
       "status":{
          "genjutsuPrecisao":2
       }
@@ -194,6 +221,7 @@
    {
       "value":28,
       "name":"Estudado em Taijutsu (+25 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":25
       }
@@ -201,6 +229,7 @@
    {
       "value":29,
       "name":"Golpes Intensos (+25 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":25
       }
@@ -208,6 +237,7 @@
    {
       "value":30,
       "name":"Golpes Rápidos (+2m/s Velocidade dos Golpes)",
+      "group": "Taijutsu",
       "status":{
          "velocidadeGolpe":2
       }
@@ -215,6 +245,7 @@
    {
       "value":31,
       "name":"Bloqueios Firmes (+1% Defesa Física)",
+      "group": "Taijutsu",
       "status":{
          "defesaFisica":1
       }
@@ -222,6 +253,7 @@
    {
       "value":32,
       "name":"Versado em Taijutsu (+25 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":25
       }
@@ -229,6 +261,7 @@
    {
       "value":33,
       "name":"Golpes Destruidores (+30 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":30
       }
@@ -236,6 +269,7 @@
    {
       "value":34,
       "name":"Golpes Velozes (+2m/s Velocidade dos Golpes)",
+      "group": "Taijutsu",
       "status":{
          "velocidadeGolpe":2
       }
@@ -243,6 +277,7 @@
    {
       "value":35,
       "name":"Bloqueios Rígidos (+1% Defesa Física)",
+      "group": "Taijutsu",
       "status":{
          "defesaFisica":1
       }
@@ -250,6 +285,7 @@
    {
       "value":36,
       "name":"Mestre em Taijutsu (+40 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":40
       }
@@ -257,6 +293,7 @@
    {
       "value":37,
       "name":"Golpes Devastadores (+60 Dano Físico)",
+      "group": "Taijutsu",
       "status":{
          "danoFisico":60
       }
@@ -264,6 +301,7 @@
    {
       "value":38,
       "name":"Golpes Velozes (+2m/s Velocidade dos Golpes)",
+      "group": "Taijutsu",
       "status":{
          "velocidadeGolpe":2
       }
@@ -271,6 +309,7 @@
    {
       "value":39,
       "name":"Bloqueios Perfeitos (+1 Defesa Física)",
+      "group": "Taijutsu",
       "status":{
          "defesaFisica":1
       }
@@ -278,6 +317,7 @@
    {
       "value":40,
       "name":"Estudado em Selos (-0,25s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-0.25
       }
@@ -285,6 +325,7 @@
    {
       "value":40,
       "name":"Selos Rápidos (-0,25s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-0.25
       }
@@ -292,6 +333,7 @@
    {
       "value":41,
       "name":"Selos Ágeis (-0,25s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-0.25
       }
@@ -299,6 +341,7 @@
    {
       "value":42,
       "name":"Versado em Selos (-0,25s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-0.25
       }
@@ -306,6 +349,7 @@
    {
       "value":43,
       "name":"Mestre em Selos (-0,50s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-0.50
       }
@@ -313,6 +357,7 @@
    {
       "value":44,
       "name":"Selos Ultra Sônicos (-1s Formação de Selos)",
+      "group": "Selos de Mão",
       "status":{
          "ninjutsuSelos":-1
       }
@@ -320,6 +365,7 @@
    {
       "value":45,
       "name":"Estudado em Elemento de Chakra (+25 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuDano": 25,
          "ninjutsuVelocidade": 2 
@@ -328,6 +374,7 @@
    {
       "value":46,
       "name":"Alcance Elemental (+05m Alcance Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuAlcance": 5
       }
@@ -335,6 +382,7 @@
    {
       "value":47,
       "name":"Velocidade Elemental (+1m/s Velocidade Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuVelocidade": 1
       }
@@ -342,6 +390,7 @@
    {
       "value":48,
       "name":"Elemento Destruidor (+25 Dano Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuDano": 25
       }
@@ -349,6 +398,7 @@
    {
       "value":49,
       "name":"Versado em Elemento de Chakra (+75 Dano Ninjutsu, +2m/s Velocidade Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuDano": 75,
          "ninjutsuVelocidade": 2
@@ -357,6 +407,7 @@
    {
       "value":50,
       "name":"Grande Alcance Elemental (+05m Alcance Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuAlcance": 5
       }
@@ -364,6 +415,7 @@
    {
       "value":53,
       "name":"Grande Velocidade Elemental (+1m/s Velocidade Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuVelocidade": 1
       }
@@ -371,6 +423,7 @@
    {
       "value":54,
       "name":"Mestre em Elemento de Chakra (+100 Dano Ninjutsu, +4m/s Velocidade Ninjutsu.)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuDano": 100,
          "ninjutsuVelocidade": 4
@@ -379,6 +432,7 @@
    {
       "value":54,
       "name":"Elemento Devastador (+100 Dano Ninjutsu)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuDano": 100
       }
@@ -386,27 +440,31 @@
    {
       "value":54,
       "name":"Verdadeiro Alcance Elemental (+20m Alcance Ninjutsu)",
+      "group": "Elementos de Chakra",
       "status":{
          "ninjutsuAlcance": 20
       }
    },
    {
       "value":55,
-      "name":"Resistência Sobrehumana (+1 Stamina)",
+      "name":"Resistência Sobre-humana (+1 Stamina)",
+      "group": "Resistência",
       "status":{
          "stamina": 1
       }
    },
    {
       "value":56,
-      "name":"Resistência Física Sobrehumana (+1% Defesa Física (contra ataques físicos))",
+      "name":"Resistência Física Sobre-humana (+1% Defesa Física (contra ataques físicos))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 1
       }
    },
    {
       "value":57,
-      "name":"Resistência Elemental Sobrehumana (+1% Defesa Física (contra ataques elementais))",
+      "name":"Resistência Elemental Sobre-humana (+1% Defesa Física (contra ataques elementais))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 1
       }
@@ -414,6 +472,7 @@
    {
       "value":58,
       "name":"Resistência Monstruosa (+1 Stamina)",
+      "group": "Resistência",
       "status":{
          "stamina": 1
       }
@@ -421,6 +480,7 @@
    {
       "value":59,
       "name":"Resistência Física Monstruosa (+2% Defesa Física (contra ataques físicos))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 2
       }
@@ -428,6 +488,7 @@
    {
       "value":60,
       "name":"Resistência Elemental Monstruosa (+2% Defesa Física (contra ataques elementais))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 2
       }
@@ -435,6 +496,7 @@
    {
       "value":61,
       "name":"Resistência Colossal (+2 Stamina)",
+      "group": "Resistência",
       "status":{
          "stamina": 2
       }
@@ -442,6 +504,7 @@
    {
       "value":62,
       "name":"Resistência Física Colossal (+2% Defesa Física (contra ataques físicos))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 2
       }
@@ -449,6 +512,7 @@
    {
       "value":63,
       "name":"Resistência Elemental Colossal (+2% Defesa Física (contra ataques elementais))",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 2
       }
@@ -456,6 +520,7 @@
    {
       "value":64,
       "name":"Inquebrável (+7% Defesa Física)",
+      "group": "Resistência",
       "status":{
          "defesaFisica": 7
       }
@@ -463,6 +528,7 @@
    {
       "value":65,
       "name":"Tranquilidade Incomum (+100SM)",
+      "group": "Resiliência",
       "status":{
          "saudeMental": 100
       }
@@ -470,6 +536,7 @@
    {
       "value":66,
       "name":"Mente Perceptiva (+1 Percepção de Genjutsus)",
+      "group": "Resiliência",
       "status":{
          "genjutsuPercepcao": 1
       }
@@ -477,6 +544,7 @@
    {
       "value":67,
       "name":"Resiliência Absurda (+200SM)",
+      "group": "Resiliência",
       "status":{
          "saudeMental": 200
       }
@@ -484,6 +552,7 @@
    {
       "value":68,
       "name":"Quebrador de Ilusões (+2 Percepção de Genjutsus)",
+      "group": "Resiliência",
       "status":{
          "genjutsuPercepcao": 2
       }
@@ -491,6 +560,7 @@
    {
       "value":69,
       "name":"Nirvana (+400 SM)",
+      "group": "Resiliência",
       "status":{
          "saudeMental": 400
       }
@@ -498,13 +568,15 @@
    {
       "value":70,
       "name":"Inalcançável (+2 Percepção de Genjutsus)",
+      "group": "Resiliência",
       "status":{
          "genjutsuPercepcao": 2
       }
    },
    {
       "value":71,
-      "name":"Força Sobrehumana (+30 Dano Físico | +50 Dano com Armas)",
+      "name":"Força Sobre-humana (+30 Dano Físico | +50 Dano com Armas)",
+      "group": "Força",
       "status":{
          "danoFisico": 30,
          "danoArmas": 50
@@ -513,13 +585,15 @@
    {
       "value":72,
       "name":"Carregador Sobrehumano (+10 Carga)",
+      "group": "Força",
       "status":{
          "capacidadeCarga": 10
       }
    },
    {
       "value":73,
-      "name":"Proteção Sobrehumana (+1% Defesa Física)",
+      "name":"Proteção Sobre-humana (+1% Defesa Física)",
+      "group": "Força",
       "status":{
          "defesaFisica": 1
       }
@@ -527,6 +601,7 @@
    {
       "value":74,
       "name":"Força Monstruosa (+50 Dano Físico | +75 Dano com Armas)",
+      "group": "Força",
       "status":{
          "danoFisico": 50,
          "danoArmas": 75
@@ -535,6 +610,7 @@
    {
       "value":75,
       "name":"Carregador Monstruoso (+20 Carga)",
+      "group": "Força",
       "status":{
          "capacidadeCarga": 20
       }
@@ -542,6 +618,7 @@
    {
       "value":76,
       "name":"Proteção Monstruosa (+2% Defesa Física)",
+      "group": "Força",
       "status":{
          "defesaFisica": 2
       }
@@ -549,6 +626,7 @@
    {
       "value":77,
       "name":"Força Força Colossal (+60 Dano Físico | +80 Dano com Armas)",
+      "group": "Força",
       "status":{
          "danoFisico": 60,
          "danoArmas": 80
@@ -557,6 +635,7 @@
    {
       "value":78,
       "name":"Carregador Colossal (+20 Carga)",
+      "group": "Força",
       "status":{
          "capacidadeCarga": 20
       }
@@ -564,6 +643,7 @@
    {
       "value":79,
       "name":"Proteção Colossal (+2% Defesa Física)",
+      "group": "Força",
       "status":{
          "defesaFisica": 2
       }
@@ -571,6 +651,7 @@
    {
       "value":80,
       "name":"Destruidor de Mundos (+65 Dano Físico)",
+      "group": "Força",
       "status":{
          "danoFisico": 65
       }
@@ -578,6 +659,7 @@
    {
       "value":81,
       "name":"Estudado em Nintaijutsu (+35 Dano Físico(Usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "danoFisico": 35
       }
@@ -585,6 +667,7 @@
    {
       "value":82,
       "name":"Levez da alma (+2m/s velocidade de golpes(Usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "velocidadeGolpe": 2
       }
@@ -592,6 +675,7 @@
    {
       "value":83,
       "name":"Versado em Nintaijutsu (+50 Dano Físico (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "danoFisico": 50
       }
@@ -599,6 +683,7 @@
    {
       "value":84,
       "name":"Grandeza da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "velocidadeGolpe": 2
       }
@@ -606,6 +691,7 @@
    {
       "value":85,
       "name":"Mestre em Nintaijutsu (+60 Dano Físico (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "danoFisico": 60
       }
@@ -613,6 +699,7 @@
    {
       "value":86,
       "name":"Explosão da Alma (+60 Dano Físico (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "danoFisico": 60
       }
@@ -620,6 +707,7 @@
    {
       "value":87,
       "name":"Maravilhas da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "velocidadeGolpe": 60
       }
@@ -627,6 +715,7 @@
    {
       "value":88,
       "name":"Maravilhas da Alma (+2m/s Velocidade dos Golpes (usando Nintaijutsu))",
+      "group": "Nintaijutsu",
       "status":{
          "velocidadeGolpe": 60
       }
@@ -634,6 +723,7 @@
    {
       "value":89,
       "name":"Inteligência Aguçada (+1 Criação de Armadilhas)",
+      "group": "Inteligência",
       "status":{
          "armadilhaCriacao": 1
       }
@@ -641,6 +731,7 @@
    {
       "value":90,
       "name":"Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "group": "Inteligência",
       "status":{
          "armadilhaVelocidade": -3
       }
@@ -648,6 +739,7 @@
    {
       "value":91,
       "name":"Altas Habilidades (+2 Criação de Armadilhas.)",
+      "group": "Inteligência",
       "status":{
          "armadilhaCriacao": 2
       }
@@ -655,6 +747,7 @@
    {
       "value":92,
       "name":"Grande Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "group": "Inteligência",
       "status":{
          "armadilhaVelocidade": -3
       }
@@ -662,6 +755,7 @@
    {
       "value":93,
       "name":"Conhecimentos Psicológicos (+1 Precisão Genjutsu (Ilusão))",
+      "group": "Inteligência",
       "status":{
          "genjutsuPrecisao": 1
       }
@@ -669,6 +763,7 @@
    {
       "value":94,
       "name":"Genialidade (+2 Criação de Armadilhas)",
+      "group": "Inteligência",
       "status":{
          "armadilhaCriacao": 2
       }
@@ -676,6 +771,7 @@
    {
       "value":95,
       "name":"Mestre Preparador de Armadilhas (-3 Velocidade no Preparo de Armadilhas.)",
+      "group": "Inteligência",
       "status":{
          "armadilhaVelocidade": -3
       }
@@ -683,6 +779,7 @@
    {
       "value":96,
       "name":"Atenção intensificada (+1 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 1
       }
@@ -690,6 +787,7 @@
    {
       "value":97,
       "name":"Foco em Ação (+1 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 1
       }
@@ -697,6 +795,7 @@
    {
       "value":98,
       "name":"Foco no Oculto (+1 Percepção de Armadilhas)",
+      "group": "Atenção",
       "status":{
          "armadilhaPercepcao": 1
       }
@@ -704,6 +803,7 @@
    {
       "value":99,
       "name":"Foco na Realidade (+1 Percepção de Genjutsus)",
+      "group": "Atenção",
       "status":{
          "genjutsuPercepcao": 1
       }
@@ -711,6 +811,7 @@
    {
       "value":100,
       "name":"Atenção Aprimorada (+1 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 1
       }
@@ -718,6 +819,7 @@
    {
       "value":101,
       "name":"Concentrado em Ação (+2 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 2
       }
@@ -725,6 +827,7 @@
    {
       "value":102,
       "name":"Concentrado no Oculto (+2 Percepção de Armadilhas)",
+      "group": "Atenção",
       "status":{
          "armadilhaPercepcao": 2
       }
@@ -732,6 +835,7 @@
    {
       "value":103,
       "name":"Concentrado na Realidade (+2 Percepção de Genjutsus)",
+      "group": "Atenção",
       "status":{
          "genjutsuPercepcao": 2
       }
@@ -739,6 +843,7 @@
    {
       "value":104,
       "name":"Super Atento (+1 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 1
       }
@@ -746,6 +851,7 @@
    {
       "value":105,
       "name":"Olhos de Águia (+2 Percepção de Movimentos)",
+      "group": "Atenção",
       "status":{
          "percepcaoMovimento": 2
       }
@@ -753,6 +859,7 @@
    {
       "value":106,
       "name":"Minucioso (+2 Percepção de Armadilhas)",
+      "group": "Atenção",
       "status":{
          "armadilhaPercepcao": 2
       }
@@ -760,6 +867,7 @@
    {
       "value":107,
       "name":"Realista (+2 Percepção de Genjutsu)",
+      "group": "Atenção",
       "status":{
          "genjutsuPercepcao": 2
       }
@@ -767,6 +875,7 @@
    {
       "value":108,
       "name":"Carismático (+1 Percepção de Mentiras, +1 Persuasão.)",
+      "group": "Carisma",
       "status":{
          "percepcaoMentira": 1,
          "persuasao": 1
@@ -775,6 +884,7 @@
    {
       "value":109,
       "name":"Envolvente (+2 Percepção de Mentiras, +2 Persuasão.)",
+      "group": "Carisma",
       "status":{
          "percepcaoMentira": 2,
          "persuasao": 2
@@ -783,6 +893,7 @@
    {
       "value":110,
       "name":"Perceptivo (+1 Percepção de Mentiras)",
+      "group": "Carisma",
       "status":{
          "percepcaoMentira": 1
       }
@@ -790,6 +901,7 @@
    {
       "value":111,
       "name":"Persuasivo (+1 Persuasão)",
+      "group": "Carisma",
       "status":{
          "persuasao": 1
       }
@@ -797,6 +909,7 @@
    {
       "value":112,
       "name":"Mestre Perceptivo (+2 Percepção de Mentiras.)",
+      "group": "Carisma",
       "status":{
          "percepcaoMentira": 2
       }
@@ -804,6 +917,7 @@
    {
       "value":113,
       "name":"Mestre Persuasivo (+2 Persuasão.)",
+      "group": "Carisma",
       "status":{
          "persuasao": 2
       }
@@ -811,6 +925,7 @@
    {
       "value":114,
       "name":"Grande Lábia (+2 Percepção de Mentiras, +2 Persuasão)",
+      "group": "Carisma",
       "status":{
          "persuasao": 2,
          "percepcaoMentira": 2
@@ -819,6 +934,7 @@
    {
       "value":115,
       "name":"Gênio Perceptivo (+2 Percepção de Mentiras)",
+      "group": "Carisma",
       "status":{
          "percepcaoMentira": 2
       }
@@ -826,13 +942,15 @@
    {
       "value":116,
       "name":"Gênio Persuasivo (+2 Persuasão)",
+      "group": "Carisma",
       "status":{
          "persuasao": 2
       }
    },
    {
       "value":117,
-      "name":"Reservas Sobrehumanas (+100HP & CH.)",
+      "name":"Reservas Sobre-humanas (+100HP & CH.)",
+      "group": "Reservas",
       "status":{
          "hp": 100,
          "chakra":100
@@ -840,7 +958,8 @@
    },
    {
       "value":118,
-      "name":"Determinação Sobrehumana (+1 VT)",
+      "name":"Determinação Sobre-humana (+1 VT)",
+      "group": "Reservas",
       "status":{
          "vontade": 1
       }
@@ -848,6 +967,7 @@
    {
       "value":119,
       "name":"Ninjutsus Expansivos (+5m Alcance Ninjutsu.)",
+      "group": "Reservas",
       "status":{
          "ninjutsuAlcance": 5
       }
@@ -855,6 +975,7 @@
    {
       "value":120,
       "name":"Genjutsus Expansivos (+5m Alcance Genjutsu.)",
+      "group": "Reservas",
       "status":{
          "genjutsuAlcance": 5
       }
@@ -862,6 +983,7 @@
    {
       "value":121,
       "name":"Afinidade Aquática (+4m/s extras quando dentro da água)",
+      "group": "Reservas",
       "status":{
          "velocidadePersonagem": 4
       }
@@ -869,6 +991,7 @@
    {
       "value":122,
       "name":"Determinação Monstruosa (+2VT)",
+      "group": "Reservas",
       "status":{
          "vontade": 2
       }
@@ -876,6 +999,7 @@
    {
       "value":123,
       "name":"Ninjutsus Mega Expansivos (+5m Alcance Ninjutsu.)",
+      "group": "Reservas",
       "status":{
          "ninjutsuAlcance": 5
       }
@@ -883,6 +1007,7 @@
    {
       "value":124,
       "name":"Genjutsus Mega Expansivos (+5m Alcance Genjutsu.)",
+      "group": "Reservas",
       "status":{
          "genjutsuAlcance": 5
       }
@@ -890,6 +1015,7 @@
    {
       "value":125,
       "name":"Reservas Colossais (+400HP & CH.)",
+      "group": "Reservas",
       "status":{
          "hp": 400,
          "chakra":400
@@ -898,6 +1024,7 @@
    {
       "value":126,
       "name":"Determinação Colossal (+2VT)",
+      "group": "Reservas",
       "status":{
          "vontade": 2
       }
@@ -905,6 +1032,7 @@
    {
       "value":127,
       "name":"Ninjutsus Ultra Expansivos (+15m Alcance Ninjutsu.)",
+      "group": "Reservas",
       "status":{
          "ninjutsuAlcance":15
       }
@@ -912,20 +1040,23 @@
    {
       "value":128,
       "name":"Genjutsus Ultra Expansivos (+15m Alcance Genjutsu.)",
+      "group": "Reservas",
       "status":{
          "genjutsuAlcance":15
       }
    },
    {
       "value":129,
-      "name":"Destreza Sobrehumana (+2m/s Velocidade do Personagem)",
+      "name":"Destreza Sobre-humana (+2m/s Velocidade do Personagem)",
+      "group": "Destreza",
       "status":{
          "velocidadePersonagem": 2
       }
    },
    {
       "value":130,
-      "name":"Agilidade Sobrehumana (+2m/s Velocidade dos Golpes.)",
+      "name":"Agilidade Sobre-humana (+2m/s Velocidade dos Golpes.)",
+      "group": "Destreza",
       "status":{
          "velocidadeGolpe": 2
       }
@@ -933,6 +1064,7 @@
    {
       "value":130,
       "name":"Reflexos Sobrehumanos (+1m/s Reflexos.)",
+      "group": "Destreza",
       "status":{
          "reflexos": 1
       }
@@ -940,6 +1072,7 @@
    {
       "value":131,
       "name":"Destreza Monstruosa (+2m/s Velocidade do Personagem)",
+      "group": "Destreza",
       "status":{
          "velocidadePersonagem":2
       }
@@ -947,6 +1080,7 @@
    {
       "value":132,
       "name":"Agilidade Monstruosa (+2m/s Velocidade dos Golpes.)",
+      "group": "Destreza",
       "status":{
          "velocidadeGolpe":2
       }
@@ -954,6 +1088,7 @@
    {
       "value":133,
       "name":"Reflexos Monstruosos (+1m/s Reflexos.)",
+      "group": "Destreza",
       "status":{
          "reflexos":1
       }
@@ -961,6 +1096,7 @@
    {
       "value":134,
       "name":"Destreza Divina (+2m/s Velocidade do Personagem)",
+      "group": "Destreza",
       "status":{
          "velocidadePersonagem":2
       }
@@ -968,6 +1104,7 @@
    {
       "value":135,
       "name":"Agilidade Divina (+2m/s Velocidade dos Golpes.)",
+      "group": "Destreza",
       "status":{
          "velocidadeGolpe":2
       }
@@ -975,6 +1112,7 @@
    {
       "value":136,
       "name":"Reflexos Divinos (+1m/s Reflexos.)",
+      "group": "Destreza",
       "status":{
          "reflexos":1
       }
@@ -982,6 +1120,7 @@
    {
       "value":137,
       "name":"Estudado em Bukijutsu (+50 Dano com Arma (escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "danoArmas":50
       }
@@ -989,6 +1128,7 @@
    {
       "value":138,
       "name":"Armas Velozes (+2 Velocidade dos Golpes (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "velocidadeGolpe":2
       }
@@ -996,6 +1136,7 @@
    {
       "value":139,
       "name":"Arremessos Velozes (+2 Velocidade de Arremesso (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "arremessoVelocidade":2
       }
@@ -1003,6 +1144,7 @@
    {
       "value":140,
       "name":"Arremessos Precisos (+1 Precisão de Arremesso (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "arremessoPrecisao":1
       }
@@ -1010,6 +1152,7 @@
    {
       "value":141,
       "name":"Versado em Bukijutsu (+75 Dano com Arma (escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "danoArmas":75
       }
@@ -1017,6 +1160,7 @@
    {
       "value":142,
       "name":"Armas Mega Velozes (+2 Velocidade dos Golpes (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "velocidadeGolpe": 2
       }
@@ -1024,6 +1168,7 @@
    {
       "value":143,
       "name":"Arremessos Mega Velozes (+2 Velocidade de Arremesso)",
+      "group": "Bukijutsu",
       "status":{
          "arremessoVelocidade": 2
       }
@@ -1031,6 +1176,7 @@
    {
       "value":144,
       "name":"Arremessos Mega Precisos (+2 Precisão de Arremesso (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "arremessoPrecisao": 2
       }
@@ -1038,6 +1184,7 @@
    {
       "value":145,
       "name":"Mestre em Bukijutsu (+80 Dano com Arma (escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "danoArmas": 80
       }
@@ -1045,6 +1192,7 @@
    {
       "value":146,
       "name":"Armas Ultra Velozes (+2 Velocidade dos Golpes (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "velocidadeGolpe": 2
       }
@@ -1052,6 +1200,7 @@
    {
       "value":147,
       "name":"Arremessos Ultra Velozes (+2 Velocidade de Arremesso)",
+      "group": "Bukijutsu",
       "status":{
          "arremessoVelocidade": 2
       }
@@ -1059,6 +1208,7 @@
    {
       "value":148,
       "name":"Arremessos Ultra Precisos (+2 Precisão de Arremesso (usando a arma escolhida))",
+      "group": "Bukijutsu",
       "status":{
          "arremessoPrecisao": 2
       }
@@ -1066,6 +1216,7 @@
    {
       "value":148,
       "name":"Mestre do Saque (Todos os bônus de redução de saque do atributo Destreza são dobrados)",
+      "group": "Bukijutsu",
       "status":{
          "mestreSaque": true
       }
@@ -1073,6 +1224,7 @@
    {
       "value":149,
       "name": "Caminho do Ninjutsu Dispersivo (Dano)(+75 de dano nas técnicas de ninjutsu (do tipo dispersivo))",
+      "group": "Ninjutsu",
       "status":{
          "ninjutsuDano":75
       }
@@ -1080,6 +1232,7 @@
    {
       "value":150,
       "name": "Reservas Monstruosas(+200HP & CH)",
+      "group": "Reservas",
       "status":{
          "hp":200,
          "chakra": 200
