@@ -181,6 +181,10 @@ input:disabled {
     text-transform: uppercase !important;
 }
 
+.text-success {
+    color: #3ae160 !important;
+}
+
 @media (max-width: 766px) {
     .card-body {
         padding: 0.8rem;
