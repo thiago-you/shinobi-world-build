@@ -207,14 +207,14 @@
                             <div id="talent-tab" class="attribute-tab row justify-content-around">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <label for="talentPoints">Talentos para distribuir*:</label>
-                                        <input id="talentPoints" name="attrPoints" type="number" class="form-control" value="3" min="0" max="57" disabled/>
+                                        <label for="talentPoints">Talentos distribuidos*:</label>
+                                        <input id="talentPoints" name="attrPoints" type="text" class="form-control" value="0/3" data-value="0" data-max="3" disabled/>
                                         <small>
-                                            Os talentos podem variar conforme o clã selecionado.
+                                            * É possível selecionar talentos acima do limite estimado.
                                         </small>
                                     </div>
                                     <div id="talents" class="row mb-2 align-items-center">
-                                        <div class="col-12 mb-3 talent-item static-talent">
+                                        <div class="col-12 talent-item static-talent">
                                             <div class="form-group">
                                                 <label for="talento-1"
                                                     class="d-flex justify-content-between align-items-center">

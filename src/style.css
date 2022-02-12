@@ -116,6 +116,14 @@ form {
     font-family: 'Comfortaa', cursive;
 }
 
+#talents .form-group {
+    margin-bottom: 0.5rem !important;
+}
+
+#talents label {
+    font-size: 0.8rem;
+}
+
 h1 {
     text-align: center;
     font-size: 1.6rem;
@@ -162,7 +170,6 @@ input:disabled {
 .selectize-input {
     white-space: nowrap !important;
 }
-
 
 @media (max-width: 766px) {
     .card-body {
