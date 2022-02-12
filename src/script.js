@@ -207,7 +207,8 @@ $(function () {
         const talentsValue = $('#talentPoints').data('value') || 0;
 
         $('#attrPoints').val(pontos);
-        $('#talentPoints').val(`${talentsValue}/${talentos}`).data('max', talentos);
+        $('#talentPoints').data('max', talentos).find('.value').text(`${talentsValue}/${talentos}`);
+        $('#talentPoints').find('.extra-value').text('');
 
         const countAttrPoints = $('#attrPoints').val() || 10;
 
@@ -290,9 +291,11 @@ $(function () {
         const selectedTalentos = $('.talent-item .selectize-talento', '#talents').toArray().reduce((value, item) => value + Math.min($(item).val() || 0, 1), 0);
 
         if (selectedTalentos > maxTalentos) {
-            $('#talentPoints').val(`${maxTalentos}/${maxTalentos} (+${selectedTalentos - maxTalentos})`).data('value', maxTalentos);
+            $('#talentPoints').data('value', maxTalentos).find('.value').text(`${maxTalentos}/${maxTalentos}`);
+            $('#talentPoints').find('.extra-value').text(`(+${selectedTalentos - maxTalentos})`);
         } else {
-            $('#talentPoints').val(`${selectedTalentos}/${maxTalentos}`).data('value', selectedTalentos);
+            $('#talentPoints').data('value', selectedTalentos).find('.value').text(`${selectedTalentos}/${maxTalentos}`);
+            $('#talentPoints').find('.extra-value').text('');
         }
     }
 

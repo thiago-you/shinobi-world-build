@@ -208,7 +208,10 @@
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="talentPoints">Talentos distribuidos*:</label>
-                                        <input id="talentPoints" name="attrPoints" type="text" class="form-control" value="0/3" data-value="0" data-max="3" disabled/>
+                                        <div id="talentPoints" name="attrPoints" type="text" class="input form-control cursor-none disabled" data-value="0" data-max="3" disabled readonly>
+                                            <span class="value">0/3</span>
+                                            <span class="extra-value text-success"></span>
+                                        </div>
                                         <small>
                                             * É possível selecionar talentos acima do limite estimado.
                                         </small>
