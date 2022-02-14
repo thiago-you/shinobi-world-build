@@ -116,6 +116,14 @@ form {
     font-family: 'Comfortaa', cursive;
 }
 
+#talents .form-group {
+    margin-bottom: 0.5rem !important;
+}
+
+#talents label {
+    font-size: 0.8rem;
+}
+
 h1 {
     text-align: center;
     font-size: 1.6rem;
@@ -163,6 +171,19 @@ input:disabled {
     white-space: nowrap !important;
 }
 
+.selectize-talento {
+    font-size: 0.9rem !important;
+}
+
+.selectize-dropdown .optgroup-header {
+    color: #282626 !important;
+    background: #caccce !important;
+    text-transform: uppercase !important;
+}
+
+.text-success {
+    color: #3ae160 !important;
+}
 
 @media (max-width: 766px) {
     .card-body {

@@ -4,6 +4,7 @@
 class Talentos {
     constructor() {
         this.list = [];
+        this.groups = [];
     }
 
     /**
@@ -22,9 +23,16 @@ class Talentos {
         });
 
         // validate unique value
-        this.list.forEach(function(item, index) {
+        this.list.forEach((item, index) => {
             item.value = index;
+
+            if (item.group != undefined && item.group != null && item.group.length > 0) {
+                this.groups.push({'name': item.group});
+            }
         });
+
+        // filter unique groups
+        this.groups = this.groups.filter((value, index, self) => self.indexOf(value) === index);
     }
 
     /**
