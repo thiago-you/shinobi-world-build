@@ -128,7 +128,7 @@ class Status {
         this.armadilhaCriacao = 0 + ((this.inteligencia) / 3);
         this.armadilhaVelocidade = 20 - this.inteligencia;
         this.armadilhaPercepcao = 0 + this.atencao;
-        this.persuasao = 0 + this.carisma + (this.inteligencia * 2);
+        this.persuasao = 0 + this.carisma + (this.inteligencia / 2);
 
         // add talents status
         this.hp += this.talento.hp;
