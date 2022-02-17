@@ -35,6 +35,11 @@ $(function () {
     $('.selectize').selectize({ create: false, sortField: 'text' });
 
     /**
+     * Initialize tooltip component
+     */
+    $('body').tooltip({ selector: '.tooltip-icon' });
+    
+    /**
      * set dynamic height to fit attributes and talents card
      */
     $('#talent-tab').css('height', $('#attr-tab').height());
@@ -93,9 +98,10 @@ $(function () {
         const itemsCount = $('#talents').find('.talent-item').length + 1;
 
         const removeIcon = $('<i class="fas fa-times fa-fw text-danger item-remove" role="button">');
+        const infoIcon = $('<i class="fa fa-info-circle fa-fw mr-1 tooltip-icon" title="Apague o valor atual para poder buscar na lista." role="button" data-toggle="tooltip"></i>');
 
         item.removeClass('static-talent');
-        item.find('label').html(`<span class="text">Talento ${itemsCount}:</span>`).attr('for', `talento-${itemsCount}:`).append(removeIcon);
+        item.find('label').html(`<span class="text">Talento ${itemsCount}:</span>`).attr('for', `talento-${itemsCount}:`).append(removeIcon).find('span').prepend(infoIcon);
         item.find('select').attr('name', `talento-${itemsCount}:`);
         item.find('.selectize-control').remove();
 
@@ -448,6 +454,8 @@ $(function () {
         $('#ninjutsuConjuracao').val(status.ninjutsuConjuracao + 's');
         $('#ninjutsuSelos').val(status.ninjutsuSelos  + 's');
         $('#ninjutsuDano').val(status.ninjutsuDano);
+        $('#ninjutsuDanoConcentrado').val(status.ninjutsuDanoConcentrado);
+        $('#ninjutsuDanoDispersivo').val(status.ninjutsuDanoDispersivo);
         $('#genjutsuAlcance').val(status.genjutsuAlcance  + 'm');
         $('#genjutsuVelocidade').val(status.genjutsuVelocidade  + 'm/s');
         $('#genjutsuPrecisao').val(status.genjutsuPrecisao);

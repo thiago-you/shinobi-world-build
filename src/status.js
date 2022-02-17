@@ -14,6 +14,8 @@ class Status {
         this.ninjutsuConjuracao = 15;
         this.ninjutsuSelos = 3;
         this.ninjutsuDano = 0;
+        this.ninjutsuDanoConcentrado = 0;
+        this.ninjutsuDanoDispersivo = 0;
         this.genjutsuAlcance = 2;
         this.genjutsuVelocidade = 0;
         this.genjutsuPrecisao = 0;
@@ -65,6 +67,8 @@ class Status {
             ninjutsuConjuracao: 0,
             ninjutsuSelos: 0,
             ninjutsuDano: 0,
+            ninjutsuDanoConcentrado: 0,
+            ninjutsuDanoDispersivo: 0,
             genjutsuAlcance: 0,
             genjutsuVelocidade: 0,
             genjutsuPrecisao: 0,
@@ -109,6 +113,8 @@ class Status {
         this.ninjutsuConjuracao = 15 - this.ninjutsu;
         this.ninjutsuSelos = 3;
         this.ninjutsuDano = 0 + (this.ninjutsu * 2) + (this.atencao * 2);
+        this.ninjutsuDanoConcentrado = 0;
+        this.ninjutsuDanoDispersivo = 0;
         this.genjutsuAlcance = 2 + (this.genjutsu * 2);
         this.genjutsuVelocidade = 0 + (this.genjutsu * 2);
         this.genjutsuPrecisao = 0 + (this.genjutsu / 2) + (this.carisma / 2);
@@ -141,6 +147,8 @@ class Status {
         this.ninjutsuConjuracao -= this.talento.ninjutsuConjuracao;
         this.ninjutsuSelos -= this.talento.ninjutsuSelos;
         this.ninjutsuDano += this.talento.ninjutsuDano;
+        this.ninjutsuDanoConcentrado += this.talento.ninjutsuDanoConcentrado;
+        this.ninjutsuDanoDispersivo += this.talento.ninjutsuDanoDispersivo;
         this.genjutsuAlcance += this.talento.genjutsuAlcance;
         this.genjutsuVelocidade += this.talento.genjutsuVelocidade;
         this.genjutsuPrecisao += this.talento.genjutsuPrecisao;
@@ -184,6 +192,8 @@ class Status {
         this.ninjutsuConjuracao = this.#validateAttributeType(this.ninjutsuConjuracao, 15);
         this.ninjutsuSelos = this.#validateAttributeType(this.ninjutsuSelos, 3);
         this.ninjutsuDano = this.#validateAttributeType(this.ninjutsuDano, 0);
+        this.ninjutsuDanoConcentrado = this.#validateAttributeType(this.ninjutsuDanoConcentrado, 0);
+        this.ninjutsuDanoDispersivo = this.#validateAttributeType(this.ninjutsuDanoDispersivo, 0);
         this.genjutsuAlcance = this.#validateAttributeType(this.genjutsuAlcance, 2);
         this.genjutsuVelocidade = this.#validateAttributeType(this.genjutsuVelocidade, 0);
         this.genjutsuPrecisao = this.#validateAttributeType(this.genjutsuPrecisao, 0);
@@ -248,6 +258,8 @@ class Status {
         this.talento.ninjutsuConjuracao = this.#validateAttributeType(this.talento.ninjutsuConjuracao);
         this.talento.ninjutsuSelos = this.#validateAttributeType(this.talento.ninjutsuSelos);
         this.talento.ninjutsuDano = this.#validateAttributeType(this.talento.ninjutsuDano);
+        this.talento.ninjutsuDanoConcentrado = this.#validateAttributeType(this.talento.ninjutsuDanoConcentrado);
+        this.talento.ninjutsuDanoDispersivo = this.#validateAttributeType(this.talento.ninjutsuDanoDispersivo);
         this.talento.genjutsuAlcance = this.#validateAttributeType(this.talento.genjutsuAlcance);
         this.talento.genjutsuVelocidade = this.#validateAttributeType(this.talento.genjutsuVelocidade);
         this.talento.genjutsuPrecisao = this.#validateAttributeType(this.talento.genjutsuPrecisao);

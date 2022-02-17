@@ -221,7 +221,10 @@
                                             <div class="form-group">
                                                 <label for="talento-1"
                                                     class="d-flex justify-content-between align-items-center">
-                                                    <span class="text">Talento 1:</span>
+                                                    <span class="text">
+                                                        <i class="fa fa-info-circle fa-fw tooltip-icon" title="Apague o valor atual para poder buscar na lista." role="button" data-toggle="tooltip"></i>
+                                                        Talento 1:
+                                                    </span>
                                                 </label>
                                                 <select name="talento-1"
                                                     class="form-control selectize-talento"></select>
@@ -359,9 +362,23 @@
                                 </div>
                                 <div class="col-6 attr-filter attr-ninjutsu">
                                     <div class="form-group">
+                                        <label for="ninjutsuDanoConcentrado">Dano Concentrado</label>
+                                        <input id="ninjutsuDanoConcentrado" name="ninjutsuDanoConcentrado" value="0"
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6 attr-filter attr-ninjutsu">
+                                    <div class="form-group">
                                         <label for="ninjutsuAlcance" class="d-none d-sm-block">Alcance</label>
                                         <label for="ninjutsuAlcance" class="d-block d-sm-none">Alcance</label>
                                         <input id="ninjutsuAlcance" name="ninjutsuAlcance" value="2m" 
+                                            class="form-control flex-fill" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-6 attr-filter attr-ninjutsu">
+                                    <div class="form-group">
+                                        <label for="ninjutsuDanoDispersivo">Dano Dispersivo</label>
+                                        <input id="ninjutsuDanoDispersivo" name="ninjutsuDanoDispersivo" value="0"
                                             class="form-control flex-fill" disabled />
                                     </div>
                                 </div>

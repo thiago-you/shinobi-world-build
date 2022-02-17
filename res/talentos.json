@@ -1226,7 +1226,7 @@
       "name": "Caminho do Ninjutsu Dispersivo (Dano)(+75 de dano nas técnicas de ninjutsu (do tipo dispersivo))",
       "group": "Ninjutsu",
       "status":{
-         "ninjutsuDano":75
+         "ninjutsuDanoDispersivo":75
       }
    },
    {
